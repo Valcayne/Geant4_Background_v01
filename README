@@ -1,0 +1,29 @@
+
+Noviembre de 2026
+
+ln -s /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/myC6D6 myC6D6-11.3.2-mod02
+
+Para correr siempre:
+source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/share/Geant4/geant4make/geant4make.sh
+
+myC6D6-11.3.2-mod02 inputs/input_test01.inp
+
+Cosas mías en: /mnt/lustre/home/u5491/n_TOF/U238/Calc01
+
+
+doFullSim inputs/inp01/FullSim-Empty/inp01.inp xula2
+
+Para mirar cómo va todo en xula:
+squeue -u u6979
+
+Para los in-beam gamma rays:
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 0 1
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 1 2
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 2 3
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 3 4
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 4 5
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 5 6
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 6 7
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 7 8
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 8 9
+LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 9 10

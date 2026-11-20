@@ -1,0 +1,100 @@
+#!/usr/bin/env python3.10
+
+import subprocess
+import itertools
+import argparse
+import math
+import sys
+import os
+
+
+maxima = {
+    'xula1':  {'cpus': 40, 'jobs': 40},
+    'xula2': {'cpus': 36, 'jobs': 40},
+    'xula3': {'cpus': 48, 'jobs': 40},
+    'xula4': {'cpus': 112, 'jobs': 40}
+}
+
+#maxima = {
+#    'xula1': {'cpus': 3, 'jobs': 40},
+#    'xula2': {'cpus': 3, 'jobs': 40},
+#    'xula3': {'cpus': 3, 'jobs': 40},
+#    'xula4': {'cpus': 8, 'jobs': 40}
+#}
+
+parser = argparse.ArgumentParser(description='SLURM parallel program launcher')
+
+parser.add_argument('exe', help='executable to be launch')
+parser.add_argument('args',help='arguments for the executable', nargs='+')
+parser.add_argument('-n', '--nargs', type=int, default=1,
+                    help='number of arguments for the executable (1 by default)')
+parser.add_argument('-p', '--partition', choices=['xula1','xula2','xula3','xula4'], default='free',
+                    help='specific partition (free partitions by default)')
+
+args = parser.parse_args()
+
+if not os.path.exists(args.exe) or not os.access(args.exe, os.X_OK):
+    print('Program "'+args.exe+'" does not exist or is not executable')
+    sys.exit(1)
+
+elif len(args.args)%args.nargs != 0:
+    print('Error number of arguments')
+    sys.exit(1)
+
+
+
+njobs = len(args.args)//args.nargs
+jobs = (args.args[iarg:iarg+args.nargs] for iarg in range(0,len(args.args),args.nargs))
+
+
+if args.partition == 'free':
+
+    queued = subprocess.run(['squeue', '--format=%P', '--user='+os.environ['USER']],
+                            stdout=subprocess.PIPE).stdout.decode('utf-8').split()
+
+    free_cpus = {}
+    for partition in maxima.keys():
+        free_jobs = max(0, maxima[partition]['jobs']-queued.count(partition))
+        free_cpus[partition] = free_jobs*maxima[partition]['cpus']
+
+
+    partition_jobs = {partition: [] for partition in maxima.keys()}
+    while njobs != sum(1 for _ in itertools.chain.from_iterable(partition_jobs.values())):
+        for partition in maxima.keys():
+            partition_jobs[partition].extend(itertools.islice(jobs,free_cpus[partition]))
+
+
+    for partition, jbs in partition_jobs.items():
+        if len(jbs) > 0:
+            jobs_list = list(itertools.chain.from_iterable(jbs))
+            subprocess.run([sys.argv[0], '--nargs='+str(args.nargs), 
+                                         '--partition='+partition, args.exe] + jobs_list) 
+
+else:
+
+    max_jobs = maxima[args.partition]['jobs']
+    max_cpus = maxima[args.partition]['cpus']
+
+    narrs = min(max_jobs, math.ceil(njobs/max_cpus))
+    ncpus = min(max_cpus, math.ceil(njobs/narrs))
+
+    if os.environ.get('SLURM_ARRAY_TASK_ID') is None:
+        subprocess.run(['sbatch', '--nodes=1',
+                                  '--tasks-per-node=1',
+                                  '--partition='+args.partition,
+#                                  '--output=/dev/null',
+                                  '--cpus-per-task='+str(ncpus),
+                                  '--time=99:00:00',
+                                  '--exclusive',
+                                  '--array=0-'+str(narrs-1)] + sys.argv)
+    
+        print('{:d} jobs to {:s} ({:d}x{:d})'.format(njobs,args.partition,narrs,ncpus))
+    
+    else:
+        iarr = int(os.environ.get('SLURM_ARRAY_TASK_ID'))
+        part = itertools.islice(jobs, iarr, None, narrs)
+        part = list(itertools.chain.from_iterable(part))
+
+        ps = subprocess.Popen(['echo']+part, stdout=subprocess.PIPE)
+        subprocess.run(['xargs', '--max-args='+str(args.nargs),
+                                 '--max-procs='+str(ncpus), './'+args.exe], stdin=ps.stdout)

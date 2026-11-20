@@ -1,0 +1,9 @@
+
+Noviembre de 2026
+
+ln -s /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/myC6D6 myC6D6-11.3.2-mod02
+
+Para correr siempre:
+source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/share/Geant4/geant4make/geant4make.sh
+
+./myC6D6-11.3.2-mod02 inputs/input_test01.inp

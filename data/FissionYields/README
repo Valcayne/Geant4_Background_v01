@@ -1,0 +1,4 @@
+
+Los ficheros con *_noLightProd* son iguales que los otros pero sin protones, alfas, etc.
+Eso es porque Geant4 me da un segmentation fault cuando genero un alfa en U238 con cero energía.
+

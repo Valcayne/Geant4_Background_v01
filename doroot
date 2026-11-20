@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#rm ${1}
+g++ -std=c++11 ${1}.cc  -lMinuit  `root-config --libs --cflags` -o ${1}
+

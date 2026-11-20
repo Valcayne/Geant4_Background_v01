@@ -1,0 +1,3112 @@
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.23e+02_1.26e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 123  126  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_1.23e+02_1.26e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_3.98e+02_4.07e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 398  407  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_3.98e+02_4.07e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.51e+02_1.55e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 151  155  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_1.51e+02_1.55e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_9.77e+02_1.00e+03)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 977  1000  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_9.77e+02_1.00e+03_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.86e+02_1.91e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 186  191  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_1.86e+02_1.91e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_4.27e+02_4.37e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 427  437  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_4.27e+02_4.37e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.07e+02_1.10e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 107  110  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_1.07e+02_1.10e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.41e+02_1.45e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+
+ SourceEne (MeV): 141  145  1
+*************************************************************
+ SourcePar: neutron
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_8.51e+02_8.71e+02)
+ NSourceFnames: 0
+-------------------------------------------------------------
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ PhysicsListName: QGSP_BIC_HP
+ TotalNC6D6Det: 4
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+   2  9  50  45
+ PhysicsListOpt3: 1
+   2  9  50  -45
+-------------------------------------------------------------
+   2  9  50  -135
+ NEvents: 10000000
+   2  9  50  -225
+ Production cuts (mm): 1  1
+-------------------------------------------------------------
+ Seed: 1234567
+ SourceType: 1
+ OutFname: outputs/out01/FullSim-Empty/out01_1.41e+02_1.45e+02_1e7.root
+ SourcePos (cm): 0  0  -18400
+ OutputInfo: 0  2  0
+ SourceZ (cm,cm^{-1}): 0  0
+ Energy resolution:
+ SourceRad (cm): 1.5
+   1  0.00272027  0.00195347
+ Aperture (degrees): 0
+   2  0.00273878  0.00202048
+ BIF-fname: data/EAR1.bif
+   3  0.00195789  0.00211079
+ SourceEne (MeV): 851  871  1
+   4  0.00194601  0.00781076
+ SourcePar: neutron
+*************************************************************
+ NSourceFnames: 0
+
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_8.51e+02_8.71e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_7.94e+02_8.13e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 794  813  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_7.94e+02_8.13e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_9.12e+02_9.33e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 912  933  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_9.12e+02_9.33e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.15e+02_1.17e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 115  117  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_1.15e+02_1.17e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_6.46e+02_6.61e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 646  661  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_6.46e+02_6.61e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_7.41e+02_7.59e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 741  759  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+
+ Seed: 1234567
+*************************************************************
+ OutFname: outputs/out01/FullSim-Empty/out01_7.41e+02_7.59e+02_1e7.root
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_6.03e+02_6.17e+02)
+ OutputInfo: 0  2  0
+-------------------------------------------------------------
+ Energy resolution:
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+   1  0.00272027  0.00195347
+ TotalNC6D6Det: 4
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   2  9  50  45
+   4  0.00194601  0.00781076
+   2  9  50  -45
+*************************************************************
+   2  9  50  -135
+
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 603  617  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_6.03e+02_6.17e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_4.57e+02_4.68e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 457  468  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_4.57e+02_4.68e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+
+**************************************************************
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+                             WWW : http://geant4.org/
+**************************************************************
+**************************************************************
+
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+
+*************************************************************
+*************************************************************
+
+
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_2.63e+02_2.69e+02)
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_5.62e+02_5.75e+02)
+*************************************************************
+**************************************************************
+-------------------------------------------------------------
+-------------------------------------------------------------
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_2.45e+02_2.51e+02)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+-------------------------------------------------------------
+                       Copyright : Geant4 Collaboration
+ TotalNC6D6Det: 4
+ TotalNC6D6Det: 4
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+                      References : NIM A 506 (2003), 250-303
+   2  9  50  45
+ TotalNC6D6Det: 4
+   2  9  50  45
+
+                                 : IEEE-TNS 53 (2006), 270-278
+   2  9  50  -45
+   2  9  50  -45
+   2  9  50  45
+*************************************************************
+                                 : NIM A 835 (2016), 186-225
+   2  9  50  -135
+   2  9  50  -135
+   2  9  50  -45
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_6.92e+02_7.08e+02)
+                             WWW : http://geant4.org/
+   2  9  50  -225
+   2  9  50  -225
+   2  9  50  -135
+-------------------------------------------------------------
+**************************************************************
+-------------------------------------------------------------
+-------------------------------------------------------------
+   2  9  50  -225
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+
+ SourceType: 1
+ SourceType: 1
+-------------------------------------------------------------
+ TotalNC6D6Det: 4
+ SourcePos (cm): 0  0  -18400
+ SourcePos (cm): 0  0  -18400
+ SourceType: 1
+ SourceZ (cm,cm^{-1}): 0  0
+   2  9  50  45
+ SourceZ (cm,cm^{-1}): 0  0
+ SourcePos (cm): 0  0  -18400
+ SourceRad (cm): 1.5
+   2  9  50  -45
+ SourceRad (cm): 1.5
+ SourceZ (cm,cm^{-1}): 0  0
+ Aperture (degrees): 0
+   2  9  50  -135
+ Aperture (degrees): 0
+ SourceRad (cm): 1.5
+ BIF-fname: data/EAR1.bif
+   2  9  50  -225
+ BIF-fname: data/EAR1.bif
+ Aperture (degrees): 0
+ SourceEne (MeV): 263  269  1
+-------------------------------------------------------------
+ SourceEne (MeV): 562  575  1
+ BIF-fname: data/EAR1.bif
+ SourcePar: neutron
+ SourceType: 1
+ SourcePar: neutron
+ SourceEne (MeV): 245  251  1
+ NSourceFnames: 0
+ SourcePos (cm): 0  0  -18400
+ NSourceFnames: 0
+ SourcePar: neutron
+-------------------------------------------------------------
+ SourceZ (cm,cm^{-1}): 0  0
+-------------------------------------------------------------
+ NSourceFnames: 0
+ PhysicsListName: QGSP_BIC_HP
+ SourceRad (cm): 1.5
+ PhysicsListName: QGSP_BIC_HP
+-------------------------------------------------------------
+ PhysicsListOpt1: 1
+ Aperture (degrees): 0
+ PhysicsListOpt1: 1
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt2: 1
+ BIF-fname: data/EAR1.bif
+ PhysicsListOpt2: 1
+ PhysicsListOpt1: 1
+ PhysicsListOpt3: 1
+ SourceEne (MeV): 692  708  1
+ PhysicsListOpt3: 1
+ PhysicsListOpt2: 1
+-------------------------------------------------------------
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ NEvents: 10000000
+ PhysicsListOpt3: 1
+ Production cuts (mm): 1  1
+-------------------------------------------------------------
+ Seed: 1234567
+ NEvents: 10000000
+ OutFname: outputs/out01/FullSim-Empty/out01_2.63e+02_2.69e+02_1e7.root
+ Production cuts (mm): 1  1
+ OutputInfo: 0  2  0
+ Seed: 1234567
+ Energy resolution:
+ OutFname: outputs/out01/FullSim-Empty/out01_6.92e+02_7.08e+02_1e7.root
+   1  0.00272027  0.00195347
+ OutputInfo: 0  2  0
+   2  0.00273878  0.00202048
+ Energy resolution:
+   3  0.00195789  0.00211079
+   1  0.00272027  0.00195347
+   4  0.00194601  0.00781076
+   2  0.00273878  0.00202048
+*************************************************************
+   3  0.00195789  0.00211079
+
+   4  0.00194601  0.00781076
+*************************************************************
+
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ PhysicsListOpt3: 1
+ Seed: 1234567
+-------------------------------------------------------------
+ OutFname: outputs/out01/FullSim-Empty/out01_5.62e+02_5.75e+02_1e7.root
+ NEvents: 10000000
+ OutputInfo: 0  2  0
+ Production cuts (mm): 1  1
+ Energy resolution:
+ Seed: 1234567
+   1  0.00272027  0.00195347
+ OutFname: outputs/out01/FullSim-Empty/out01_2.45e+02_2.51e+02_1e7.root
+   2  0.00273878  0.00202048
+ OutputInfo: 0  2  0
+   3  0.00195789  0.00211079
+ Energy resolution:
+   4  0.00194601  0.00781076
+   1  0.00272027  0.00195347
+*************************************************************
+   2  0.00273878  0.00202048
+
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+
+*************************************************************
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.32e+02_1.35e+02)
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_2.29e+02_2.34e+02)
+-------------------------------------------------------------
+-------------------------------------------------------------
+
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+
+*************************************************************
+ TotalNC6D6Det: 4
+ TotalNC6D6Det: 4
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_3.47e+02_3.55e+02)
+   2  9  50  45
+   2  9  50  45
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_4.90e+02_5.01e+02)
+-------------------------------------------------------------
+   2  9  50  -45
+   2  9  50  -45
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+   2  9  50  -135
+   2  9  50  -135
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  -225
+   2  9  50  -225
+ TotalNC6D6Det: 4
+-------------------------------------------------------------
+   2  9  50  45
+-------------------------------------------------------------
+ SourceType: 1
+   2  9  50  45
+   2  9  50  -45
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+   2  9  50  -45
+   2  9  50  -135
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+   2  9  50  -135
+   2  9  50  -225
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+-------------------------------------------------------------
+ SourceType: 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 132  135  1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceEne (MeV): 229  234  1
+ SourcePar: neutron
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ SourcePar: neutron
+ NSourceFnames: 0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ NSourceFnames: 0
+-------------------------------------------------------------
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 347  355  1
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ SourceEne (MeV): 490  501  1
+ SourcePar: neutron
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ SourcePar: neutron
+ NSourceFnames: 0
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+-------------------------------------------------------------
+ NEvents: 10000000
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_1.32e+02_1.35e+02_1e7.root
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ OutFname: outputs/out01/FullSim-Empty/out01_2.29e+02_2.34e+02_1e7.root
+ OutputInfo: 0  2  0
+-------------------------------------------------------------
+ NEvents: 10000000
+ OutputInfo: 0  2  0
+ Energy resolution:
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Energy resolution:
+   1  0.00272027  0.00195347
+ Production cuts (mm): 1  1
+ Seed: 1234567
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_3.47e+02_3.55e+02_1e7.root
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+ OutFname: outputs/out01/FullSim-Empty/out01_4.90e+02_5.01e+02_1e7.root
+ OutputInfo: 0  2  0
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+ OutputInfo: 0  2  0
+ Energy resolution:
+   4  0.00194601  0.00781076
+*************************************************************
+ Energy resolution:
+   1  0.00272027  0.00195347
+*************************************************************
+
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+   4  0.00194601  0.00781076
+*************************************************************
+*************************************************************
+
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+
+*************************************************************
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_5.25e+02_5.37e+02)
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_2.00e+02_2.04e+02)
+-------------------------------------------------------------
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+
+ TotalNC6D6Det: 4
+   2  9  50  45
+
+
+*************************************************************
+
+   2  9  50  -45
+   2  9  50  45
+
+*************************************************************
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_3.72e+02_3.80e+02)
+*************************************************************
+   2  9  50  -135
+   2  9  50  -45
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_3.02e+02_3.09e+02)
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.74e+02_1.78e+02)
+-------------------------------------------------------------
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_3.24e+02_3.31e+02)
+   2  9  50  -225
+   2  9  50  -135
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.62e+02_1.66e+02)
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+-------------------------------------------------------------
+-------------------------------------------------------------
+   2  9  50  -225
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+
+*************************************************************
+*************************************************************
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ SourceType: 1
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+**************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_2.82e+02_2.88e+02)
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_1.00e+02_1.02e+02)
+ TotalNC6D6Det: 4
+ TotalNC6D6Det: 4
+ SourcePos (cm): 0  0  -18400
+   2  9  50  45
+   2  9  50  45
+ SourceType: 1
+ TotalNC6D6Det: 4
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+   2  9  50  45
+-------------------------------------------------------------
+-------------------------------------------------------------
+ SourceZ (cm,cm^{-1}): 0  0
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -45
+ SourcePos (cm): 0  0  -18400
+                       Copyright : Geant4 Collaboration
+   2  9  50  45
+   2  9  50  -45
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ SourceRad (cm): 1.5
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -135
+ SourceZ (cm,cm^{-1}): 0  0
+                      References : NIM A 506 (2003), 250-303
+   2  9  50  -45
+   2  9  50  -135
+ TotalNC6D6Det: 4
+ TotalNC6D6Det: 4
+ Aperture (degrees): 0
+   2  9  50  -135
+   2  9  50  -225
+   2  9  50  -225
+ SourceRad (cm): 1.5
+                                 : IEEE-TNS 53 (2006), 270-278
+   2  9  50  -135
+   2  9  50  45
+ BIF-fname: data/EAR1.bif
+   2  9  50  -225
+   2  9  50  45
+   2  9  50  -225
+-------------------------------------------------------------
+-------------------------------------------------------------
+ Aperture (degrees): 0
+                                 : NIM A 835 (2016), 186-225
+   2  9  50  -225
+   2  9  50  -45
+ SourceEne (MeV): 525  537  1
+-------------------------------------------------------------
+   2  9  50  -45
+-------------------------------------------------------------
+ SourceType: 1
+ SourceType: 1
+ BIF-fname: data/EAR1.bif
+                             WWW : http://geant4.org/
+-------------------------------------------------------------
+   2  9  50  -135
+ SourcePar: neutron
+ SourceType: 1
+   2  9  50  -135
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourcePos (cm): 0  0  -18400
+ SourceEne (MeV): 200  204  1
+**************************************************************
+ SourceType: 1
+   2  9  50  -225
+ SourcePos (cm): 0  0  -18400
+ NSourceFnames: 0
+   2  9  50  -225
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceZ (cm,cm^{-1}): 0  0
+ SourcePar: neutron
+
+ SourcePos (cm): 0  0  -18400
+-------------------------------------------------------------
+ SourceZ (cm,cm^{-1}): 0  0
+-------------------------------------------------------------
+-------------------------------------------------------------
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ SourceRad (cm): 1.5
+ NSourceFnames: 0
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceType: 1
+ SourceRad (cm): 1.5
+ PhysicsListName: QGSP_BIC_HP
+ SourceType: 1
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ Aperture (degrees): 0
+-------------------------------------------------------------
+ SourceRad (cm): 1.5
+ SourcePos (cm): 0  0  -18400
+ Aperture (degrees): 0
+ PhysicsListOpt1: 1
+ SourcePos (cm): 0  0  -18400
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ BIF-fname: data/EAR1.bif
+ PhysicsListName: QGSP_BIC_HP
+ Aperture (degrees): 0
+ SourceZ (cm,cm^{-1}): 0  0
+ BIF-fname: data/EAR1.bif
+ PhysicsListOpt2: 1
+ SourceZ (cm,cm^{-1}): 0  0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 174  178  1
+ SourceEne (MeV): 372  380  1
+ PhysicsListOpt1: 1
+ BIF-fname: data/EAR1.bif
+ SourceRad (cm): 1.5
+ SourceEne (MeV): 302  309  1
+ PhysicsListOpt3: 1
+ SourceRad (cm): 1.5
+ SourceEne (MeV): 324  331  1
+ SourcePar: neutron
+ SourcePar: neutron
+ PhysicsListOpt2: 1
+ SourceEne (MeV): 162  166  1
+ Aperture (degrees): 0
+ SourcePar: neutron
+-------------------------------------------------------------
+ Aperture (degrees): 0
+ SourcePar: neutron
+ NSourceFnames: 0
+ NSourceFnames: 0
+ PhysicsListOpt3: 1
+ NSourceFnames: 0
+ SourcePar: neutron
+ BIF-fname: data/EAR1.bif
+ NEvents: 10000000
+ BIF-fname: data/EAR1.bif
+ NSourceFnames: 0
+-------------------------------------------------------------
+-------------------------------------------------------------
+ Production cuts (mm): 1  1
+-------------------------------------------------------------
+-------------------------------------------------------------
+ NSourceFnames: 0
+ SourceEne (MeV): 282  288  1
+ SourceEne (MeV): 100  102  1
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListName: QGSP_BIC_HP
+ Seed: 1234567
+ NEvents: 10000000
+ PhysicsListName: QGSP_BIC_HP
+-------------------------------------------------------------
+ SourcePar: neutron
+ SourcePar: neutron
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt1: 1
+ OutFname: outputs/out01/FullSim-Empty/out01_5.25e+02_5.37e+02_1e7.root
+ Production cuts (mm): 1  1
+ PhysicsListOpt1: 1
+ PhysicsListName: QGSP_BIC_HP
+ NSourceFnames: 0
+ NSourceFnames: 0
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt2: 1
+ OutputInfo: 0  2  0
+ Seed: 1234567
+ PhysicsListOpt2: 1
+ PhysicsListOpt1: 1
+-------------------------------------------------------------
+-------------------------------------------------------------
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+ PhysicsListOpt3: 1
+ Energy resolution:
+ OutFname: outputs/out01/FullSim-Empty/out01_2.00e+02_2.04e+02_1e7.root
+ PhysicsListOpt3: 1
+ PhysicsListOpt2: 1
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+-------------------------------------------------------------
+   1  0.00272027  0.00195347
+ OutputInfo: 0  2  0
+-------------------------------------------------------------
+ PhysicsListOpt3: 1
+ PhysicsListOpt1: 1
+ PhysicsListOpt1: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ NEvents: 10000000
+   2  0.00273878  0.00202048
+ Energy resolution:
+-------------------------------------------------------------
+ PhysicsListOpt2: 1
+ NEvents: 10000000
+ PhysicsListOpt2: 1
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Production cuts (mm): 1  1
+   3  0.00195789  0.00211079
+   1  0.00272027  0.00195347
+ NEvents: 10000000
+ PhysicsListOpt3: 1
+ Production cuts (mm): 1  1
+ PhysicsListOpt3: 1
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ Seed: 1234567
+   4  0.00194601  0.00781076
+   2  0.00273878  0.00202048
+ Production cuts (mm): 1  1
+-------------------------------------------------------------
+ Seed: 1234567
+-------------------------------------------------------------
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_1.74e+02_1.78e+02_1e7.root
+ OutFname: outputs/out01/FullSim-Empty/out01_3.72e+02_3.80e+02_1e7.root
+*************************************************************
+   3  0.00195789  0.00211079
+ Seed: 1234567
+ NEvents: 10000000
+ OutFname: outputs/out01/FullSim-Empty/out01_3.02e+02_3.09e+02_1e7.root
+ NEvents: 10000000
+ OutFname: outputs/out01/FullSim-Empty/out01_3.24e+02_3.31e+02_1e7.root
+ OutputInfo: 0  2  0
+ OutputInfo: 0  2  0
+
+   4  0.00194601  0.00781076
+ OutFname: outputs/out01/FullSim-Empty/out01_1.62e+02_1.66e+02_1e7.root
+ Production cuts (mm): 1  1
+ OutputInfo: 0  2  0
+ Production cuts (mm): 1  1
+ OutputInfo: 0  2  0
+ Energy resolution:
+ Energy resolution:
+*************************************************************
+ OutputInfo: 0  2  0
+ Seed: 1234567
+ Energy resolution:
+ Seed: 1234567
+ Energy resolution:
+   1  0.00272027  0.00195347
+   1  0.00272027  0.00195347
+
+ Energy resolution:
+ OutFname: outputs/out01/FullSim-Empty/out01_2.82e+02_2.88e+02_1e7.root
+   1  0.00272027  0.00195347
+ OutFname: outputs/out01/FullSim-Empty/out01_1.00e+02_1.02e+02_1e7.root
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   2  0.00273878  0.00202048
+   2  0.00273878  0.00202048
+   1  0.00272027  0.00195347
+ OutputInfo: 0  2  0
+ OutputInfo: 0  2  0
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   3  0.00195789  0.00211079
+   3  0.00195789  0.00211079
+   2  0.00273878  0.00202048
+ Energy resolution:
+ Energy resolution:
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+   4  0.00194601  0.00781076
+   4  0.00194601  0.00781076
+   3  0.00195789  0.00211079
+   1  0.00272027  0.00195347
+   1  0.00272027  0.00195347
+   4  0.00194601  0.00781076
+*************************************************************
+*************************************************************
+*************************************************************
+   4  0.00194601  0.00781076
+   2  0.00273878  0.00202048
+   2  0.00273878  0.00202048
+*************************************************************
+
+
+
+*************************************************************
+   3  0.00195789  0.00211079
+   3  0.00195789  0.00211079
+
+
+   4  0.00194601  0.00781076
+   4  0.00194601  0.00781076
+*************************************************************
+*************************************************************
+
+
+
+*************************************************************
+ INPUT VALUES: (inputs/inp01/FullSim-Empty/inp01.inp_2.14e+02_2.19e+02)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder -  NoTarget
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -18400
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1.5
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 214  219  1
+ SourcePar: neutron
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 1
+ PhysicsListOpt2: 1
+ PhysicsListOpt3: 1
+-------------------------------------------------------------
+ NEvents: 10000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/out01/FullSim-Empty/out01_2.14e+02_2.19e+02_1e7.root
+ OutputInfo: 0  2  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+
+**************************************************************
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+                             WWW : http://geant4.org/
+**************************************************************
+**************************************************************
+
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+
+**************************************************************
+**************************************************************
+
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+**************************************************************
+                       Copyright : Geant4 Collaboration
+                       Copyright : Geant4 Collaboration
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                      References : NIM A 506 (2003), 250-303
+                      References : NIM A 506 (2003), 250-303
+                       Copyright : Geant4 Collaboration
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : IEEE-TNS 53 (2006), 270-278
+                      References : NIM A 506 (2003), 250-303
+                                 : NIM A 835 (2016), 186-225
+                                 : NIM A 835 (2016), 186-225
+                                 : IEEE-TNS 53 (2006), 270-278
+                             WWW : http://geant4.org/
+                             WWW : http://geant4.org/
+                                 : NIM A 835 (2016), 186-225
+**************************************************************
+**************************************************************
+                             WWW : http://geant4.org/
+
+
+**************************************************************
+
+
+
+**************************************************************
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+                             WWW : http://geant4.org/
+**************************************************************
+**************************************************************
+
+
+
+
+**************************************************************
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                       Copyright : Geant4 Collaboration
+
+                      References : NIM A 506 (2003), 250-303
+
+
+                                 : IEEE-TNS 53 (2006), 270-278
+                      References : NIM A 506 (2003), 250-303
+
+**************************************************************
+                                 : IEEE-TNS 53 (2006), 270-278
+**************************************************************
+**************************************************************
+                                 : NIM A 835 (2016), 186-225
+                                 : IEEE-TNS 53 (2006), 270-278
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                                 : NIM A 835 (2016), 186-225
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                             WWW : http://geant4.org/
+                                 : NIM A 835 (2016), 186-225
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                             WWW : http://geant4.org/
+                       Copyright : Geant4 Collaboration
+                       Copyright : Geant4 Collaboration
+**************************************************************
+                             WWW : http://geant4.org/
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+**************************************************************
+                      References : NIM A 506 (2003), 250-303
+                      References : NIM A 506 (2003), 250-303
+
+**************************************************************
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : IEEE-TNS 53 (2006), 270-278
+
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                                 : NIM A 835 (2016), 186-225
+                                 : NIM A 835 (2016), 186-225
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+                             WWW : http://geant4.org/
+                             WWW : http://geant4.org/
+                             WWW : http://geant4.org/
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+
+
+
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+
+Build EAR1
+Build EAR1
+
+
+Build Two columns
+Build Two columns
+Build Roof and walls
+Build Roof and walls
+Build Beam line
+Build Beam line
+Build TAC
+Build TAC
+
+
+Build Notarget
+Build Notarget
+
+
+Construct L6D6 detectors
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+
+Build EAR1
+Build Beam line
+
+Build Two columns
+Build Roof and walls
+Build TAC
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build EAR1
+
+
+
+Build EAR1
+Build Two columns
+Build Notarget
+
+Build Two columns
+
+Build Roof and walls
+Construct L6D6 detectors
+Build Roof and walls
+Build Beam line
+Build Beam line
+Build TAC
+Build TAC
+
+Build Notarget
+
+
+Build Notarget
+Construct L6D6 detectors
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+
+Build Two columns
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Volume of C6D6 1.02131 Litres
+Build Roof and walls
+Build Beam line
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build Beam line
+Volume of C6D6 1.02131 Litres
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build TAC
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build TAC
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build Notarget
+
+Construct L6D6 detectors
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build Beam line
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build TAC
+Volume of C6D6 1.02131 Litres
+Creating SD with name: C6D6SensitiveDetector
+
+Creating SD with name: C6D6SensitiveTarget
+Build Notarget
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+
+Construct L6D6 detectors
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+
+Build Notarget
+Build Beam line
+
+Construct L6D6 detectors
+Build TAC
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+
+Build Notarget
+
+Construct L6D6 detectors
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Roof and walls
+Build Beam line
+Build TAC
+
+Build Notarget
+Volume of C6D6 1.02131 Litres
+
+Construct L6D6 detectors
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveTarget
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Volume of C6D6 1.02131 Litres
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Volume of C6D6 1.02131 Litres
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomMgt1001
+      issued by : G4LogicalVolumeStore::GetVolume()
+Volume NOT found in store !
+        Volume Target NOT found in store !
+        Returning NULL pointer.
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : HAD_RDM_300
+      issued by : G4VRadioactiveDecay::DeselectAVolume()
+Target is not a valid logical volume name.  No action taken.
+
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+ #### PROGRESS: 3257542/10000000 run histories have been computed (32.5754 %) in 1.01667 minutes (0.0169444 h) (NSig=187)---> (1.92248e+08 run histories/h, 11036.1 sig/h) ####
+ #### PROGRESS: 2609011/10000000 run histories have been computed (26.0901 %) in 1.01667 minutes (0.0169444 h) (NSig=236)---> (1.53974e+08 run histories/h, 13927.9 sig/h) ####
+ #### PROGRESS: 2903476/10000000 run histories have been computed (29.0348 %) in 1.01667 minutes (0.0169444 h) (NSig=237)---> (1.71353e+08 run histories/h, 13986.9 sig/h) ####
+ #### PROGRESS: 3207540/10000000 run histories have been computed (32.0754 %) in 1.01667 minutes (0.0169444 h) (NSig=192)---> (1.89297e+08 run histories/h, 11331.1 sig/h) ####
+ #### PROGRESS: 2614066/10000000 run histories have been computed (26.1407 %) in 1.01667 minutes (0.0169444 h) (NSig=230)---> (1.54273e+08 run histories/h, 13573.8 sig/h) ####
+ #### PROGRESS: 3194685/10000000 run histories have been computed (31.9469 %) in 1.01667 minutes (0.0169444 h) (NSig=219)---> (1.88539e+08 run histories/h, 12924.6 sig/h) ####
+ #### PROGRESS: 2718952/10000000 run histories have been computed (27.1895 %) in 1.01667 minutes (0.0169444 h) (NSig=207)---> (1.60463e+08 run histories/h, 12216.4 sig/h) ####
+ #### PROGRESS: 3094537/10000000 run histories have been computed (30.9454 %) in 1.01667 minutes (0.0169444 h) (NSig=201)---> (1.82628e+08 run histories/h, 11862.3 sig/h) ####
+ #### PROGRESS: 3181419/10000000 run histories have been computed (31.8142 %) in 1.01667 minutes (0.0169444 h) (NSig=174)---> (1.87756e+08 run histories/h, 10268.9 sig/h) ####
+ #### PROGRESS: 2924931/10000000 run histories have been computed (29.2493 %) in 1.01667 minutes (0.0169444 h) (NSig=202)---> (1.72619e+08 run histories/h, 11921.3 sig/h) ####
+ #### PROGRESS: 3335789/10000000 run histories have been computed (33.3579 %) in 1.01667 minutes (0.0169444 h) (NSig=207)---> (1.96866e+08 run histories/h, 12216.4 sig/h) ####
+ #### PROGRESS: 3148928/10000000 run histories have been computed (31.4893 %) in 1.01667 minutes (0.0169444 h) (NSig=212)---> (1.85838e+08 run histories/h, 12511.5 sig/h) ####
+ #### PROGRESS: 3122802/10000000 run histories have been computed (31.228 %) in 1.01667 minutes (0.0169444 h) (NSig=189)---> (1.84297e+08 run histories/h, 11154.1 sig/h) ####
+ #### PROGRESS: 2998713/10000000 run histories have been computed (29.9871 %) in 1.01667 minutes (0.0169444 h) (NSig=183)---> (1.76973e+08 run histories/h, 10800 sig/h) ####
+ #### PROGRESS: 2870342/10000000 run histories have been computed (28.7034 %) in 1.01667 minutes (0.0169444 h) (NSig=204)---> (1.69397e+08 run histories/h, 12039.3 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.51e+02_1.55e+02_1e7.root): 0.0350716 h --  Estimated time for the full job: 0.052016 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_4.57e+02_4.68e+02_1e7.root): 0.0480014 h --  Estimated time for the full job: 0.0649459 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_4.27e+02_4.37e+02_1e7.root): 0.0414147 h --  Estimated time for the full job: 0.0583592 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.63e+02_2.69e+02_1e7.root): 0.0358825 h --  Estimated time for the full job: 0.0528269 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_4.90e+02_5.01e+02_1e7.root): 0.0478758 h --  Estimated time for the full job: 0.0648203 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.00e+02_1.02e+02_1e7.root): 0.036095 h --  Estimated time for the full job: 0.0530395 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.98e+02_4.07e+02_1e7.root): 0.0453753 h --  Estimated time for the full job: 0.0623198 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.45e+02_2.51e+02_1e7.root): 0.0378115 h --  Estimated time for the full job: 0.054756 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.00e+02_2.04e+02_1e7.root): 0.0363162 h --  Estimated time for the full job: 0.0532607 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.47e+02_3.55e+02_1e7.root): 0.0409866 h --  Estimated time for the full job: 0.0579311 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.74e+02_1.78e+02_1e7.root): 0.0338515 h --  Estimated time for the full job: 0.0507959 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.07e+02_1.10e+02_1e7.root): 0.0368658 h --  Estimated time for the full job: 0.0538102 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.15e+02_1.17e+02_1e7.root): 0.0373159 h --  Estimated time for the full job: 0.0542604 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.24e+02_3.31e+02_1e7.root): 0.0395613 h --  Estimated time for the full job: 0.0565057 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.72e+02_3.80e+02_1e7.root): 0.0420884 h --  Estimated time for the full job: 0.0590328 h ####
+ #### PROGRESS: 3229552/10000000 run histories have been computed (32.2955 %) in 1.01667 minutes (0.0169444 h) (NSig=203)---> (1.90597e+08 run histories/h, 11980.3 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.29e+02_2.34e+02_1e7.root): 0.0355224 h --  Estimated time for the full job: 0.0524669 h ####
+ #### PROGRESS: 2207559/10000000 run histories have been computed (22.0756 %) in 1.01667 minutes (0.0169444 h) (NSig=279)---> (1.30282e+08 run histories/h, 16465.6 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_7.41e+02_7.59e+02_1e7.root): 0.059812 h --  Estimated time for the full job: 0.0767565 h ####
+ #### PROGRESS: 1941852/10000000 run histories have been computed (19.4185 %) in 1.01667 minutes (0.0169444 h) (NSig=279)---> (1.14601e+08 run histories/h, 16465.6 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_9.12e+02_9.33e+02_1e7.root): 0.0703148 h --  Estimated time for the full job: 0.0872592 h ####
+ #### PROGRESS: 3254292/10000000 run histories have been computed (32.5429 %) in 1.01667 minutes (0.0169444 h) (NSig=182)---> (1.92057e+08 run histories/h, 10741 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.32e+02_1.35e+02_1e7.root): 0.0351235 h --  Estimated time for the full job: 0.052068 h ####
+ #### PROGRESS: 2519872/10000000 run histories have been computed (25.1987 %) in 1.01667 minutes (0.0169444 h) (NSig=260)---> (1.48714e+08 run histories/h, 15344.3 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_5.25e+02_5.37e+02_1e7.root): 0.0502988 h --  Estimated time for the full job: 0.0672433 h ####
+ #### PROGRESS: 3086672/10000000 run histories have been computed (30.8667 %) in 1.01667 minutes (0.0169444 h) (NSig=205)---> (1.82164e+08 run histories/h, 12098.4 sig/h) ####
+ #### PROGRESS: 3274521/10000000 run histories have been computed (32.7452 %) in 1.01667 minutes (0.0169444 h) (NSig=208)---> (1.9325e+08 run histories/h, 12275.4 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.82e+02_2.88e+02_1e7.root): 0.0379511 h --  Estimated time for the full job: 0.0548955 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.86e+02_1.91e+02_1e7.root): 0.0348019 h --  Estimated time for the full job: 0.0517463 h ####
+ #### PROGRESS: 3219476/10000000 run histories have been computed (32.1948 %) in 1.01667 minutes (0.0169444 h) (NSig=169)---> (1.90002e+08 run histories/h, 9973.77 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.23e+02_1.26e+02_1e7.root): 0.0356866 h --  Estimated time for the full job: 0.0526311 h ####
+ #### PROGRESS: 2430615/10000000 run histories have been computed (24.3061 %) in 1.01667 minutes (0.0169444 h) (NSig=259)---> (1.43446e+08 run histories/h, 15285.2 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_5.62e+02_5.75e+02_1e7.root): 0.0527681 h --  Estimated time for the full job: 0.0697126 h ####
+ #### PROGRESS: 1824417/10000000 run histories have been computed (18.2442 %) in 1.01667 minutes (0.0169444 h) (NSig=281)---> (1.07671e+08 run histories/h, 16583.6 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_9.77e+02_1.00e+03_1e7.root): 0.0759315 h --  Estimated time for the full job: 0.0928759 h ####
+ #### PROGRESS: 3099842/10000000 run histories have been computed (30.9984 %) in 1.01667 minutes (0.0169444 h) (NSig=177)---> (1.82941e+08 run histories/h, 10445.9 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.02e+02_3.09e+02_1e7.root): 0.0377178 h --  Estimated time for the full job: 0.0546623 h ####
+ #### PROGRESS: 3242106/10000000 run histories have been computed (32.4211 %) in 1.01667 minutes (0.0169444 h) (NSig=181)---> (1.91337e+08 run histories/h, 10682 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.14e+02_2.19e+02_1e7.root): 0.0353193 h --  Estimated time for the full job: 0.0522637 h ####
+ #### PROGRESS: 2340100/10000000 run histories have been computed (23.401 %) in 1.01667 minutes (0.0169444 h) (NSig=302)---> (1.38104e+08 run histories/h, 17823 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_6.46e+02_6.61e+02_1e7.root): 0.0554646 h --  Estimated time for the full job: 0.0724091 h ####
+ #### PROGRESS: 3287720/10000000 run histories have been computed (32.8772 %) in 1.01667 minutes (0.0169444 h) (NSig=177)---> (1.94029e+08 run histories/h, 10445.9 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.62e+02_1.66e+02_1e7.root): 0.0345941 h --  Estimated time for the full job: 0.0515386 h ####
+ #### PROGRESS: 2109614/10000000 run histories have been computed (21.0961 %) in 1.01667 minutes (0.0169444 h) (NSig=310)---> (1.24502e+08 run histories/h, 18295.1 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_7.94e+02_8.13e+02_1e7.root): 0.0633757 h --  Estimated time for the full job: 0.0803201 h ####
+ #### PROGRESS: 2430308/10000000 run histories have been computed (24.3031 %) in 1.01667 minutes (0.0169444 h) (NSig=263)---> (1.43428e+08 run histories/h, 15521.3 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_6.03e+02_6.17e+02_1e7.root): 0.0527769 h --  Estimated time for the full job: 0.0697214 h ####
+ #### PROGRESS: 2319030/10000000 run histories have been computed (23.1903 %) in 1.01667 minutes (0.0169444 h) (NSig=284)---> (1.36861e+08 run histories/h, 16760.7 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_6.92e+02_7.08e+02_1e7.root): 0.0561225 h --  Estimated time for the full job: 0.0730669 h ####
+ #### PROGRESS: 3236160/10000000 run histories have been computed (32.3616 %) in 1.01667 minutes (0.0169444 h) (NSig=192)---> (1.90986e+08 run histories/h, 11331.1 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.41e+02_1.45e+02_1e7.root): 0.0354153 h --  Estimated time for the full job: 0.0523597 h ####
+ #### PROGRESS: 2034049/10000000 run histories have been computed (20.3405 %) in 1.01667 minutes (0.0169444 h) (NSig=253)---> (1.20042e+08 run histories/h, 14931.1 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_8.51e+02_8.71e+02_1e7.root): 0.0663596 h --  Estimated time for the full job: 0.083304 h ####
+ #### PROGRESS: 6507509/10000000 run histories have been computed (65.0751 %) in 2.01667 minutes (0.0336111 h) (NSig=393)---> (1.93612e+08 run histories/h, 11692.6 sig/h) ####
+ #### PROGRESS: 6209646/10000000 run histories have been computed (62.0965 %) in 2.01667 minutes (0.0336111 h) (NSig=400)---> (1.8475e+08 run histories/h, 11900.8 sig/h) ####
+ #### PROGRESS: 5125870/10000000 run histories have been computed (51.2587 %) in 2.01667 minutes (0.0336111 h) (NSig=488)---> (1.52505e+08 run histories/h, 14519 sig/h) ####
+ #### PROGRESS: 6295205/10000000 run histories have been computed (62.952 %) in 2.01667 minutes (0.0336111 h) (NSig=376)---> (1.87295e+08 run histories/h, 11186.8 sig/h) ####
+ #### PROGRESS: 6206794/10000000 run histories have been computed (62.0679 %) in 2.01667 minutes (0.0336111 h) (NSig=365)---> (1.84665e+08 run histories/h, 10859.5 sig/h) ####
+ #### PROGRESS: 6514646/10000000 run histories have been computed (65.1465 %) in 2.01667 minutes (0.0336111 h) (NSig=354)---> (1.93824e+08 run histories/h, 10532.2 sig/h) ####
+ #### PROGRESS: 4003964/10000000 run histories have been computed (40.0396 %) in 2.01667 minutes (0.0336111 h) (NSig=539)---> (1.19126e+08 run histories/h, 16036.4 sig/h) ####
+ #### PROGRESS: 5735410/10000000 run histories have been computed (57.3541 %) in 2.01667 minutes (0.0336111 h) (NSig=424)---> (1.7064e+08 run histories/h, 12614.9 sig/h) ####
+ #### PROGRESS: 6467726/10000000 run histories have been computed (64.6773 %) in 2.01667 minutes (0.0336111 h) (NSig=389)---> (1.92428e+08 run histories/h, 11573.6 sig/h) ####
+ #### PROGRESS: 5006490/10000000 run histories have been computed (50.0649 %) in 2.01667 minutes (0.0336111 h) (NSig=499)---> (1.48953e+08 run histories/h, 14846.3 sig/h) ####
+ #### PROGRESS: 4859839/10000000 run histories have been computed (48.5984 %) in 2.01667 minutes (0.0336111 h) (NSig=539)---> (1.4459e+08 run histories/h, 16036.4 sig/h) ####
+ #### PROGRESS: 5286329/10000000 run histories have been computed (52.8633 %) in 2.01667 minutes (0.0336111 h) (NSig=482)---> (1.57279e+08 run histories/h, 14340.5 sig/h) ####
+ #### PROGRESS: 5499564/10000000 run histories have been computed (54.9956 %) in 2.01667 minutes (0.0336111 h) (NSig=407)---> (1.63623e+08 run histories/h, 12109.1 sig/h) ####
+ #### PROGRESS: 5952051/10000000 run histories have been computed (59.5205 %) in 2.01667 minutes (0.0336111 h) (NSig=366)---> (1.77086e+08 run histories/h, 10889.3 sig/h) ####
+ #### PROGRESS: 6338050/10000000 run histories have been computed (63.3805 %) in 2.01667 minutes (0.0336111 h) (NSig=369)---> (1.8857e+08 run histories/h, 10978.5 sig/h) ####
+ #### PROGRESS: 6259840/10000000 run histories have been computed (62.5984 %) in 2.01667 minutes (0.0336111 h) (NSig=364)---> (1.86243e+08 run histories/h, 10829.8 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.86e+02_1.91e+02_1e7.root): 0.0180386 h --  Estimated time for the full job: 0.0516497 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.45e+02_2.51e+02_1e7.root): 0.0205161 h --  Estimated time for the full job: 0.0541273 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_4.90e+02_5.01e+02_1e7.root): 0.0319604 h --  Estimated time for the full job: 0.0655715 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.41e+02_1.45e+02_1e7.root): 0.0197805 h --  Estimated time for the full job: 0.0533916 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.07e+02_1.10e+02_1e7.root): 0.020541 h --  Estimated time for the full job: 0.0541521 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.62e+02_1.66e+02_1e7.root): 0.017982 h --  Estimated time for the full job: 0.0515932 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_8.51e+02_8.71e+02_1e7.root): 0.0503335 h --  Estimated time for the full job: 0.0839446 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.72e+02_3.80e+02_1e7.root): 0.0249917 h --  Estimated time for the full job: 0.0586028 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.51e+02_1.55e+02_1e7.root): 0.0183563 h --  Estimated time for the full job: 0.0519674 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_5.25e+02_5.37e+02_1e7.root): 0.033524 h --  Estimated time for the full job: 0.0671351 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_6.03e+02_6.17e+02_1e7.root): 0.0355498 h --  Estimated time for the full job: 0.069161 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_4.57e+02_4.68e+02_1e7.root): 0.0299701 h --  Estimated time for the full job: 0.0635812 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.98e+02_4.07e+02_1e7.root): 0.0275048 h --  Estimated time for the full job: 0.061116 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.24e+02_3.31e+02_1e7.root): 0.0228587 h --  Estimated time for the full job: 0.0564698 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.14e+02_2.19e+02_1e7.root): 0.0194196 h --  Estimated time for the full job: 0.0530307 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.00e+02_2.04e+02_1e7.root): 0.0200821 h --  Estimated time for the full job: 0.0536932 h ####
+ #### PROGRESS: 5816688/10000000 run histories have been computed (58.1669 %) in 2.01667 minutes (0.0336111 h) (NSig=405)---> (1.73058e+08 run histories/h, 12049.6 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.47e+02_3.55e+02_1e7.root): 0.0241728 h --  Estimated time for the full job: 0.0577839 h ####
+ #### PROGRESS: 6437634/10000000 run histories have been computed (64.3763 %) in 2.01667 minutes (0.0336111 h) (NSig=392)---> (1.91533e+08 run histories/h, 11662.8 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.00e+02_1.02e+02_1e7.root): 0.0185992 h --  Estimated time for the full job: 0.0522103 h ####
+ #### PROGRESS: 6465096/10000000 run histories have been computed (64.651 %) in 2.01667 minutes (0.0336111 h) (NSig=369)---> (1.9235e+08 run histories/h, 10978.5 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.32e+02_1.35e+02_1e7.root): 0.0183775 h --  Estimated time for the full job: 0.0519886 h ####
+ #### PROGRESS: 4647142/10000000 run histories have been computed (46.4714 %) in 2.01667 minutes (0.0336111 h) (NSig=632)---> (1.38262e+08 run histories/h, 18803.3 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_6.46e+02_6.61e+02_1e7.root): 0.0387153 h --  Estimated time for the full job: 0.0723264 h ####
+ #### PROGRESS: 6416210/10000000 run histories have been computed (64.1621 %) in 2.01667 minutes (0.0336111 h) (NSig=372)---> (1.90896e+08 run histories/h, 11067.8 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.29e+02_2.34e+02_1e7.root): 0.0187736 h --  Estimated time for the full job: 0.0523847 h ####
+ #### PROGRESS: 6401823/10000000 run histories have been computed (64.0182 %) in 2.01667 minutes (0.0336111 h) (NSig=342)---> (1.90467e+08 run histories/h, 10175.2 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.23e+02_1.26e+02_1e7.root): 0.0188913 h --  Estimated time for the full job: 0.0525024 h ####
+ #### PROGRESS: 6378667/10000000 run histories have been computed (63.7867 %) in 2.01667 minutes (0.0336111 h) (NSig=380)---> (1.89779e+08 run histories/h, 11305.8 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.63e+02_2.69e+02_1e7.root): 0.0190819 h --  Estimated time for the full job: 0.052693 h ####
+ #### PROGRESS: 6063723/10000000 run histories have been computed (60.6372 %) in 2.01667 minutes (0.0336111 h) (NSig=364)---> (1.80408e+08 run histories/h, 10829.8 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_3.02e+02_3.09e+02_1e7.root): 0.0218187 h --  Estimated time for the full job: 0.0554298 h ####
+ #### PROGRESS: 4501585/10000000 run histories have been computed (45.0159 %) in 2.01667 minutes (0.0336111 h) (NSig=587)---> (1.33931e+08 run histories/h, 17464.5 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_6.92e+02_7.08e+02_1e7.root): 0.0410539 h --  Estimated time for the full job: 0.0746651 h ####
+ #### PROGRESS: 4305055/10000000 run histories have been computed (43.0506 %) in 2.01667 minutes (0.0336111 h) (NSig=586)---> (1.28084e+08 run histories/h, 17434.7 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_7.41e+02_7.59e+02_1e7.root): 0.0444625 h --  Estimated time for the full job: 0.0780736 h ####
+ #### PROGRESS: 5543127/10000000 run histories have been computed (55.4313 %) in 2.01667 minutes (0.0336111 h) (NSig=474)---> (1.64919e+08 run histories/h, 14102.5 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_4.27e+02_4.37e+02_1e7.root): 0.0270245 h --  Estimated time for the full job: 0.0606357 h ####
+ #### PROGRESS: 3861701/10000000 run histories have been computed (38.617 %) in 2.01667 minutes (0.0336111 h) (NSig=544)---> (1.14894e+08 run histories/h, 16185.1 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_9.12e+02_9.33e+02_1e7.root): 0.053426 h --  Estimated time for the full job: 0.0870371 h ####
+ #### PROGRESS: 6532657/10000000 run histories have been computed (65.3266 %) in 2.01667 minutes (0.0336111 h) (NSig=401)---> (1.9436e+08 run histories/h, 11930.6 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.74e+02_1.78e+02_1e7.root): 0.0178398 h --  Estimated time for the full job: 0.0514509 h ####
+ #### PROGRESS: 4764756/10000000 run histories have been computed (47.6476 %) in 2.01667 minutes (0.0336111 h) (NSig=518)---> (1.41761e+08 run histories/h, 15411.6 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_5.62e+02_5.75e+02_1e7.root): 0.03693 h --  Estimated time for the full job: 0.0705411 h ####
+ #### PROGRESS: 6177532/10000000 run histories have been computed (61.7753 %) in 2.01667 minutes (0.0336111 h) (NSig=379)---> (1.83794e+08 run histories/h, 11276 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_1.15e+02_1.17e+02_1e7.root): 0.0207975 h --  Estimated time for the full job: 0.0544086 h ####
+ #### PROGRESS: 3664750/10000000 run histories have been computed (36.6475 %) in 2.01667 minutes (0.0336111 h) (NSig=566)---> (1.09034e+08 run histories/h, 16839.7 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_9.77e+02_1.00e+03_1e7.root): 0.0581035 h --  Estimated time for the full job: 0.0917146 h ####
+ #### PROGRESS: 6145760/10000000 run histories have been computed (61.4576 %) in 2.01667 minutes (0.0336111 h) (NSig=401)---> (1.82849e+08 run histories/h, 11930.6 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_2.82e+02_2.88e+02_1e7.root): 0.0210788 h --  Estimated time for the full job: 0.0546899 h ####
+ #### PROGRESS: 4190156/10000000 run histories have been computed (41.9016 %) in 2.01667 minutes (0.0336111 h) (NSig=603)---> (1.24666e+08 run histories/h, 17940.5 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_7.94e+02_8.13e+02_1e7.root): 0.0466034 h --  Estimated time for the full job: 0.0802145 h ####
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.62e+02_1.66e+02_1e7.root with 10000000 run histories terminated after 0.0516667 h , TotalNSignals = 558 ########
+ Deleting run action. Run terminated after 10000000 events
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.74e+02_1.78e+02_1e7.root with 10000000 run histories terminated after 0.0516667 h , TotalNSignals = 597 ########
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.86e+02_1.91e+02_1e7.root with 10000000 run histories terminated after 0.0516667 h , TotalNSignals = 590 ########
+ Deleting run action. Run terminated after 10000000 events
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.51e+02_1.55e+02_1e7.root with 10000000 run histories terminated after 0.0522222 h , TotalNSignals = 595 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.00e+02_1.02e+02_1e7.root with 10000000 run histories terminated after 0.0522222 h , TotalNSignals = 571 ########
+ Deleting run action. Run terminated after 10000000 events
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.23e+02_1.26e+02_1e7.root with 10000000 run histories terminated after 0.0522222 h , TotalNSignals = 531 ########
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.32e+02_1.35e+02_1e7.root with 10000000 run histories terminated after 0.0522222 h , TotalNSignals = 562 ########
+ ######## Job with input outputs/out01/FullSim-Empty/out01_2.29e+02_2.34e+02_1e7.root with 10000000 run histories terminated after 0.0522222 h , TotalNSignals = 610 ########
+ Deleting run action. Run terminated after 10000000 events
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_2.63e+02_2.69e+02_1e7.root with 10000000 run histories terminated after 0.0530556 h , TotalNSignals = 581 ########
+ ######## Job with input outputs/out01/FullSim-Empty/out01_2.00e+02_2.04e+02_1e7.root with 10000000 run histories terminated after 0.0530556 h , TotalNSignals = 583 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_2.14e+02_2.19e+02_1e7.root with 10000000 run histories terminated after 0.0533333 h , TotalNSignals = 593 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.07e+02_1.10e+02_1e7.root with 10000000 run histories terminated after 0.0538889 h , TotalNSignals = 562 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_2.45e+02_2.51e+02_1e7.root with 10000000 run histories terminated after 0.0538889 h , TotalNSignals = 633 ########
+ Deleting run action. Run terminated after 10000000 events
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.15e+02_1.17e+02_1e7.root with 10000000 run histories terminated after 0.0544444 h , TotalNSignals = 623 ########
+ ######## Job with input outputs/out01/FullSim-Empty/out01_1.41e+02_1.45e+02_1e7.root with 10000000 run histories terminated after 0.0544444 h , TotalNSignals = 600 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_2.82e+02_2.88e+02_1e7.root with 10000000 run histories terminated after 0.055 h , TotalNSignals = 669 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_3.02e+02_3.09e+02_1e7.root with 10000000 run histories terminated after 0.0555556 h , TotalNSignals = 630 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_3.24e+02_3.31e+02_1e7.root with 10000000 run histories terminated after 0.0561111 h , TotalNSignals = 649 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_3.47e+02_3.55e+02_1e7.root with 10000000 run histories terminated after 0.0577778 h , TotalNSignals = 688 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_3.72e+02_3.80e+02_1e7.root with 10000000 run histories terminated after 0.0583333 h , TotalNSignals = 788 ########
+ Deleting run action. Run terminated after 10000000 events
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_3.98e+02_4.07e+02_1e7.root with 10000000 run histories terminated after 0.0602778 h , TotalNSignals = 778 ########
+ ######## Job with input outputs/out01/FullSim-Empty/out01_4.27e+02_4.37e+02_1e7.root with 10000000 run histories terminated after 0.0602778 h , TotalNSignals = 901 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_4.57e+02_4.68e+02_1e7.root with 10000000 run histories terminated after 0.0630556 h , TotalNSignals = 890 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_4.90e+02_5.01e+02_1e7.root with 10000000 run histories terminated after 0.0641667 h , TotalNSignals = 965 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_5.25e+02_5.37e+02_1e7.root with 10000000 run histories terminated after 0.0666667 h , TotalNSignals = 989 ########
+ #### PROGRESS: 8378579/10000000 run histories have been computed (83.7858 %) in 4.01667 minutes (0.0669444 h) (NSig=1182)---> (1.25157e+08 run histories/h, 17656.4 sig/h) ####
+ #### PROGRESS: 8897697/10000000 run histories have been computed (88.977 %) in 4.01667 minutes (0.0669444 h) (NSig=1189)---> (1.32912e+08 run histories/h, 17761 sig/h) ####
+ #### PROGRESS: 8035379/10000000 run histories have been computed (80.3538 %) in 4.01667 minutes (0.0669444 h) (NSig=1134)---> (1.20031e+08 run histories/h, 16939.4 sig/h) ####
+ #### PROGRESS: 9226184/10000000 run histories have been computed (92.2618 %) in 4.01667 minutes (0.0669444 h) (NSig=1219)---> (1.37819e+08 run histories/h, 18209.1 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_7.94e+02_8.13e+02_1e7.root): 0.0129551 h --  Estimated time for the full job: 0.0798995 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_6.92e+02_7.08e+02_1e7.root): 0.0082935 h --  Estimated time for the full job: 0.0752379 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_8.51e+02_8.71e+02_1e7.root): 0.0163677 h --  Estimated time for the full job: 0.0833121 h ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_6.46e+02_6.61e+02_1e7.root): 0.00561475 h --  Estimated time for the full job: 0.0725592 h ####
+ #### PROGRESS: 9637766/10000000 run histories have been computed (96.3777 %) in 4.01667 minutes (0.0669444 h) (NSig=1063)---> (1.43967e+08 run histories/h, 15878.8 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_6.03e+02_6.17e+02_1e7.root): 0.0025161 h --  Estimated time for the full job: 0.0694605 h ####
+ #### PROGRESS: 7434528/10000000 run histories have been computed (74.3453 %) in 4.01667 minutes (0.0669444 h) (NSig=1151)---> (1.11055e+08 run histories/h, 17193.4 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_9.77e+02_1.00e+03_1e7.root): 0.0231009 h --  Estimated time for the full job: 0.0900453 h ####
+ #### PROGRESS: 8747569/10000000 run histories have been computed (87.4757 %) in 4.01667 minutes (0.0669444 h) (NSig=1135)---> (1.30669e+08 run histories/h, 16954.4 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_7.41e+02_7.59e+02_1e7.root): 0.00958475 h --  Estimated time for the full job: 0.0765292 h ####
+ #### PROGRESS: 7910325/10000000 run histories have been computed (79.1033 %) in 4.01667 minutes (0.0669444 h) (NSig=1118)---> (1.18163e+08 run histories/h, 16700.4 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_9.12e+02_9.33e+02_1e7.root): 0.0176848 h --  Estimated time for the full job: 0.0846292 h ####
+ #### PROGRESS: 9747825/10000000 run histories have been computed (97.4783 %) in 4.01667 minutes (0.0669444 h) (NSig=1092)---> (1.45611e+08 run histories/h, 16312 sig/h) ####
+ #### Estimated time left to complete the job (outputs/out01/FullSim-Empty/out01_5.62e+02_5.75e+02_1e7.root): 0.00173184 h --  Estimated time for the full job: 0.0686763 h ####
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_5.62e+02_5.75e+02_1e7.root with 10000000 run histories terminated after 0.0686111 h , TotalNSignals = 1121 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_6.03e+02_6.17e+02_1e7.root with 10000000 run histories terminated after 0.0694444 h , TotalNSignals = 1098 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_6.46e+02_6.61e+02_1e7.root with 10000000 run histories terminated after 0.0722222 h , TotalNSignals = 1322 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_6.92e+02_7.08e+02_1e7.root with 10000000 run histories terminated after 0.075 h , TotalNSignals = 1338 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_7.41e+02_7.59e+02_1e7.root with 10000000 run histories terminated after 0.0761111 h , TotalNSignals = 1283 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_7.94e+02_8.13e+02_1e7.root with 10000000 run histories terminated after 0.0797222 h , TotalNSignals = 1413 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_8.51e+02_8.71e+02_1e7.root with 10000000 run histories terminated after 0.0830556 h , TotalNSignals = 1452 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_9.12e+02_9.33e+02_1e7.root with 10000000 run histories terminated after 0.0836111 h , TotalNSignals = 1454 ########
+ Deleting run action. Run terminated after 10000000 events
+ ######## Job with input outputs/out01/FullSim-Empty/out01_9.77e+02_1.00e+03_1e7.root with 10000000 run histories terminated after 0.0880556 h , TotalNSignals = 1564 ########

@@ -1,0 +1,2640 @@
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.940e+00_5.950e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.94  5.95  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.940e+00_5.950e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.370e+00_5.380e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.37  5.38  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.370e+00_5.380e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.310e+00_5.320e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.31  5.32  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.310e+00_5.320e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.580e+00_5.590e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.58  5.59  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.580e+00_5.590e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.610e+00_5.620e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.61  5.62  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.610e+00_5.620e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.970e+00_5.980e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.97  5.98  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.970e+00_5.980e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.460e+00_5.470e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.46  5.47  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.460e+00_5.470e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.160e+00_5.170e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.16  5.17  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.160e+00_5.170e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.670e+00_5.680e+00)
+*************************************************************
+-------------------------------------------------------------
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.130e+00_5.140e+00)
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+-------------------------------------------------------------
+ TotalNC6D6Det: 4
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+   2  9  50  45
+ TotalNC6D6Det: 4
+   2  9  50  -45
+   2  9  50  45
+   2  9  50  -135
+   2  9  50  -45
+   2  9  50  -225
+   2  9  50  -135
+-------------------------------------------------------------
+   2  9  50  -225
+ SourceType: 1
+-------------------------------------------------------------
+ SourcePos (cm): 0  0  -1
+ SourceType: 1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourcePos (cm): 0  0  -1
+ SourceRad (cm): 1
+ SourceZ (cm,cm^{-1}): 0  0
+ Aperture (degrees): 0
+ SourceRad (cm): 1
+ BIF-fname: data/EAR1.bif
+ Aperture (degrees): 0
+ SourceEne (MeV): 5.67  5.68  0
+ BIF-fname: data/EAR1.bif
+ SourcePar: gamma
+ SourceEne (MeV): 5.13  5.14  0
+ NSourceFnames: 0
+ SourcePar: gamma
+-------------------------------------------------------------
+ NSourceFnames: 0
+ PhysicsListName: QGSP_BIC_HP
+-------------------------------------------------------------
+ PhysicsListOpt1: 0
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt2: 0
+ PhysicsListOpt1: 0
+ PhysicsListOpt3: 0
+ PhysicsListOpt2: 0
+-------------------------------------------------------------
+ PhysicsListOpt3: 0
+ NEvents: 100000000
+-------------------------------------------------------------
+ Production cuts (mm): 1  1
+ NEvents: 100000000
+ Seed: 1234567
+ Production cuts (mm): 1  1
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.670e+00_5.680e+00_1e8.root
+ Seed: 1234567
+ OutputInfo: 1  0  0
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.130e+00_5.140e+00_1e8.root
+ Energy resolution:
+ OutputInfo: 1  0  0
+   1  0.00272027  0.00195347
+ Energy resolution:
+   2  0.00273878  0.00202048
+   1  0.00272027  0.00195347
+   3  0.00195789  0.00211079
+   2  0.00273878  0.00202048
+   4  0.00194601  0.00781076
+   3  0.00195789  0.00211079
+*************************************************************
+   4  0.00194601  0.00781076
+
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.400e+00_5.410e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.4  5.41  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.400e+00_5.410e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.520e+00_5.530e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.52  5.53  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.520e+00_5.530e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.760e+00_5.770e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.76  5.77  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.760e+00_5.770e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.190e+00_5.200e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.19  5.2  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.190e+00_5.200e+00_1e8.root
+*************************************************************
+ OutputInfo: 1  0  0
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.700e+00_5.710e+00)
+ Energy resolution:
+-------------------------------------------------------------
+   1  0.00272027  0.00195347
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+   2  0.00273878  0.00202048
+ TotalNC6D6Det: 4
+   3  0.00195789  0.00211079
+   2  9  50  45
+   4  0.00194601  0.00781076
+   2  9  50  -45
+*************************************************************
+   2  9  50  -135
+
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.7  5.71  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.700e+00_5.710e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+
+*************************************************************
+**************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.880e+00_5.890e+00)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+-------------------------------------------------------------
+                       Copyright : Geant4 Collaboration
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+                      References : NIM A 506 (2003), 250-303
+ TotalNC6D6Det: 4
+                                 : IEEE-TNS 53 (2006), 270-278
+   2  9  50  45
+                                 : NIM A 835 (2016), 186-225
+   2  9  50  -45
+                             WWW : http://geant4.org/
+   2  9  50  -135
+**************************************************************
+
+   2  9  50  -225
+
+
+**************************************************************
+-------------------------------------------------------------
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ SourceType: 1
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+ SourcePos (cm): 0  0  -1
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+ SourceZ (cm,cm^{-1}): 0  0
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+ SourceRad (cm): 1
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+ Aperture (degrees): 0
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+ BIF-fname: data/EAR1.bif
+                             WWW : http://geant4.org/
+**************************************************************
+ SourceEne (MeV): 5.88  5.89  0
+**************************************************************
+
+ SourcePar: gamma
+
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.880e+00_5.890e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.010e+00_5.020e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.01  5.02  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.010e+00_5.020e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.820e+00_5.830e+00)
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  -135
+   2  9  50  -225
+-------------------------------------------------------------
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.82  5.83  0
+ SourcePar: gamma
+ NSourceFnames: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.820e+00_5.830e+00_1e8.root
+ OutputInfo: 1  0  0
+ Energy resolution:
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+
+*************************************************************
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.850e+00_5.860e+00)
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.220e+00_5.230e+00)
+-------------------------------------------------------------
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -45
+   2  9  50  45
+   2  9  50  -135
+   2  9  50  -45
+   2  9  50  -225
+   2  9  50  -135
+-------------------------------------------------------------
+ SourceType: 1
+   2  9  50  -225
+ SourcePos (cm): 0  0  -1
+-------------------------------------------------------------
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceType: 1
+ SourceRad (cm): 1
+ SourcePos (cm): 0  0  -1
+ Aperture (degrees): 0
+ SourceZ (cm,cm^{-1}): 0  0
+ BIF-fname: data/EAR1.bif
+ SourceRad (cm): 1
+ SourceEne (MeV): 5.85  5.86  0
+ Aperture (degrees): 0
+ SourcePar: gamma
+ BIF-fname: data/EAR1.bif
+ NSourceFnames: 0
+ SourceEne (MeV): 5.22  5.23  0
+-------------------------------------------------------------
+ SourcePar: gamma
+ PhysicsListName: QGSP_BIC_HP
+ NSourceFnames: 0
+ PhysicsListOpt1: 0
+-------------------------------------------------------------
+ PhysicsListOpt2: 0
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt3: 0
+ PhysicsListOpt1: 0
+-------------------------------------------------------------
+ PhysicsListOpt2: 0
+ NEvents: 100000000
+ PhysicsListOpt3: 0
+ Production cuts (mm): 1  1
+-------------------------------------------------------------
+ Seed: 1234567
+ NEvents: 100000000
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.850e+00_5.860e+00_1e8.root
+ Production cuts (mm): 1  1
+ OutputInfo: 1  0  0
+ Seed: 1234567
+ Energy resolution:
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.220e+00_5.230e+00_1e8.root
+   1  0.00272027  0.00195347
+ OutputInfo: 1  0  0
+   2  0.00273878  0.00202048
+ Energy resolution:
+   3  0.00195789  0.00211079
+   1  0.00272027  0.00195347
+   4  0.00194601  0.00781076
+   2  0.00273878  0.00202048
+*************************************************************
+   3  0.00195789  0.00211079
+
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+
+*************************************************************
+*************************************************************
+
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.490e+00_5.500e+00)
+
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.280e+00_5.290e+00)
+
+*************************************************************
+
+-------------------------------------------------------------
+
+*************************************************************
+-------------------------------------------------------------
+*************************************************************
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.550e+00_5.560e+00)
+*************************************************************
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+*************************************************************
+
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.250e+00_5.260e+00)
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.430e+00_5.440e+00)
+-------------------------------------------------------------
+
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.070e+00_5.080e+00)
+ TotalNC6D6Det: 4
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.910e+00_5.920e+00)
+*************************************************************
+-------------------------------------------------------------
+ TotalNC6D6Det: 4
+-------------------------------------------------------------
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+*************************************************************
+-------------------------------------------------------------
+   2  9  50  45
+-------------------------------------------------------------
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.640e+00_5.650e+00)
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+   2  9  50  45
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ TotalNC6D6Det: 4
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.730e+00_5.740e+00)
+   2  9  50  45
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+   2  9  50  -45
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+-------------------------------------------------------------
+ TotalNC6D6Det: 4
+   2  9  50  -45
+ TotalNC6D6Det: 4
+-------------------------------------------------------------
+   2  9  50  -45
+ TotalNC6D6Det: 4
+   2  9  50  -135
+ TotalNC6D6Det: 4
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+   2  9  50  -135
+   2  9  50  45
+   2  9  50  45
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+   2  9  50  -135
+   2  9  50  45
+   2  9  50  -225
+ TotalNC6D6Det: 4
+   2  9  50  45
+   2  9  50  -225
+   2  9  50  -45
+   2  9  50  -45
+ TotalNC6D6Det: 4
+   2  9  50  -225
+   2  9  50  -45
+-------------------------------------------------------------
+   2  9  50  -45
+   2  9  50  45
+-------------------------------------------------------------
+   2  9  50  -135
+   2  9  50  -135
+-------------------------------------------------------------
+   2  9  50  45
+   2  9  50  -135
+ SourceType: 1
+   2  9  50  -135
+   2  9  50  -45
+ SourceType: 1
+   2  9  50  -225
+   2  9  50  -225
+ SourceType: 1
+   2  9  50  -45
+   2  9  50  -225
+ SourcePos (cm): 0  0  -1
+   2  9  50  -225
+   2  9  50  -135
+ SourcePos (cm): 0  0  -1
+-------------------------------------------------------------
+-------------------------------------------------------------
+ SourcePos (cm): 0  0  -1
+   2  9  50  -135
+-------------------------------------------------------------
+ SourceZ (cm,cm^{-1}): 0  0
+-------------------------------------------------------------
+   2  9  50  -225
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceType: 1
+ SourceType: 1
+ SourceZ (cm,cm^{-1}): 0  0
+   2  9  50  -225
+ SourceType: 1
+ SourceRad (cm): 1
+ SourceType: 1
+-------------------------------------------------------------
+ SourceRad (cm): 1
+ SourcePos (cm): 0  0  -1
+ SourcePos (cm): 0  0  -1
+ SourceRad (cm): 1
+-------------------------------------------------------------
+ SourcePos (cm): 0  0  -1
+ Aperture (degrees): 0
+ SourcePos (cm): 0  0  -1
+ SourceType: 1
+ Aperture (degrees): 0
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceZ (cm,cm^{-1}): 0  0
+ Aperture (degrees): 0
+ SourceType: 1
+ SourceZ (cm,cm^{-1}): 0  0
+ BIF-fname: data/EAR1.bif
+ SourceZ (cm,cm^{-1}): 0  0
+ SourcePos (cm): 0  0  -1
+ BIF-fname: data/EAR1.bif
+ SourceRad (cm): 1
+ SourceRad (cm): 1
+ BIF-fname: data/EAR1.bif
+ SourcePos (cm): 0  0  -1
+ SourceRad (cm): 1
+ SourceEne (MeV): 5.49  5.5  0
+ SourceRad (cm): 1
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceEne (MeV): 5.28  5.29  0
+ Aperture (degrees): 0
+ Aperture (degrees): 0
+ SourceEne (MeV): 5.55  5.56  0
+ SourceZ (cm,cm^{-1}): 0  0
+ Aperture (degrees): 0
+ SourcePar: gamma
+ Aperture (degrees): 0
+ SourceRad (cm): 1
+ SourcePar: gamma
+ BIF-fname: data/EAR1.bif
+ BIF-fname: data/EAR1.bif
+ SourcePar: gamma
+ SourceRad (cm): 1
+ BIF-fname: data/EAR1.bif
+ NSourceFnames: 0
+ BIF-fname: data/EAR1.bif
+ Aperture (degrees): 0
+ NSourceFnames: 0
+ SourceEne (MeV): 5.25  5.26  0
+ SourceEne (MeV): 5.43  5.44  0
+ NSourceFnames: 0
+ Aperture (degrees): 0
+ SourceEne (MeV): 5.07  5.08  0
+-------------------------------------------------------------
+ SourceEne (MeV): 5.91  5.92  0
+ BIF-fname: data/EAR1.bif
+-------------------------------------------------------------
+ SourcePar: gamma
+ SourcePar: gamma
+-------------------------------------------------------------
+ BIF-fname: data/EAR1.bif
+ SourcePar: gamma
+ PhysicsListName: QGSP_BIC_HP
+ SourcePar: gamma
+ SourceEne (MeV): 5.64  5.65  0
+ PhysicsListName: QGSP_BIC_HP
+ NSourceFnames: 0
+ NSourceFnames: 0
+ PhysicsListName: QGSP_BIC_HP
+ SourceEne (MeV): 5.73  5.74  0
+ NSourceFnames: 0
+ PhysicsListOpt1: 0
+ NSourceFnames: 0
+ SourcePar: gamma
+ PhysicsListOpt1: 0
+-------------------------------------------------------------
+-------------------------------------------------------------
+ PhysicsListOpt1: 0
+ SourcePar: gamma
+-------------------------------------------------------------
+ PhysicsListOpt2: 0
+-------------------------------------------------------------
+ NSourceFnames: 0
+ PhysicsListOpt2: 0
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt2: 0
+ NSourceFnames: 0
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt3: 0
+ PhysicsListName: QGSP_BIC_HP
+-------------------------------------------------------------
+ PhysicsListOpt3: 0
+ PhysicsListOpt1: 0
+ PhysicsListOpt1: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ PhysicsListOpt1: 0
+-------------------------------------------------------------
+ PhysicsListOpt1: 0
+ PhysicsListName: QGSP_BIC_HP
+-------------------------------------------------------------
+ PhysicsListOpt2: 0
+ PhysicsListOpt2: 0
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt2: 0
+ NEvents: 100000000
+ PhysicsListOpt2: 0
+ PhysicsListOpt1: 0
+ NEvents: 100000000
+ PhysicsListOpt3: 0
+ PhysicsListOpt3: 0
+ NEvents: 100000000
+ PhysicsListOpt1: 0
+ PhysicsListOpt3: 0
+ Production cuts (mm): 1  1
+ PhysicsListOpt3: 0
+ PhysicsListOpt2: 0
+ Production cuts (mm): 1  1
+-------------------------------------------------------------
+-------------------------------------------------------------
+ Production cuts (mm): 1  1
+ PhysicsListOpt2: 0
+-------------------------------------------------------------
+ Seed: 1234567
+-------------------------------------------------------------
+ PhysicsListOpt3: 0
+ Seed: 1234567
+ NEvents: 100000000
+ NEvents: 100000000
+ Seed: 1234567
+ PhysicsListOpt3: 0
+ NEvents: 100000000
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.490e+00_5.500e+00_1e8.root
+ NEvents: 100000000
+-------------------------------------------------------------
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.280e+00_5.290e+00_1e8.root
+ Production cuts (mm): 1  1
+ Production cuts (mm): 1  1
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.550e+00_5.560e+00_1e8.root
+-------------------------------------------------------------
+ Production cuts (mm): 1  1
+ OutputInfo: 1  0  0
+ Production cuts (mm): 1  1
+ NEvents: 100000000
+ OutputInfo: 1  0  0
+ Seed: 1234567
+ Seed: 1234567
+ OutputInfo: 1  0  0
+ NEvents: 100000000
+ Seed: 1234567
+ Energy resolution:
+ Seed: 1234567
+ Production cuts (mm): 1  1
+ Energy resolution:
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.250e+00_5.260e+00_1e8.root
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.430e+00_5.440e+00_1e8.root
+ Energy resolution:
+ Production cuts (mm): 1  1
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.070e+00_5.080e+00_1e8.root
+   1  0.00272027  0.00195347
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.910e+00_5.920e+00_1e8.root
+ Seed: 1234567
+   1  0.00272027  0.00195347
+ OutputInfo: 1  0  0
+ OutputInfo: 1  0  0
+   1  0.00272027  0.00195347
+ Seed: 1234567
+ OutputInfo: 1  0  0
+   2  0.00273878  0.00202048
+ OutputInfo: 1  0  0
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.640e+00_5.650e+00_1e8.root
+   2  0.00273878  0.00202048
+ Energy resolution:
+ Energy resolution:
+   2  0.00273878  0.00202048
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.730e+00_5.740e+00_1e8.root
+ Energy resolution:
+   3  0.00195789  0.00211079
+ Energy resolution:
+ OutputInfo: 1  0  0
+   3  0.00195789  0.00211079
+   1  0.00272027  0.00195347
+   1  0.00272027  0.00195347
+   3  0.00195789  0.00211079
+ OutputInfo: 1  0  0
+   1  0.00272027  0.00195347
+   4  0.00194601  0.00781076
+   1  0.00272027  0.00195347
+ Energy resolution:
+   4  0.00194601  0.00781076
+   2  0.00273878  0.00202048
+   2  0.00273878  0.00202048
+   4  0.00194601  0.00781076
+ Energy resolution:
+   2  0.00273878  0.00202048
+*************************************************************
+   2  0.00273878  0.00202048
+
+   1  0.00272027  0.00195347
+
+
+*************************************************************
+   3  0.00195789  0.00211079
+   3  0.00195789  0.00211079
+*************************************************************
+   1  0.00272027  0.00195347
+   3  0.00195789  0.00211079
+
+   3  0.00195789  0.00211079
+*************************************************************
+   2  0.00273878  0.00202048
+*************************************************************
+*************************************************************
+
+   4  0.00194601  0.00781076
+   4  0.00194601  0.00781076
+
+   2  0.00273878  0.00202048
+   4  0.00194601  0.00781076
+   4  0.00194601  0.00781076
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.790e+00_5.800e+00)
+   3  0.00195789  0.00211079
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.340e+00_5.350e+00)
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.040e+00_5.050e+00)
+
+*************************************************************
+*************************************************************
+   3  0.00195789  0.00211079
+*************************************************************
+*************************************************************
+-------------------------------------------------------------
+   4  0.00194601  0.00781076
+-------------------------------------------------------------
+-------------------------------------------------------------
+*************************************************************
+
+
+   4  0.00194601  0.00781076
+
+
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+*************************************************************
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+ INPUT VALUES: (inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp_5.100e+00_5.110e+00)
+*************************************************************
+ TotalNC6D6Det: 4
+
+ TotalNC6D6Det: 4
+ TotalNC6D6Det: 4
+
+-------------------------------------------------------------
+   2  9  50  45
+   2  9  50  45
+   2  9  50  45
+ EAR-Target: EAR1_2024_BigSampleHolder_noWalls -  Graphite-20-635
+   2  9  50  -45
+   2  9  50  -45
+   2  9  50  -45
+ TotalNC6D6Det: 4
+   2  9  50  -135
+   2  9  50  -135
+   2  9  50  -135
+   2  9  50  -225
+   2  9  50  45
+   2  9  50  -225
+   2  9  50  -225
+-------------------------------------------------------------
+   2  9  50  -45
+-------------------------------------------------------------
+-------------------------------------------------------------
+ SourceType: 1
+   2  9  50  -135
+ SourceType: 1
+ SourceType: 1
+ SourcePos (cm): 0  0  -1
+   2  9  50  -225
+ SourcePos (cm): 0  0  -1
+ SourcePos (cm): 0  0  -1
+ SourceZ (cm,cm^{-1}): 0  0
+-------------------------------------------------------------
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceZ (cm,cm^{-1}): 0  0
+ SourceRad (cm): 1
+ SourceType: 1
+ SourceRad (cm): 1
+ SourceRad (cm): 1
+ Aperture (degrees): 0
+ SourcePos (cm): 0  0  -1
+ Aperture (degrees): 0
+ Aperture (degrees): 0
+ BIF-fname: data/EAR1.bif
+ SourceZ (cm,cm^{-1}): 0  0
+ BIF-fname: data/EAR1.bif
+ BIF-fname: data/EAR1.bif
+ SourceEne (MeV): 5.79  5.8  0
+ SourceRad (cm): 1
+ SourceEne (MeV): 5.34  5.35  0
+ SourceEne (MeV): 5.04  5.05  0
+ SourcePar: gamma
+ Aperture (degrees): 0
+ SourcePar: gamma
+ SourcePar: gamma
+ NSourceFnames: 0
+ BIF-fname: data/EAR1.bif
+ NSourceFnames: 0
+ NSourceFnames: 0
+-------------------------------------------------------------
+ SourceEne (MeV): 5.1  5.11  0
+-------------------------------------------------------------
+-------------------------------------------------------------
+ PhysicsListName: QGSP_BIC_HP
+ SourcePar: gamma
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt1: 0
+ NSourceFnames: 0
+ PhysicsListOpt1: 0
+ PhysicsListOpt1: 0
+ PhysicsListOpt2: 0
+-------------------------------------------------------------
+ PhysicsListOpt2: 0
+ PhysicsListOpt2: 0
+ PhysicsListOpt3: 0
+ PhysicsListName: QGSP_BIC_HP
+ PhysicsListOpt3: 0
+ PhysicsListOpt3: 0
+-------------------------------------------------------------
+ PhysicsListOpt1: 0
+-------------------------------------------------------------
+-------------------------------------------------------------
+ NEvents: 100000000
+ PhysicsListOpt2: 0
+ NEvents: 100000000
+ NEvents: 100000000
+ Production cuts (mm): 1  1
+ PhysicsListOpt3: 0
+ Production cuts (mm): 1  1
+ Production cuts (mm): 1  1
+ Seed: 1234567
+-------------------------------------------------------------
+ Seed: 1234567
+ Seed: 1234567
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.790e+00_5.800e+00_1e8.root
+ NEvents: 100000000
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.340e+00_5.350e+00_1e8.root
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.040e+00_5.050e+00_1e8.root
+ OutputInfo: 1  0  0
+ Production cuts (mm): 1  1
+ OutputInfo: 1  0  0
+ OutputInfo: 1  0  0
+ Energy resolution:
+ Seed: 1234567
+ Energy resolution:
+ Energy resolution:
+   1  0.00272027  0.00195347
+ OutFname: outputs/GR01/Carbon-20-635_v01/Out_GR01_5.100e+00_5.110e+00_1e8.root
+   1  0.00272027  0.00195347
+   1  0.00272027  0.00195347
+   2  0.00273878  0.00202048
+ OutputInfo: 1  0  0
+   2  0.00273878  0.00202048
+   2  0.00273878  0.00202048
+   3  0.00195789  0.00211079
+ Energy resolution:
+   3  0.00195789  0.00211079
+   3  0.00195789  0.00211079
+   4  0.00194601  0.00781076
+   1  0.00272027  0.00195347
+   4  0.00194601  0.00781076
+   4  0.00194601  0.00781076
+*************************************************************
+   2  0.00273878  0.00202048
+*************************************************************
+*************************************************************
+
+   3  0.00195789  0.00211079
+
+
+   4  0.00194601  0.00781076
+*************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+
+**************************************************************
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+                             WWW : http://geant4.org/
+**************************************************************
+**************************************************************
+
+
+
+
+
+
+**************************************************************
+
+**************************************************************
+**************************************************************
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                       Copyright : Geant4 Collaboration
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+
+                      References : NIM A 506 (2003), 250-303
+
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+**************************************************************
+                                 : IEEE-TNS 53 (2006), 270-278
+**************************************************************
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                                 : NIM A 835 (2016), 186-225
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+                       Copyright : Geant4 Collaboration
+                             WWW : http://geant4.org/
+**************************************************************
+                       Copyright : Geant4 Collaboration
+                             WWW : http://geant4.org/
+**************************************************************
+                             WWW : http://geant4.org/
+**************************************************************
+                      References : NIM A 506 (2003), 250-303
+
+                      References : NIM A 506 (2003), 250-303
+**************************************************************
+
+**************************************************************
+
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : IEEE-TNS 53 (2006), 270-278
+
+
+                                 : NIM A 835 (2016), 186-225
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+                             WWW : http://geant4.org/
+**************************************************************
+**************************************************************
+
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-03-patch-02 [MT]   (25-April-2025)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+
+Build Beam line
+Build EAR1
+
+Build Two columns
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+
+Build Beam line
+Build Graphite-20-635 target
+Build EAR1
+
+Build Two columns
+
+
+
+Construct L6D6 detectors
+Build Graphite-20-635 target
+Build EAR1
+Build Beam line
+
+
+
+Build Two columns
+Construct L6D6 detectors
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+
+Build Graphite-20-635 target
+Build EAR1
+
+
+Build Two columns
+Construct L6D6 detectors
+Build Beam line
+
+Build EAR1
+
+
+Build Two columns
+Build Graphite-20-635 target
+Build Beam line
+
+Construct L6D6 detectors
+
+Build Graphite-20-635 target
+
+
+
+Build EAR1
+
+Construct L6D6 detectors
+Build EAR1
+
+Build EAR1
+
+Build Two columns
+
+Build Two columns
+Build Two columns
+Build Beam line
+Build Beam line
+Build Beam line
+
+Build Graphite-20-635 target
+
+
+
+Build Graphite-20-635 target
+Build Graphite-20-635 target
+Construct L6D6 detectors
+
+
+Construct L6D6 detectors
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+
+Build EAR1
+Construct L6D6 detectors
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+
+Build EAR1
+Construct L6D6 detectors
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+
+Build Beam line
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Volume of C6D6 1.02131 Litres
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Volume of C6D6 1.02131 Litres
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build EAR1
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build Two columns
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build Beam line
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+
+Volume of C6D6 1.02131 Litres
+Build EAR1
+
+
+Build Graphite-20-635 target
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build Two columns
+Creating SD with name: C6D6SensitiveDetector
+
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Construct L6D6 detectors
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build Beam line
+Creating SD with name: C6D6SensitiveTarget
+Creating SD with name: C6D6SensitiveTarget
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+Volume of C6D6 1.02131 Litres
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Volume of C6D6 1.02131 Litres
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Volume of C6D6 1.02131 Litres
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Creating SD with name: C6D6SensitiveTarget
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Volume of C6D6 1.02131 Litres
+
+Volume of C6D6 1.02131 Litres
+Build EAR1
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+
+Build Two columns
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build Beam line
+Creating SD with name: C6D6SensitiveTarget
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Creating SD with name: C6D6SensitiveTarget
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+Creating SD with name: C6D6SensitiveDetector
+
+Creating SD with name: C6D6SensitiveTarget
+Construct L6D6 detectors
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+
+Build EAR1
+
+Build Two columns
+Build Beam line
+
+Build Graphite-20-635 target
+
+Construct L6D6 detectors
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Volume of C6D6 1.02131 Litres
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Volume of C6D6 1.02131 Litres
+Creating SD with name: C6D6SensitiveDetector
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Creating SD with name: C6D6SensitiveTarget
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+Volume of C6D6 1.02131 Litres
+Build L6D6_1 thetaL6D6= 50 phiL6D6z= 45 z= 9
+Build L6D6_2 thetaL6D6= 50 phiL6D6z= -45 z= 9
+Build L6D6_3 thetaL6D6= 50 phiL6D6z= -135 z= 9
+Build L6D6_4 thetaL6D6= 50 phiL6D6z= -225 z= 9
+Creating SD with name: C6D6SensitiveDetector
+Creating SD with name: C6D6SensitiveTarget
+ #### PROGRESS: 957780/100000000 run histories have been computed (0.95778 %) in 1.01667 minutes (0.0169444 h) (NSig=2382)---> (5.65247e+07 run histories/h, 140577 sig/h) ####
+ #### PROGRESS: 997548/100000000 run histories have been computed (0.997548 %) in 1.01667 minutes (0.0169444 h) (NSig=2664)---> (5.88717e+07 run histories/h, 157220 sig/h) ####
+ #### PROGRESS: 957756/100000000 run histories have been computed (0.957756 %) in 1.01667 minutes (0.0169444 h) (NSig=2454)---> (5.65233e+07 run histories/h, 144826 sig/h) ####
+ #### PROGRESS: 951318/100000000 run histories have been computed (0.951318 %) in 1.01667 minutes (0.0169444 h) (NSig=2320)---> (5.61434e+07 run histories/h, 136918 sig/h) ####
+ #### PROGRESS: 989301/100000000 run histories have been computed (0.989301 %) in 1.01667 minutes (0.0169444 h) (NSig=2390)---> (5.8385e+07 run histories/h, 141049 sig/h) ####
+ #### PROGRESS: 1033327/100000000 run histories have been computed (1.03333 %) in 1.01667 minutes (0.0169444 h) (NSig=2672)---> (6.09832e+07 run histories/h, 157692 sig/h) ####
+ #### PROGRESS: 994484/100000000 run histories have been computed (0.994484 %) in 1.01667 minutes (0.0169444 h) (NSig=2513)---> (5.86909e+07 run histories/h, 148308 sig/h) ####
+ #### PROGRESS: 990332/100000000 run histories have been computed (0.990332 %) in 1.01667 minutes (0.0169444 h) (NSig=2576)---> (5.84458e+07 run histories/h, 152026 sig/h) ####
+ #### PROGRESS: 981945/100000000 run histories have been computed (0.981945 %) in 1.01667 minutes (0.0169444 h) (NSig=2358)---> (5.79509e+07 run histories/h, 139161 sig/h) ####
+ #### PROGRESS: 977824/100000000 run histories have been computed (0.977824 %) in 1.01667 minutes (0.0169444 h) (NSig=2519)---> (5.77076e+07 run histories/h, 148662 sig/h) ####
+ #### PROGRESS: 996652/100000000 run histories have been computed (0.996652 %) in 1.01667 minutes (0.0169444 h) (NSig=2596)---> (5.88188e+07 run histories/h, 153207 sig/h) ####
+ #### PROGRESS: 979075/100000000 run histories have been computed (0.979075 %) in 1.01667 minutes (0.0169444 h) (NSig=2326)---> (5.77815e+07 run histories/h, 137272 sig/h) ####
+ #### PROGRESS: 1003648/100000000 run histories have been computed (1.00365 %) in 1.01667 minutes (0.0169444 h) (NSig=2811)---> (5.92317e+07 run histories/h, 165895 sig/h) ####
+ #### PROGRESS: 1014817/100000000 run histories have been computed (1.01482 %) in 1.01667 minutes (0.0169444 h) (NSig=2561)---> (5.98908e+07 run histories/h, 151141 sig/h) ####
+ #### PROGRESS: 1007431/100000000 run histories have been computed (1.00743 %) in 1.01667 minutes (0.0169444 h) (NSig=2537)---> (5.94549e+07 run histories/h, 149725 sig/h) ####
+ #### PROGRESS: 997232/100000000 run histories have been computed (0.997232 %) in 1.01667 minutes (0.0169444 h) (NSig=2497)---> (5.8853e+07 run histories/h, 147364 sig/h) ####
+ #### PROGRESS: 951383/100000000 run histories have been computed (0.951383 %) in 1.01667 minutes (0.0169444 h) (NSig=2243)---> (5.61472e+07 run histories/h, 132374 sig/h) ####
+ #### PROGRESS: 983988/100000000 run histories have been computed (0.983988 %) in 1.01667 minutes (0.0169444 h) (NSig=2631)---> (5.80714e+07 run histories/h, 155272 sig/h) ####
+ #### PROGRESS: 971226/100000000 run histories have been computed (0.971226 %) in 1.01667 minutes (0.0169444 h) (NSig=2450)---> (5.73183e+07 run histories/h, 144590 sig/h) ####
+ #### PROGRESS: 979048/100000000 run histories have been computed (0.979048 %) in 1.01667 minutes (0.0169444 h) (NSig=2402)---> (5.77799e+07 run histories/h, 141757 sig/h) ####
+ #### PROGRESS: 1004986/100000000 run histories have been computed (1.00499 %) in 1.01667 minutes (0.0169444 h) (NSig=2609)---> (5.93106e+07 run histories/h, 153974 sig/h) ####
+ #### PROGRESS: 963638/100000000 run histories have been computed (0.963638 %) in 1.01667 minutes (0.0169444 h) (NSig=2428)---> (5.68704e+07 run histories/h, 143292 sig/h) ####
+ #### PROGRESS: 944164/100000000 run histories have been computed (0.944164 %) in 1.01667 minutes (0.0169444 h) (NSig=2368)---> (5.57212e+07 run histories/h, 139751 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.580e+00_5.590e+00_1e8.root): 1.75219 h --  Estimated time for the full job: 1.76914 h ####
+ #### PROGRESS: 917416/100000000 run histories have been computed (0.917416 %) in 1.01667 minutes (0.0169444 h) (NSig=2298)---> (5.41426e+07 run histories/h, 135620 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.100e+00_5.110e+00_1e8.root): 1.68166 h --  Estimated time for the full job: 1.69861 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.640e+00_5.650e+00_1e8.root): 1.75224 h --  Estimated time for the full job: 1.76918 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.700e+00_5.710e+00_1e8.root): 1.76421 h --  Estimated time for the full job: 1.78115 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.760e+00_5.770e+00_1e8.root): 1.69582 h --  Estimated time for the full job: 1.71277 h ####
+ #### PROGRESS: 949941/100000000 run histories have been computed (0.949941 %) in 1.01667 minutes (0.0169444 h) (NSig=2418)---> (5.60621e+07 run histories/h, 142702 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.160e+00_5.170e+00_1e8.root): 1.62285 h --  Estimated time for the full job: 1.63979 h ####
+ #### PROGRESS: 1048629/100000000 run histories have been computed (1.04863 %) in 1.01667 minutes (0.0169444 h) (NSig=2791)---> (6.18863e+07 run histories/h, 164715 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.490e+00_5.500e+00_1e8.root): 1.6869 h --  Estimated time for the full job: 1.70384 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.250e+00_5.260e+00_1e8.root): 1.69404 h --  Estimated time for the full job: 1.71099 h ####
+ #### PROGRESS: 1016400/100000000 run histories have been computed (1.0164 %) in 1.01667 minutes (0.0169444 h) (NSig=2677)---> (5.99843e+07 run histories/h, 157987 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.850e+00_5.860e+00_1e8.root): 1.70866 h --  Estimated time for the full job: 1.7256 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.370e+00_5.380e+00_1e8.root): 1.71593 h --  Estimated time for the full job: 1.73287 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.130e+00_5.140e+00_1e8.root): 1.68319 h --  Estimated time for the full job: 1.70014 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.940e+00_5.950e+00_1e8.root): 1.71371 h --  Estimated time for the full job: 1.73066 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.010e+00_5.020e+00_1e8.root): 1.67134 h --  Estimated time for the full job: 1.68829 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.280e+00_5.290e+00_1e8.root): 1.65276 h --  Estimated time for the full job: 1.6697 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.520e+00_5.530e+00_1e8.root): 1.665 h --  Estimated time for the full job: 1.68195 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.550e+00_5.560e+00_1e8.root): 1.6822 h --  Estimated time for the full job: 1.69915 h ####
+ #### PROGRESS: 1004374/100000000 run histories have been computed (1.00437 %) in 1.01667 minutes (0.0169444 h) (NSig=2544)---> (5.92745e+07 run histories/h, 150138 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.790e+00_5.800e+00_1e8.root): 1.76409 h --  Estimated time for the full job: 1.78103 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.220e+00_5.230e+00_1e8.root): 1.70507 h --  Estimated time for the full job: 1.72202 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.910e+00_5.920e+00_1e8.root): 1.7277 h --  Estimated time for the full job: 1.74464 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.880e+00_5.890e+00_1e8.root): 1.71376 h --  Estimated time for the full job: 1.73071 h ####
+ #### PROGRESS: 984368/100000000 run histories have been computed (0.984368 %) in 1.01667 minutes (0.0169444 h) (NSig=2409)---> (5.80938e+07 run histories/h, 142170 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.070e+00_5.080e+00_1e8.root): 1.66909 h --  Estimated time for the full job: 1.68604 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.460e+00_5.470e+00_1e8.root): 1.74144 h --  Estimated time for the full job: 1.75838 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.730e+00_5.740e+00_1e8.root): 1.77771 h --  Estimated time for the full job: 1.79465 h ####
+ #### PROGRESS: 995195/100000000 run histories have been computed (0.995195 %) in 1.01667 minutes (0.0169444 h) (NSig=2534)---> (5.87328e+07 run histories/h, 149548 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.970e+00_5.980e+00_1e8.root): 1.83003 h --  Estimated time for the full job: 1.84698 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.670e+00_5.680e+00_1e8.root): 1.76679 h --  Estimated time for the full job: 1.78374 h ####
+ #### PROGRESS: 1026455/100000000 run histories have been computed (1.02645 %) in 1.01667 minutes (0.0169444 h) (NSig=2639)---> (6.05777e+07 run histories/h, 155744 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.040e+00_5.050e+00_1e8.root): 1.59892 h --  Estimated time for the full job: 1.61587 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.340e+00_5.350e+00_1e8.root): 1.65016 h --  Estimated time for the full job: 1.6671 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.610e+00_5.620e+00_1e8.root): 1.67012 h --  Estimated time for the full job: 1.68707 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.820e+00_5.830e+00_1e8.root): 1.70441 h --  Estimated time for the full job: 1.72135 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.190e+00_5.200e+00_1e8.root): 1.68568 h --  Estimated time for the full job: 1.70263 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.310e+00_5.320e+00_1e8.root): 1.63383 h --  Estimated time for the full job: 1.65077 h ####
+ #### PROGRESS: 965079/100000000 run histories have been computed (0.965079 %) in 1.01667 minutes (0.0169444 h) (NSig=2452)---> (5.69555e+07 run histories/h, 144708 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.430e+00_5.440e+00_1e8.root): 1.73881 h --  Estimated time for the full job: 1.75576 h ####
+ #### PROGRESS: 1005868/100000000 run histories have been computed (1.00587 %) in 1.01667 minutes (0.0169444 h) (NSig=2528)---> (5.93627e+07 run histories/h, 149193 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.400e+00_5.410e+00_1e8.root): 1.66762 h --  Estimated time for the full job: 1.68456 h ####
+ #### PROGRESS: 1922388/100000000 run histories have been computed (1.92239 %) in 2.01667 minutes (0.0336111 h) (NSig=4828)---> (5.7195e+07 run histories/h, 143643 sig/h) ####
+ #### PROGRESS: 1915732/100000000 run histories have been computed (1.91573 %) in 2.01667 minutes (0.0336111 h) (NSig=4833)---> (5.6997e+07 run histories/h, 143792 sig/h) ####
+ #### PROGRESS: 1884481/100000000 run histories have been computed (1.88448 %) in 2.01667 minutes (0.0336111 h) (NSig=4614)---> (5.60672e+07 run histories/h, 137276 sig/h) ####
+ #### PROGRESS: 1942673/100000000 run histories have been computed (1.94267 %) in 2.01667 minutes (0.0336111 h) (NSig=4658)---> (5.77985e+07 run histories/h, 138585 sig/h) ####
+ #### PROGRESS: 2078565/100000000 run histories have been computed (2.07857 %) in 2.01667 minutes (0.0336111 h) (NSig=5424)---> (6.18416e+07 run histories/h, 161375 sig/h) ####
+ #### PROGRESS: 1882644/100000000 run histories have been computed (1.88264 %) in 2.01667 minutes (0.0336111 h) (NSig=4562)---> (5.60125e+07 run histories/h, 135729 sig/h) ####
+ #### PROGRESS: 1938448/100000000 run histories have been computed (1.93845 %) in 2.01667 minutes (0.0336111 h) (NSig=5092)---> (5.76728e+07 run histories/h, 151498 sig/h) ####
+ #### PROGRESS: 2011993/100000000 run histories have been computed (2.01199 %) in 2.01667 minutes (0.0336111 h) (NSig=5243)---> (5.98609e+07 run histories/h, 155990 sig/h) ####
+ #### PROGRESS: 1948657/100000000 run histories have been computed (1.94866 %) in 2.01667 minutes (0.0336111 h) (NSig=4816)---> (5.79766e+07 run histories/h, 143286 sig/h) ####
+ #### PROGRESS: 1917386/100000000 run histories have been computed (1.91739 %) in 2.01667 minutes (0.0336111 h) (NSig=4925)---> (5.70462e+07 run histories/h, 146529 sig/h) ####
+ #### PROGRESS: 2000744/100000000 run histories have been computed (2.00074 %) in 2.01667 minutes (0.0336111 h) (NSig=5035)---> (5.95263e+07 run histories/h, 149802 sig/h) ####
+ #### PROGRESS: 1977543/100000000 run histories have been computed (1.97754 %) in 2.01667 minutes (0.0336111 h) (NSig=5287)---> (5.8836e+07 run histories/h, 157299 sig/h) ####
+ #### PROGRESS: 2035207/100000000 run histories have been computed (2.03521 %) in 2.01667 minutes (0.0336111 h) (NSig=5261)---> (6.05516e+07 run histories/h, 156526 sig/h) ####
+ #### PROGRESS: 1983960/100000000 run histories have been computed (1.98396 %) in 2.01667 minutes (0.0336111 h) (NSig=5166)---> (5.90269e+07 run histories/h, 153699 sig/h) ####
+ #### PROGRESS: 1906596/100000000 run histories have been computed (1.9066 %) in 2.01667 minutes (0.0336111 h) (NSig=4780)---> (5.67252e+07 run histories/h, 142215 sig/h) ####
+ #### PROGRESS: 1961835/100000000 run histories have been computed (1.96183 %) in 2.01667 minutes (0.0336111 h) (NSig=5169)---> (5.83686e+07 run histories/h, 153788 sig/h) ####
+ #### PROGRESS: 1998198/100000000 run histories have been computed (1.9982 %) in 2.01667 minutes (0.0336111 h) (NSig=5541)---> (5.94505e+07 run histories/h, 164856 sig/h) ####
+ #### PROGRESS: 1904910/100000000 run histories have been computed (1.90491 %) in 2.01667 minutes (0.0336111 h) (NSig=4761)---> (5.6675e+07 run histories/h, 141650 sig/h) ####
+ #### PROGRESS: 1939185/100000000 run histories have been computed (1.93918 %) in 2.01667 minutes (0.0336111 h) (NSig=4656)---> (5.76948e+07 run histories/h, 138526 sig/h) ####
+ #### PROGRESS: 1974084/100000000 run histories have been computed (1.97408 %) in 2.01667 minutes (0.0336111 h) (NSig=5071)---> (5.87331e+07 run histories/h, 150873 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.910e+00_5.920e+00_1e8.root): 1.71479 h --  Estimated time for the full job: 1.7484 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.460e+00_5.470e+00_1e8.root): 1.72087 h --  Estimated time for the full job: 1.75448 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.700e+00_5.710e+00_1e8.root): 1.74996 h --  Estimated time for the full job: 1.78357 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.880e+00_5.890e+00_1e8.root): 1.69654 h --  Estimated time for the full job: 1.73015 h ####
+ #### PROGRESS: 1954042/100000000 run histories have been computed (1.95404 %) in 2.01667 minutes (0.0336111 h) (NSig=4709)---> (5.81368e+07 run histories/h, 140102 sig/h) ####
+ #### PROGRESS: 2051877/100000000 run histories have been computed (2.05188 %) in 2.01667 minutes (0.0336111 h) (NSig=5285)---> (6.10476e+07 run histories/h, 157240 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.040e+00_5.050e+00_1e8.root): 1.58342 h --  Estimated time for the full job: 1.61703 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.790e+00_5.800e+00_1e8.root): 1.7517 h --  Estimated time for the full job: 1.78531 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.370e+00_5.380e+00_1e8.root): 1.70031 h --  Estimated time for the full job: 1.73392 h ####
+ #### PROGRESS: 1986528/100000000 run histories have been computed (1.98653 %) in 2.01667 minutes (0.0336111 h) (NSig=4981)---> (5.91033e+07 run histories/h, 148195 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.280e+00_5.290e+00_1e8.root): 1.63693 h --  Estimated time for the full job: 1.67054 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.820e+00_5.830e+00_1e8.root): 1.69122 h --  Estimated time for the full job: 1.72483 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.430e+00_5.440e+00_1e8.root): 1.71935 h --  Estimated time for the full job: 1.75297 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.520e+00_5.530e+00_1e8.root): 1.64632 h --  Estimated time for the full job: 1.67993 h ####
+ #### PROGRESS: 1887721/100000000 run histories have been computed (1.88772 %) in 2.01667 minutes (0.0336111 h) (NSig=4745)---> (5.61636e+07 run histories/h, 141174 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.100e+00_5.110e+00_1e8.root): 1.66603 h --  Estimated time for the full job: 1.69964 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.310e+00_5.320e+00_1e8.root): 1.61787 h --  Estimated time for the full job: 1.65148 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.070e+00_5.080e+00_1e8.root): 1.66053 h --  Estimated time for the full job: 1.69414 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.640e+00_5.650e+00_1e8.root): 1.72927 h --  Estimated time for the full job: 1.76289 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.250e+00_5.260e+00_1e8.root): 1.67964 h --  Estimated time for the full job: 1.71325 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.010e+00_5.020e+00_1e8.root): 1.64846 h --  Estimated time for the full job: 1.68207 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.580e+00_5.590e+00_1e8.root): 1.73084 h --  Estimated time for the full job: 1.76445 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.940e+00_5.950e+00_1e8.root): 1.69965 h --  Estimated time for the full job: 1.73326 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.190e+00_5.200e+00_1e8.root): 1.66901 h --  Estimated time for the full job: 1.70262 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.760e+00_5.770e+00_1e8.root): 1.68647 h --  Estimated time for the full job: 1.72008 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.160e+00_5.170e+00_1e8.root): 1.60446 h --  Estimated time for the full job: 1.63807 h ####
+ #### PROGRESS: 1948287/100000000 run histories have been computed (1.94829 %) in 2.01667 minutes (0.0336111 h) (NSig=4726)---> (5.79656e+07 run histories/h, 140608 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.610e+00_5.620e+00_1e8.root): 1.65834 h --  Estimated time for the full job: 1.69195 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.670e+00_5.680e+00_1e8.root): 1.7469 h --  Estimated time for the full job: 1.78051 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.850e+00_5.860e+00_1e8.root): 1.69155 h --  Estimated time for the full job: 1.72516 h ####
+ #### PROGRESS: 1973717/100000000 run histories have been computed (1.97372 %) in 2.01667 minutes (0.0336111 h) (NSig=4942)---> (5.87222e+07 run histories/h, 147035 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.490e+00_5.500e+00_1e8.root): 1.66932 h --  Estimated time for the full job: 1.70293 h ####
+ #### PROGRESS: 1810553/100000000 run histories have been computed (1.81055 %) in 2.01667 minutes (0.0336111 h) (NSig=4559)---> (5.38677e+07 run histories/h, 135640 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.970e+00_5.980e+00_1e8.root): 1.82279 h --  Estimated time for the full job: 1.8564 h ####
+ #### PROGRESS: 1985486/100000000 run histories have been computed (1.98549 %) in 2.01667 minutes (0.0336111 h) (NSig=4967)---> (5.90723e+07 run histories/h, 147779 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.550e+00_5.560e+00_1e8.root): 1.65923 h --  Estimated time for the full job: 1.69284 h ####
+ #### PROGRESS: 1995445/100000000 run histories have been computed (1.99544 %) in 2.01667 minutes (0.0336111 h) (NSig=5076)---> (5.93686e+07 run histories/h, 151021 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.400e+00_5.410e+00_1e8.root): 1.65078 h --  Estimated time for the full job: 1.68439 h ####
+ #### PROGRESS: 1874269/100000000 run histories have been computed (1.87427 %) in 2.01667 minutes (0.0336111 h) (NSig=4662)---> (5.57634e+07 run histories/h, 138704 sig/h) ####
+ #### PROGRESS: 1981066/100000000 run histories have been computed (1.98107 %) in 2.01667 minutes (0.0336111 h) (NSig=5157)---> (5.89408e+07 run histories/h, 153431 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.730e+00_5.740e+00_1e8.root): 1.75968 h --  Estimated time for the full job: 1.79329 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.130e+00_5.140e+00_1e8.root): 1.66301 h --  Estimated time for the full job: 1.69662 h ####
+ #### PROGRESS: 1951213/100000000 run histories have been computed (1.95121 %) in 2.01667 minutes (0.0336111 h) (NSig=5169)---> (5.80526e+07 run histories/h, 153788 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.220e+00_5.230e+00_1e8.root): 1.68896 h --  Estimated time for the full job: 1.72258 h ####
+ #### PROGRESS: 2018194/100000000 run histories have been computed (2.01819 %) in 2.01667 minutes (0.0336111 h) (NSig=5289)---> (6.00454e+07 run histories/h, 157359 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.340e+00_5.350e+00_1e8.root): 1.63179 h --  Estimated time for the full job: 1.66541 h ####
+ #### PROGRESS: 3753464/100000000 run histories have been computed (3.75346 %) in 4.01667 minutes (0.0669444 h) (NSig=9279)---> (5.60683e+07 run histories/h, 138607 sig/h) ####
+ #### PROGRESS: 3615401/100000000 run histories have been computed (3.6154 %) in 4.01667 minutes (0.0669444 h) (NSig=9062)---> (5.4006e+07 run histories/h, 135366 sig/h) ####
+ #### PROGRESS: 3831422/100000000 run histories have been computed (3.83142 %) in 4.01667 minutes (0.0669444 h) (NSig=9826)---> (5.72329e+07 run histories/h, 146778 sig/h) ####
+ #### PROGRESS: 3826637/100000000 run histories have been computed (3.82664 %) in 4.01667 minutes (0.0669444 h) (NSig=9864)---> (5.71614e+07 run histories/h, 147346 sig/h) ####
+ #### PROGRESS: 3986465/100000000 run histories have been computed (3.98646 %) in 4.01667 minutes (0.0669444 h) (NSig=10078)---> (5.95489e+07 run histories/h, 150543 sig/h) ####
+ #### PROGRESS: 3966189/100000000 run histories have been computed (3.96619 %) in 4.01667 minutes (0.0669444 h) (NSig=10035)---> (5.9246e+07 run histories/h, 149900 sig/h) ####
+ #### PROGRESS: 3854195/100000000 run histories have been computed (3.85419 %) in 4.01667 minutes (0.0669444 h) (NSig=9547)---> (5.7573e+07 run histories/h, 142611 sig/h) ####
+ #### PROGRESS: 3993290/100000000 run histories have been computed (3.99329 %) in 4.01667 minutes (0.0669444 h) (NSig=10898)---> (5.96508e+07 run histories/h, 162792 sig/h) ####
+ #### PROGRESS: 4066531/100000000 run histories have been computed (4.06653 %) in 4.01667 minutes (0.0669444 h) (NSig=10516)---> (6.07449e+07 run histories/h, 157085 sig/h) ####
+ #### PROGRESS: 4101599/100000000 run histories have been computed (4.1016 %) in 4.01667 minutes (0.0669444 h) (NSig=10670)---> (6.12687e+07 run histories/h, 159386 sig/h) ####
+ #### PROGRESS: 3904862/100000000 run histories have been computed (3.90486 %) in 4.01667 minutes (0.0669444 h) (NSig=9481)---> (5.83299e+07 run histories/h, 141625 sig/h) ####
+ #### PROGRESS: 3750630/100000000 run histories have been computed (3.75063 %) in 4.01667 minutes (0.0669444 h) (NSig=9200)---> (5.6026e+07 run histories/h, 137427 sig/h) ####
+ #### PROGRESS: 3873338/100000000 run histories have been computed (3.87334 %) in 4.01667 minutes (0.0669444 h) (NSig=10108)---> (5.7859e+07 run histories/h, 150991 sig/h) ####
+ #### PROGRESS: 3888848/100000000 run histories have been computed (3.88885 %) in 4.01667 minutes (0.0669444 h) (NSig=10383)---> (5.80907e+07 run histories/h, 155099 sig/h) ####
+ #### PROGRESS: 3947702/100000000 run histories have been computed (3.9477 %) in 4.01667 minutes (0.0669444 h) (NSig=9885)---> (5.89698e+07 run histories/h, 147660 sig/h) ####
+ #### PROGRESS: 4035254/100000000 run histories have been computed (4.03525 %) in 4.01667 minutes (0.0669444 h) (NSig=10398)---> (6.02777e+07 run histories/h, 155323 sig/h) ####
+ #### PROGRESS: 3912280/100000000 run histories have been computed (3.91228 %) in 4.01667 minutes (0.0669444 h) (NSig=10129)---> (5.84407e+07 run histories/h, 151305 sig/h) ####
+ #### PROGRESS: 3964859/100000000 run histories have been computed (3.96486 %) in 4.01667 minutes (0.0669444 h) (NSig=9977)---> (5.92261e+07 run histories/h, 149034 sig/h) ####
+ #### PROGRESS: 3792997/100000000 run histories have been computed (3.793 %) in 4.01667 minutes (0.0669444 h) (NSig=9321)---> (5.66589e+07 run histories/h, 139235 sig/h) ####
+ #### PROGRESS: 3876178/100000000 run histories have been computed (3.87618 %) in 4.01667 minutes (0.0669444 h) (NSig=9458)---> (5.79014e+07 run histories/h, 141281 sig/h) ####
+ #### PROGRESS: 3741043/100000000 run histories have been computed (3.74104 %) in 4.01667 minutes (0.0669444 h) (NSig=9286)---> (5.58828e+07 run histories/h, 138712 sig/h) ####
+ #### PROGRESS: 3992207/100000000 run histories have been computed (3.99221 %) in 4.01667 minutes (0.0669444 h) (NSig=10187)---> (5.96346e+07 run histories/h, 152171 sig/h) ####
+ #### PROGRESS: 3931317/100000000 run histories have been computed (3.93132 %) in 4.01667 minutes (0.0669444 h) (NSig=10263)---> (5.87251e+07 run histories/h, 153306 sig/h) ####
+ #### PROGRESS: 3808136/100000000 run histories have been computed (3.80814 %) in 4.01667 minutes (0.0669444 h) (NSig=9488)---> (5.6885e+07 run histories/h, 141729 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.700e+00_5.710e+00_1e8.root): 1.71659 h --  Estimated time for the full job: 1.78354 h ####
+ #### PROGRESS: 3944185/100000000 run histories have been computed (3.94419 %) in 4.01667 minutes (0.0669444 h) (NSig=10360)---> (5.89173e+07 run histories/h, 154755 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.970e+00_5.980e+00_1e8.root): 1.7847 h --  Estimated time for the full job: 1.85165 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.460e+00_5.470e+00_1e8.root): 1.6803 h --  Estimated time for the full job: 1.74725 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.430e+00_5.440e+00_1e8.root): 1.68249 h --  Estimated time for the full job: 1.74943 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.520e+00_5.530e+00_1e8.root): 1.61235 h --  Estimated time for the full job: 1.67929 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.550e+00_5.560e+00_1e8.root): 1.62093 h --  Estimated time for the full job: 1.68788 h ####
+ #### PROGRESS: 3900252/100000000 run histories have been computed (3.90025 %) in 4.01667 minutes (0.0669444 h) (NSig=9657)---> (5.8261e+07 run histories/h, 144254 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.910e+00_5.920e+00_1e8.root): 1.66998 h --  Estimated time for the full job: 1.73692 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.010e+00_5.020e+00_1e8.root): 1.60948 h --  Estimated time for the full job: 1.67642 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.310e+00_5.320e+00_1e8.root): 1.57929 h --  Estimated time for the full job: 1.64623 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.160e+00_5.170e+00_1e8.root): 1.56521 h --  Estimated time for the full job: 1.63215 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.760e+00_5.770e+00_1e8.root): 1.64744 h --  Estimated time for the full job: 1.71439 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.790e+00_5.800e+00_1e8.root): 1.71794 h --  Estimated time for the full job: 1.78489 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.370e+00_5.380e+00_1e8.root): 1.6614 h --  Estimated time for the full job: 1.72834 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.220e+00_5.230e+00_1e8.root): 1.6545 h --  Estimated time for the full job: 1.72145 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.490e+00_5.500e+00_1e8.root): 1.62884 h --  Estimated time for the full job: 1.69578 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.340e+00_5.350e+00_1e8.root): 1.59205 h --  Estimated time for the full job: 1.65899 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.250e+00_5.260e+00_1e8.root): 1.64419 h --  Estimated time for the full job: 1.71114 h ####
+ #### PROGRESS: 3959846/100000000 run histories have been computed (3.95985 %) in 4.01667 minutes (0.0669444 h) (NSig=10358)---> (5.91512e+07 run histories/h, 154725 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.610e+00_5.620e+00_1e8.root): 1.6215 h --  Estimated time for the full job: 1.68844 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.640e+00_5.650e+00_1e8.root): 1.698 h --  Estimated time for the full job: 1.76495 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.880e+00_5.890e+00_1e8.root): 1.66013 h --  Estimated time for the full job: 1.72707 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.730e+00_5.740e+00_1e8.root): 1.72251 h --  Estimated time for the full job: 1.78946 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.400e+00_5.410e+00_1e8.root): 1.60993 h --  Estimated time for the full job: 1.67688 h ####
+ #### PROGRESS: 3762766/100000000 run histories have been computed (3.76277 %) in 4.01667 minutes (0.0669444 h) (NSig=9531)---> (5.62073e+07 run histories/h, 142372 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.190e+00_5.200e+00_1e8.root): 1.63591 h --  Estimated time for the full job: 1.70285 h ####
+ #### PROGRESS: 3953745/100000000 run histories have been computed (3.95375 %) in 4.01667 minutes (0.0669444 h) (NSig=10593)---> (5.90601e+07 run histories/h, 158236 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.580e+00_5.590e+00_1e8.root): 1.69099 h --  Estimated time for the full job: 1.75793 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.130e+00_5.140e+00_1e8.root): 1.63035 h --  Estimated time for the full job: 1.69729 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.850e+00_5.860e+00_1e8.root): 1.64947 h --  Estimated time for the full job: 1.71641 h ####
+ #### PROGRESS: 3892116/100000000 run histories have been computed (3.89212 %) in 4.01667 minutes (0.0669444 h) (NSig=9711)---> (5.81395e+07 run histories/h, 145061 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.070e+00_5.080e+00_1e8.root): 1.62364 h --  Estimated time for the full job: 1.69058 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.670e+00_5.680e+00_1e8.root): 1.71218 h --  Estimated time for the full job: 1.77913 h ####
+ #### PROGRESS: 3858641/100000000 run histories have been computed (3.85864 %) in 4.01667 minutes (0.0669444 h) (NSig=9337)---> (5.76395e+07 run histories/h, 139474 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.100e+00_5.110e+00_1e8.root): 1.62625 h --  Estimated time for the full job: 1.69319 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.820e+00_5.830e+00_1e8.root): 1.65306 h --  Estimated time for the full job: 1.72 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.940e+00_5.950e+00_1e8.root): 1.66798 h --  Estimated time for the full job: 1.73492 h ####
+ #### PROGRESS: 4142729/100000000 run histories have been computed (4.14273 %) in 4.01667 minutes (0.0669444 h) (NSig=11106)---> (6.18831e+07 run histories/h, 165899 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.040e+00_5.050e+00_1e8.root): 1.54901 h --  Estimated time for the full job: 1.61595 h ####
+ #### PROGRESS: 4028895/100000000 run histories have been computed (4.0289 %) in 4.01667 minutes (0.0669444 h) (NSig=10550)---> (6.01827e+07 run histories/h, 157593 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.280e+00_5.290e+00_1e8.root): 1.59466 h --  Estimated time for the full job: 1.66161 h ####
+ #### PROGRESS: 7732083/100000000 run histories have been computed (7.73208 %) in 8.01667 minutes (0.133611 h) (NSig=18783)---> (5.78701e+07 run histories/h, 140580 sig/h) ####
+ #### PROGRESS: 7787121/100000000 run histories have been computed (7.78712 %) in 8.01667 minutes (0.133611 h) (NSig=19103)---> (5.8282e+07 run histories/h, 142975 sig/h) ####
+ #### PROGRESS: 7930478/100000000 run histories have been computed (7.93048 %) in 8.01667 minutes (0.133611 h) (NSig=19984)---> (5.93549e+07 run histories/h, 149568 sig/h) ####
+ #### PROGRESS: 7873582/100000000 run histories have been computed (7.87358 %) in 8.01667 minutes (0.133611 h) (NSig=19906)---> (5.89291e+07 run histories/h, 148985 sig/h) ####
+ #### PROGRESS: 7487570/100000000 run histories have been computed (7.48757 %) in 8.01667 minutes (0.133611 h) (NSig=18432)---> (5.604e+07 run histories/h, 137953 sig/h) ####
+ #### PROGRESS: 7550870/100000000 run histories have been computed (7.55087 %) in 8.01667 minutes (0.133611 h) (NSig=18612)---> (5.65138e+07 run histories/h, 139300 sig/h) ####
+ #### PROGRESS: 7890060/100000000 run histories have been computed (7.89006 %) in 8.01667 minutes (0.133611 h) (NSig=20742)---> (5.90524e+07 run histories/h, 155242 sig/h) ####
+ #### PROGRESS: 7895245/100000000 run histories have been computed (7.89525 %) in 8.01667 minutes (0.133611 h) (NSig=20692)---> (5.90912e+07 run histories/h, 154867 sig/h) ####
+ #### PROGRESS: 7797298/100000000 run histories have been computed (7.7973 %) in 8.01667 minutes (0.133611 h) (NSig=20250)---> (5.83582e+07 run histories/h, 151559 sig/h) ####
+ #### PROGRESS: 7895838/100000000 run histories have been computed (7.89584 %) in 8.01667 minutes (0.133611 h) (NSig=20860)---> (5.90957e+07 run histories/h, 156125 sig/h) ####
+ #### PROGRESS: 7965513/100000000 run histories have been computed (7.96551 %) in 8.01667 minutes (0.133611 h) (NSig=21467)---> (5.96171e+07 run histories/h, 160668 sig/h) ####
+ #### PROGRESS: 7587843/100000000 run histories have been computed (7.58784 %) in 8.01667 minutes (0.133611 h) (NSig=18806)---> (5.67905e+07 run histories/h, 140752 sig/h) ####
+ #### PROGRESS: 8121088/100000000 run histories have been computed (8.12109 %) in 8.01667 minutes (0.133611 h) (NSig=21068)---> (6.07815e+07 run histories/h, 157681 sig/h) ####
+ #### PROGRESS: 7947264/100000000 run histories have been computed (7.94726 %) in 8.01667 minutes (0.133611 h) (NSig=20066)---> (5.94806e+07 run histories/h, 150182 sig/h) ####
+ #### PROGRESS: 7966466/100000000 run histories have been computed (7.96647 %) in 8.01667 minutes (0.133611 h) (NSig=20391)---> (5.96243e+07 run histories/h, 152615 sig/h) ####
+ #### PROGRESS: 7727045/100000000 run histories have been computed (7.72705 %) in 8.01667 minutes (0.133611 h) (NSig=20102)---> (5.78324e+07 run histories/h, 150452 sig/h) ####
+ #### PROGRESS: 7910079/100000000 run histories have been computed (7.91008 %) in 8.01667 minutes (0.133611 h) (NSig=19783)---> (5.92023e+07 run histories/h, 148064 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.880e+00_5.890e+00_1e8.root): 1.5944 h --  Estimated time for the full job: 1.72801 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.760e+00_5.770e+00_1e8.root): 1.58218 h --  Estimated time for the full job: 1.7158 h ####
+ #### PROGRESS: 7781151/100000000 run histories have been computed (7.78115 %) in 8.01667 minutes (0.133611 h) (NSig=19349)---> (5.82373e+07 run histories/h, 144816 sig/h) ####
+ #### PROGRESS: 8280833/100000000 run histories have been computed (8.28083 %) in 8.01667 minutes (0.133611 h) (NSig=21363)---> (6.19771e+07 run histories/h, 159889 sig/h) ####
+ #### PROGRESS: 8274572/100000000 run histories have been computed (8.27457 %) in 8.01667 minutes (0.133611 h) (NSig=22112)---> (6.19303e+07 run histories/h, 165495 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.550e+00_5.560e+00_1e8.root): 1.55117 h --  Estimated time for the full job: 1.68478 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.490e+00_5.500e+00_1e8.root): 1.56334 h --  Estimated time for the full job: 1.69695 h ####
+ #### PROGRESS: 7224479/100000000 run histories have been computed (7.22448 %) in 8.01667 minutes (0.133611 h) (NSig=17778)---> (5.40709e+07 run histories/h, 133058 sig/h) ####
+ #### PROGRESS: 7708256/100000000 run histories have been computed (7.70826 %) in 8.01667 minutes (0.133611 h) (NSig=18819)---> (5.76917e+07 run histories/h, 140849 sig/h) ####
+ #### PROGRESS: 7650857/100000000 run histories have been computed (7.65086 %) in 8.01667 minutes (0.133611 h) (NSig=19459)---> (5.72621e+07 run histories/h, 145639 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.700e+00_5.710e+00_1e8.root): 1.65083 h --  Estimated time for the full job: 1.78444 h ####
+ #### PROGRESS: 7656703/100000000 run histories have been computed (7.6567 %) in 8.01667 minutes (0.133611 h) (NSig=19609)---> (5.73059e+07 run histories/h, 146762 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.640e+00_5.650e+00_1e8.root): 1.63587 h --  Estimated time for the full job: 1.76948 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.130e+00_5.140e+00_1e8.root): 1.5598 h --  Estimated time for the full job: 1.69341 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.070e+00_5.080e+00_1e8.root): 1.55869 h --  Estimated time for the full job: 1.6923 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.250e+00_5.260e+00_1e8.root): 1.57995 h --  Estimated time for the full job: 1.71356 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.100e+00_5.110e+00_1e8.root): 1.55856 h --  Estimated time for the full job: 1.69217 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.010e+00_5.020e+00_1e8.root): 1.54376 h --  Estimated time for the full job: 1.67737 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.580e+00_5.590e+00_1e8.root): 1.62725 h --  Estimated time for the full job: 1.76086 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.310e+00_5.320e+00_1e8.root): 1.51163 h --  Estimated time for the full job: 1.64524 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.520e+00_5.530e+00_1e8.root): 1.54761 h --  Estimated time for the full job: 1.68122 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.400e+00_5.410e+00_1e8.root): 1.54356 h --  Estimated time for the full job: 1.67717 h ####
+ #### PROGRESS: 7841975/100000000 run histories have been computed (7.84197 %) in 8.01667 minutes (0.133611 h) (NSig=20504)---> (5.86925e+07 run histories/h, 153460 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.370e+00_5.380e+00_1e8.root): 1.59552 h --  Estimated time for the full job: 1.72914 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.610e+00_5.620e+00_1e8.root): 1.55551 h --  Estimated time for the full job: 1.68912 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.820e+00_5.830e+00_1e8.root): 1.5835 h --  Estimated time for the full job: 1.71711 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.160e+00_5.170e+00_1e8.root): 1.47989 h --  Estimated time for the full job: 1.6135 h ####
+ #### PROGRESS: 8033794/100000000 run histories have been computed (8.03379 %) in 8.01667 minutes (0.133611 h) (NSig=20999)---> (6.01282e+07 run histories/h, 157165 sig/h) ####
+ #### PROGRESS: 7774431/100000000 run histories have been computed (7.77443 %) in 8.01667 minutes (0.133611 h) (NSig=20603)---> (5.8187e+07 run histories/h, 154201 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.040e+00_5.050e+00_1e8.root): 1.48111 h --  Estimated time for the full job: 1.61472 h ####
+ #### PROGRESS: 7473401/100000000 run histories have been computed (7.4734 %) in 8.01667 minutes (0.133611 h) (NSig=18638)---> (5.5934e+07 run histories/h, 139494 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.970e+00_5.980e+00_1e8.root): 1.71581 h --  Estimated time for the full job: 1.84942 h ####
+ #### PROGRESS: 7466589/100000000 run histories have been computed (7.46659 %) in 8.01667 minutes (0.133611 h) (NSig=18480)---> (5.5883e+07 run histories/h, 138312 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.940e+00_5.950e+00_1e8.root): 1.59974 h --  Estimated time for the full job: 1.73335 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.430e+00_5.440e+00_1e8.root): 1.61274 h --  Estimated time for the full job: 1.74635 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.460e+00_5.470e+00_1e8.root): 1.61141 h --  Estimated time for the full job: 1.74502 h ####
+ #### PROGRESS: 8066060/100000000 run histories have been computed (8.06606 %) in 8.01667 minutes (0.133611 h) (NSig=20629)---> (6.03697e+07 run histories/h, 154396 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.190e+00_5.200e+00_1e8.root): 1.57018 h --  Estimated time for the full job: 1.70379 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.280e+00_5.290e+00_1e8.root): 1.5295 h --  Estimated time for the full job: 1.66311 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.220e+00_5.230e+00_1e8.root): 1.58499 h --  Estimated time for the full job: 1.7186 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.730e+00_5.740e+00_1e8.root): 1.65421 h --  Estimated time for the full job: 1.78782 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.790e+00_5.800e+00_1e8.root): 1.65584 h --  Estimated time for the full job: 1.78945 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.340e+00_5.350e+00_1e8.root): 1.52285 h --  Estimated time for the full job: 1.65646 h ####
+ #### PROGRESS: 7710478/100000000 run histories have been computed (7.71048 %) in 8.01667 minutes (0.133611 h) (NSig=18912)---> (5.77084e+07 run histories/h, 141545 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.910e+00_5.920e+00_1e8.root): 1.59924 h --  Estimated time for the full job: 1.73285 h ####
+ #### PROGRESS: 7777969/100000000 run histories have been computed (7.77797 %) in 8.01667 minutes (0.133611 h) (NSig=19182)---> (5.82135e+07 run histories/h, 143566 sig/h) ####
+ #### PROGRESS: 7516390/100000000 run histories have been computed (7.51639 %) in 8.01667 minutes (0.133611 h) (NSig=18881)---> (5.62557e+07 run histories/h, 141313 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.850e+00_5.860e+00_1e8.root): 1.5842 h --  Estimated time for the full job: 1.71781 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.670e+00_5.680e+00_1e8.root): 1.64399 h --  Estimated time for the full job: 1.7776 h ####
+ #### PROGRESS: 14952550/100000000 run histories have been computed (14.9526 %) in 16.0167 minutes (0.266944 h) (NSig=37267)---> (5.60137e+07 run histories/h, 139606 sig/h) ####
+ #### PROGRESS: 16096082/100000000 run histories have been computed (16.0961 %) in 16.0167 minutes (0.266944 h) (NSig=41812)---> (6.02975e+07 run histories/h, 156632 sig/h) ####
+ #### PROGRESS: 15887864/100000000 run histories have been computed (15.8879 %) in 16.0167 minutes (0.266944 h) (NSig=39965)---> (5.95175e+07 run histories/h, 149713 sig/h) ####
+ #### PROGRESS: 15787588/100000000 run histories have been computed (15.7876 %) in 16.0167 minutes (0.266944 h) (NSig=41605)---> (5.91418e+07 run histories/h, 155856 sig/h) ####
+ #### PROGRESS: 15473556/100000000 run histories have been computed (15.4736 %) in 16.0167 minutes (0.266944 h) (NSig=37831)---> (5.79655e+07 run histories/h, 141719 sig/h) ####
+ #### PROGRESS: 15913079/100000000 run histories have been computed (15.9131 %) in 16.0167 minutes (0.266944 h) (NSig=42581)---> (5.9612e+07 run histories/h, 159513 sig/h) ####
+ #### PROGRESS: 15756541/100000000 run histories have been computed (15.7565 %) in 16.0167 minutes (0.266944 h) (NSig=39932)---> (5.90255e+07 run histories/h, 149589 sig/h) ####
+ #### PROGRESS: 15315329/100000000 run histories have been computed (15.3153 %) in 16.0167 minutes (0.266944 h) (NSig=38932)---> (5.73727e+07 run histories/h, 145843 sig/h) ####
+ #### PROGRESS: 15284040/100000000 run histories have been computed (15.284 %) in 16.0167 minutes (0.266944 h) (NSig=38838)---> (5.72555e+07 run histories/h, 145491 sig/h) ####
+ #### PROGRESS: 15813225/100000000 run histories have been computed (15.8132 %) in 16.0167 minutes (0.266944 h) (NSig=40005)---> (5.92379e+07 run histories/h, 149863 sig/h) ####
+ #### PROGRESS: 14997780/100000000 run histories have been computed (14.9978 %) in 16.0167 minutes (0.266944 h) (NSig=37138)---> (5.61832e+07 run histories/h, 139123 sig/h) ####
+ #### PROGRESS: 15751091/100000000 run histories have been computed (15.7511 %) in 16.0167 minutes (0.266944 h) (NSig=41410)---> (5.90051e+07 run histories/h, 155126 sig/h) ####
+ #### PROGRESS: 15028578/100000000 run histories have been computed (15.0286 %) in 16.0167 minutes (0.266944 h) (NSig=37591)---> (5.62985e+07 run histories/h, 140820 sig/h) ####
+ #### PROGRESS: 15869550/100000000 run histories have been computed (15.8696 %) in 16.0167 minutes (0.266944 h) (NSig=39935)---> (5.94489e+07 run histories/h, 149600 sig/h) ####
+ #### PROGRESS: 15944179/100000000 run histories have been computed (15.9442 %) in 16.0167 minutes (0.266944 h) (NSig=40638)---> (5.97285e+07 run histories/h, 152234 sig/h) ####
+ #### PROGRESS: 16666045/100000000 run histories have been computed (16.666 %) in 16.0167 minutes (0.266944 h) (NSig=43310)---> (6.24326e+07 run histories/h, 162243 sig/h) ####
+ #### PROGRESS: 15093157/100000000 run histories have been computed (15.0932 %) in 16.0167 minutes (0.266944 h) (NSig=37573)---> (5.65404e+07 run histories/h, 140752 sig/h) ####
+ #### PROGRESS: 14929979/100000000 run histories have been computed (14.93 %) in 16.0167 minutes (0.266944 h) (NSig=36827)---> (5.59292e+07 run histories/h, 137958 sig/h) ####
+ #### PROGRESS: 16566472/100000000 run histories have been computed (16.5665 %) in 16.0167 minutes (0.266944 h) (NSig=44012)---> (6.20596e+07 run histories/h, 164873 sig/h) ####
+ #### PROGRESS: 15579249/100000000 run histories have been computed (15.5792 %) in 16.0167 minutes (0.266944 h) (NSig=38246)---> (5.83614e+07 run histories/h, 143273 sig/h) ####
+ #### PROGRESS: 15160426/100000000 run histories have been computed (15.1604 %) in 16.0167 minutes (0.266944 h) (NSig=38141)---> (5.67924e+07 run histories/h, 142880 sig/h) ####
+ #### PROGRESS: 16139271/100000000 run histories have been computed (16.1393 %) in 16.0167 minutes (0.266944 h) (NSig=41316)---> (6.04593e+07 run histories/h, 154774 sig/h) ####
+ #### PROGRESS: 15559222/100000000 run histories have been computed (15.5592 %) in 16.0167 minutes (0.266944 h) (NSig=40802)---> (5.82864e+07 run histories/h, 152848 sig/h) ####
+ #### PROGRESS: 15407154/100000000 run histories have been computed (15.4072 %) in 16.0167 minutes (0.266944 h) (NSig=37908)---> (5.77167e+07 run histories/h, 142007 sig/h) ####
+ #### PROGRESS: 15430328/100000000 run histories have been computed (15.4303 %) in 16.0167 minutes (0.266944 h) (NSig=39880)---> (5.78035e+07 run histories/h, 149394 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.730e+00_5.740e+00_1e8.root): 1.51833 h --  Estimated time for the full job: 1.78528 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.280e+00_5.290e+00_1e8.root): 1.3915 h --  Estimated time for the full job: 1.65844 h ####
+ #### PROGRESS: 15558653/100000000 run histories have been computed (15.5587 %) in 16.0167 minutes (0.266944 h) (NSig=40159)---> (5.82842e+07 run histories/h, 150440 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.520e+00_5.530e+00_1e8.root): 1.41323 h --  Estimated time for the full job: 1.68018 h ####
+ #### PROGRESS: 15572612/100000000 run histories have been computed (15.5726 %) in 16.0167 minutes (0.266944 h) (NSig=38450)---> (5.83365e+07 run histories/h, 144037 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.070e+00_5.080e+00_1e8.root): 1.42391 h --  Estimated time for the full job: 1.69085 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.880e+00_5.890e+00_1e8.root): 1.45822 h --  Estimated time for the full job: 1.72517 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.010e+00_5.020e+00_1e8.root): 1.41057 h --  Estimated time for the full job: 1.67752 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.490e+00_5.500e+00_1e8.root): 1.42724 h --  Estimated time for the full job: 1.69418 h ####
+ #### PROGRESS: 15419261/100000000 run histories have been computed (15.4193 %) in 16.0167 minutes (0.266944 h) (NSig=37638)---> (5.77621e+07 run histories/h, 140996 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.460e+00_5.470e+00_1e8.root): 1.47604 h --  Estimated time for the full job: 1.74299 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.430e+00_5.440e+00_1e8.root): 1.47961 h --  Estimated time for the full job: 1.74656 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.610e+00_5.620e+00_1e8.root): 1.42116 h --  Estimated time for the full job: 1.68811 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.700e+00_5.710e+00_1e8.root): 1.51295 h --  Estimated time for the full job: 1.77989 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.130e+00_5.140e+00_1e8.root): 1.42782 h --  Estimated time for the full job: 1.69477 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.670e+00_5.680e+00_1e8.root): 1.5093 h --  Estimated time for the full job: 1.77625 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.550e+00_5.560e+00_1e8.root): 1.41517 h --  Estimated time for the full job: 1.68212 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.400e+00_5.410e+00_1e8.root): 1.4073 h --  Estimated time for the full job: 1.67424 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.160e+00_5.170e+00_1e8.root): 1.33478 h --  Estimated time for the full job: 1.60173 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.640e+00_5.650e+00_1e8.root): 1.5017 h --  Estimated time for the full job: 1.76865 h ####
+ #### PROGRESS: 15558128/100000000 run histories have been computed (15.5581 %) in 16.0167 minutes (0.266944 h) (NSig=38639)---> (5.82823e+07 run histories/h, 144745 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.790e+00_5.800e+00_1e8.root): 1.52103 h --  Estimated time for the full job: 1.78798 h ####
+ #### PROGRESS: 15782045/100000000 run histories have been computed (15.782 %) in 16.0167 minutes (0.266944 h) (NSig=41666)---> (5.91211e+07 run histories/h, 156085 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.040e+00_5.050e+00_1e8.root): 1.34441 h --  Estimated time for the full job: 1.61135 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.850e+00_5.860e+00_1e8.root): 1.44652 h --  Estimated time for the full job: 1.71346 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.580e+00_5.590e+00_1e8.root): 1.49385 h --  Estimated time for the full job: 1.7608 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.340e+00_5.350e+00_1e8.root): 1.38706 h --  Estimated time for the full job: 1.65401 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.220e+00_5.230e+00_1e8.root): 1.44872 h --  Estimated time for the full job: 1.71567 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.910e+00_5.920e+00_1e8.root): 1.46566 h --  Estimated time for the full job: 1.7326 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.370e+00_5.380e+00_1e8.root): 1.46305 h --  Estimated time for the full job: 1.73 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.250e+00_5.260e+00_1e8.root): 1.44879 h --  Estimated time for the full job: 1.71573 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.760e+00_5.770e+00_1e8.root): 1.44725 h --  Estimated time for the full job: 1.71419 h ####
+ #### PROGRESS: 15741554/100000000 run histories have been computed (15.7416 %) in 16.0167 minutes (0.266944 h) (NSig=41182)---> (5.89694e+07 run histories/h, 154272 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.940e+00_5.950e+00_1e8.root): 1.4643 h --  Estimated time for the full job: 1.73124 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.820e+00_5.830e+00_1e8.root): 1.44884 h --  Estimated time for the full job: 1.71579 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.100e+00_5.110e+00_1e8.root): 1.4245 h --  Estimated time for the full job: 1.69144 h ####
+ #### PROGRESS: 16218221/100000000 run histories have been computed (16.2182 %) in 16.0167 minutes (0.266944 h) (NSig=41961)---> (6.0755e+07 run histories/h, 157190 sig/h) ####
+ #### PROGRESS: 14452278/100000000 run histories have been computed (14.4523 %) in 16.0167 minutes (0.266944 h) (NSig=35527)---> (5.41396e+07 run histories/h, 133088 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.190e+00_5.200e+00_1e8.root): 1.42885 h --  Estimated time for the full job: 1.69579 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.310e+00_5.320e+00_1e8.root): 1.37901 h --  Estimated time for the full job: 1.64595 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.970e+00_5.980e+00_1e8.root): 1.58013 h --  Estimated time for the full job: 1.84708 h ####
+ #### PROGRESS: 30869918/100000000 run histories have been computed (30.8699 %) in 32.0167 minutes (0.533611 h) (NSig=79717)---> (5.7851e+07 run histories/h, 149392 sig/h) ####
+ #### PROGRESS: 31758824/100000000 run histories have been computed (31.7588 %) in 32.0167 minutes (0.533611 h) (NSig=82941)---> (5.95168e+07 run histories/h, 155433 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.370e+00_5.380e+00_1e8.root): 1.19497 h --  Estimated time for the full job: 1.72858 h ####
+ #### PROGRESS: 30841757/100000000 run histories have been computed (30.8418 %) in 32.0167 minutes (0.533611 h) (NSig=78794)---> (5.77982e+07 run histories/h, 147662 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.190e+00_5.200e+00_1e8.root): 1.14659 h --  Estimated time for the full job: 1.6802 h ####
+ #### PROGRESS: 31603505/100000000 run histories have been computed (31.6035 %) in 32.0167 minutes (0.533611 h) (NSig=83323)---> (5.92257e+07 run histories/h, 156149 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.430e+00_5.440e+00_1e8.root): 1.19655 h --  Estimated time for the full job: 1.73016 h ####
+ #### PROGRESS: 32168307/100000000 run histories have been computed (32.1683 %) in 32.0167 minutes (0.533611 h) (NSig=83696)---> (6.02842e+07 run histories/h, 156848 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.070e+00_5.080e+00_1e8.root): 1.15484 h --  Estimated time for the full job: 1.68846 h ####
+ #### PROGRESS: 31492054/100000000 run histories have been computed (31.4921 %) in 32.0167 minutes (0.533611 h) (NSig=82887)---> (5.90169e+07 run histories/h, 155332 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.280e+00_5.290e+00_1e8.root): 1.1252 h --  Estimated time for the full job: 1.65881 h ####
+ #### PROGRESS: 30300836/100000000 run histories have been computed (30.3008 %) in 32.0167 minutes (0.533611 h) (NSig=76145)---> (5.67845e+07 run histories/h, 142698 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.130e+00_5.140e+00_1e8.root): 1.16082 h --  Estimated time for the full job: 1.69443 h ####
+ #### PROGRESS: 33427630/100000000 run histories have been computed (33.4276 %) in 32.0167 minutes (0.533611 h) (NSig=87535)---> (6.26442e+07 run histories/h, 164043 sig/h) ####
+ #### PROGRESS: 32408925/100000000 run histories have been computed (32.4089 %) in 32.0167 minutes (0.533611 h) (NSig=83972)---> (6.07351e+07 run histories/h, 157366 sig/h) ####
+ #### PROGRESS: 31761390/100000000 run histories have been computed (31.7614 %) in 32.0167 minutes (0.533611 h) (NSig=80163)---> (5.95216e+07 run histories/h, 150227 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.580e+00_5.590e+00_1e8.root): 1.22743 h --  Estimated time for the full job: 1.76104 h ####
+ #### PROGRESS: 31723319/100000000 run histories have been computed (31.7233 %) in 32.0167 minutes (0.533611 h) (NSig=80093)---> (5.94503e+07 run histories/h, 150096 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.160e+00_5.170e+00_1e8.root): 1.06271 h --  Estimated time for the full job: 1.59632 h ####
+ #### PROGRESS: 31130238/100000000 run histories have been computed (31.1302 %) in 32.0167 minutes (0.533611 h) (NSig=81614)---> (5.83388e+07 run histories/h, 152947 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.310e+00_5.320e+00_1e8.root): 1.11288 h --  Estimated time for the full job: 1.64649 h ####
+ #### PROGRESS: 31133819/100000000 run histories have been computed (31.1338 %) in 32.0167 minutes (0.533611 h) (NSig=76754)---> (5.83455e+07 run histories/h, 143839 sig/h) ####
+ #### PROGRESS: 28894955/100000000 run histories have been computed (28.895 %) in 32.0167 minutes (0.533611 h) (NSig=70598)---> (5.41498e+07 run histories/h, 132302 sig/h) ####
+ #### PROGRESS: 31514088/100000000 run histories have been computed (31.5141 %) in 32.0167 minutes (0.533611 h) (NSig=80099)---> (5.90582e+07 run histories/h, 150107 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.520e+00_5.530e+00_1e8.root): 1.14645 h --  Estimated time for the full job: 1.68006 h ####
+ #### PROGRESS: 29889586/100000000 run histories have been computed (29.8896 %) in 32.0167 minutes (0.533611 h) (NSig=74546)---> (5.60138e+07 run histories/h, 139701 sig/h) ####
+ #### PROGRESS: 29846457/100000000 run histories have been computed (29.8465 %) in 32.0167 minutes (0.533611 h) (NSig=73554)---> (5.5933e+07 run histories/h, 137842 sig/h) ####
+ #### PROGRESS: 30793978/100000000 run histories have been computed (30.794 %) in 32.0167 minutes (0.533611 h) (NSig=75567)---> (5.77087e+07 run histories/h, 141614 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.550e+00_5.560e+00_1e8.root): 1.14847 h --  Estimated time for the full job: 1.68208 h ####
+ #### PROGRESS: 31100921/100000000 run histories have been computed (31.1009 %) in 32.0167 minutes (0.533611 h) (NSig=80575)---> (5.82839e+07 run histories/h, 150999 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.220e+00_5.230e+00_1e8.root): 1.18051 h --  Estimated time for the full job: 1.71412 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.760e+00_5.770e+00_1e8.root): 1.18032 h --  Estimated time for the full job: 1.71393 h ####
+ #### PROGRESS: 31110449/100000000 run histories have been computed (31.1104 %) in 32.0167 minutes (0.533611 h) (NSig=76908)---> (5.83017e+07 run histories/h, 144127 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.970e+00_5.980e+00_1e8.root): 1.31312 h --  Estimated time for the full job: 1.84673 h ####
+ #### PROGRESS: 31132197/100000000 run histories have been computed (31.1322 %) in 32.0167 minutes (0.533611 h) (NSig=76089)---> (5.83425e+07 run histories/h, 142593 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.490e+00_5.500e+00_1e8.root): 1.15964 h --  Estimated time for the full job: 1.69325 h ####
+ #### PROGRESS: 31891457/100000000 run histories have been computed (31.8915 %) in 32.0167 minutes (0.533611 h) (NSig=81532)---> (5.97654e+07 run histories/h, 152793 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.730e+00_5.740e+00_1e8.root): 1.25166 h --  Estimated time for the full job: 1.78527 h ####
+ #### PROGRESS: 32241030/100000000 run histories have been computed (32.241 %) in 32.0167 minutes (0.533611 h) (NSig=82888)---> (6.04205e+07 run histories/h, 155334 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.790e+00_5.800e+00_1e8.root): 1.25424 h --  Estimated time for the full job: 1.78785 h ####
+ #### PROGRESS: 29987989/100000000 run histories have been computed (29.988 %) in 32.0167 minutes (0.533611 h) (NSig=74574)---> (5.61982e+07 run histories/h, 139753 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.910e+00_5.920e+00_1e8.root): 1.19923 h --  Estimated time for the full job: 1.73284 h ####
+ #### PROGRESS: 31596298/100000000 run histories have been computed (31.5963 %) in 32.0167 minutes (0.533611 h) (NSig=79404)---> (5.92122e+07 run histories/h, 148805 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.250e+00_5.260e+00_1e8.root): 1.18213 h --  Estimated time for the full job: 1.71574 h ####
+ #### PROGRESS: 30110338/100000000 run histories have been computed (30.1103 %) in 32.0167 minutes (0.533611 h) (NSig=75025)---> (5.64275e+07 run histories/h, 140599 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.820e+00_5.830e+00_1e8.root): 1.1816 h --  Estimated time for the full job: 1.71522 h ####
+ #### PROGRESS: 30926996/100000000 run histories have been computed (30.927 %) in 32.0167 minutes (0.533611 h) (NSig=75667)---> (5.79579e+07 run histories/h, 141802 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.850e+00_5.860e+00_1e8.root): 1.18041 h --  Estimated time for the full job: 1.71402 h ####
+ #### PROGRESS: 30803584/100000000 run histories have been computed (30.8036 %) in 32.0167 minutes (0.533611 h) (NSig=74766)---> (5.77267e+07 run histories/h, 140113 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.400e+00_5.410e+00_1e8.root): 1.1396 h --  Estimated time for the full job: 1.67321 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.340e+00_5.350e+00_1e8.root): 1.12146 h --  Estimated time for the full job: 1.65507 h ####
+ #### PROGRESS: 30598181/100000000 run histories have been computed (30.5982 %) in 32.0167 minutes (0.533611 h) (NSig=77614)---> (5.73417e+07 run histories/h, 145450 sig/h) ####
+ #### PROGRESS: 31557283/100000000 run histories have been computed (31.5573 %) in 32.0167 minutes (0.533611 h) (NSig=83000)---> (5.91391e+07 run histories/h, 155544 sig/h) ####
+ #### PROGRESS: 30179704/100000000 run histories have been computed (30.1797 %) in 32.0167 minutes (0.533611 h) (NSig=75418)---> (5.65575e+07 run histories/h, 141335 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.700e+00_5.710e+00_1e8.root): 1.24581 h --  Estimated time for the full job: 1.77942 h ####
+ #### PROGRESS: 31810440/100000000 run histories have been computed (31.8104 %) in 32.0167 minutes (0.533611 h) (NSig=84815)---> (5.96135e+07 run histories/h, 158945 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.610e+00_5.620e+00_1e8.root): 1.15523 h --  Estimated time for the full job: 1.68884 h ####
+ #### PROGRESS: 33127262/100000000 run histories have been computed (33.1273 %) in 32.0167 minutes (0.533611 h) (NSig=88018)---> (6.20813e+07 run histories/h, 164948 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.670e+00_5.680e+00_1e8.root): 1.23857 h --  Estimated time for the full job: 1.77219 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.880e+00_5.890e+00_1e8.root): 1.19178 h --  Estimated time for the full job: 1.72539 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.940e+00_5.950e+00_1e8.root): 1.19869 h --  Estimated time for the full job: 1.7323 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.460e+00_5.470e+00_1e8.root): 1.21032 h --  Estimated time for the full job: 1.74393 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.100e+00_5.110e+00_1e8.root): 1.15732 h --  Estimated time for the full job: 1.69093 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.640e+00_5.650e+00_1e8.root): 1.2345 h --  Estimated time for the full job: 1.76811 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.010e+00_5.020e+00_1e8.root): 1.14386 h --  Estimated time for the full job: 1.67747 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.040e+00_5.050e+00_1e8.root): 1.07718 h --  Estimated time for the full job: 1.61079 h ####
+ #### PROGRESS: 61710903/100000000 run histories have been computed (61.7109 %) in 64.0167 minutes (1.06694 h) (NSig=158929)---> (5.78389e+07 run histories/h, 148957 sig/h) ####
+ #### PROGRESS: 59765985/100000000 run histories have been computed (59.766 %) in 64.0167 minutes (1.06694 h) (NSig=148538)---> (5.6016e+07 run histories/h, 139218 sig/h) ####
+ #### PROGRESS: 63200393/100000000 run histories have been computed (63.2004 %) in 64.0167 minutes (1.06694 h) (NSig=167397)---> (5.92349e+07 run histories/h, 156894 sig/h) ####
+ #### PROGRESS: 59651210/100000000 run histories have been computed (59.6512 %) in 64.0167 minutes (1.06694 h) (NSig=146804)---> (5.59084e+07 run histories/h, 137593 sig/h) ####
+ #### PROGRESS: 62303617/100000000 run histories have been computed (62.3036 %) in 64.0167 minutes (1.06694 h) (NSig=159282)---> (5.83944e+07 run histories/h, 149288 sig/h) ####
+ #### PROGRESS: 63129981/100000000 run histories have been computed (63.13 %) in 64.0167 minutes (1.06694 h) (NSig=158705)---> (5.91689e+07 run histories/h, 148747 sig/h) ####
+ #### PROGRESS: 57777939/100000000 run histories have been computed (57.7779 %) in 64.0167 minutes (1.06694 h) (NSig=140652)---> (5.41527e+07 run histories/h, 131827 sig/h) ####
+ #### PROGRESS: 59907472/100000000 run histories have been computed (59.9075 %) in 64.0167 minutes (1.06694 h) (NSig=149218)---> (5.61486e+07 run histories/h, 139855 sig/h) ####
+ #### PROGRESS: 60592552/100000000 run histories have been computed (60.5926 %) in 64.0167 minutes (1.06694 h) (NSig=152211)---> (5.67907e+07 run histories/h, 142661 sig/h) ####
+ #### PROGRESS: 62152356/100000000 run histories have been computed (62.1524 %) in 64.0167 minutes (1.06694 h) (NSig=161379)---> (5.82527e+07 run histories/h, 151253 sig/h) ####
+ #### PROGRESS: 62950270/100000000 run histories have been computed (62.9503 %) in 64.0167 minutes (1.06694 h) (NSig=166274)---> (5.90005e+07 run histories/h, 155841 sig/h) ####
+ #### PROGRESS: 62190268/100000000 run histories have been computed (62.1903 %) in 64.0167 minutes (1.06694 h) (NSig=152205)---> (5.82882e+07 run histories/h, 142655 sig/h) ####
+ #### PROGRESS: 63762314/100000000 run histories have been computed (63.7623 %) in 64.0167 minutes (1.06694 h) (NSig=163413)---> (5.97616e+07 run histories/h, 153160 sig/h) ####
+ #### PROGRESS: 66177315/100000000 run histories have been computed (66.1773 %) in 64.0167 minutes (1.06694 h) (NSig=175736)---> (6.20251e+07 run histories/h, 164710 sig/h) ####
+ #### PROGRESS: 63362542/100000000 run histories have been computed (63.3625 %) in 64.0167 minutes (1.06694 h) (NSig=160336)---> (5.93869e+07 run histories/h, 150276 sig/h) ####
+ #### PROGRESS: 64987575/100000000 run histories have been computed (64.9876 %) in 64.0167 minutes (1.06694 h) (NSig=168273)---> (6.091e+07 run histories/h, 157715 sig/h) ####
+ #### PROGRESS: 61105715/100000000 run histories have been computed (61.1057 %) in 64.0167 minutes (1.06694 h) (NSig=155042)---> (5.72717e+07 run histories/h, 145314 sig/h) ####
+ #### PROGRESS: 60905957/100000000 run histories have been computed (60.906 %) in 64.0167 minutes (1.06694 h) (NSig=152387)---> (5.70845e+07 run histories/h, 142826 sig/h) ####
+ #### PROGRESS: 61801861/100000000 run histories have been computed (61.8019 %) in 64.0167 minutes (1.06694 h) (NSig=151406)---> (5.79242e+07 run histories/h, 141906 sig/h) ####
+ #### PROGRESS: 64229217/100000000 run histories have been computed (64.2292 %) in 64.0167 minutes (1.06694 h) (NSig=166823)---> (6.01992e+07 run histories/h, 156356 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.370e+00_5.380e+00_1e8.root): 0.661995 h --  Estimated time for the full job: 1.72894 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.730e+00_5.740e+00_1e8.root): 0.718259 h --  Estimated time for the full job: 1.7852 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.070e+00_5.080e+00_1e8.root): 0.621248 h --  Estimated time for the full job: 1.68819 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.790e+00_5.800e+00_1e8.root): 0.721694 h --  Estimated time for the full job: 1.78864 h ####
+ #### PROGRESS: 62214218/100000000 run histories have been computed (62.2142 %) in 64.0167 minutes (1.06694 h) (NSig=153572)---> (5.83106e+07 run histories/h, 143936 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.430e+00_5.440e+00_1e8.root): 0.645548 h --  Estimated time for the full job: 1.71249 h ####
+ #### PROGRESS: 63816124/100000000 run histories have been computed (63.8161 %) in 64.0167 minutes (1.06694 h) (NSig=167011)---> (5.9812e+07 run histories/h, 156532 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.610e+00_5.620e+00_1e8.root): 0.623131 h --  Estimated time for the full job: 1.69008 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.970e+00_5.980e+00_1e8.root): 0.779685 h --  Estimated time for the full job: 1.84663 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.700e+00_5.710e+00_1e8.root): 0.714043 h --  Estimated time for the full job: 1.78099 h ####
+ #### PROGRESS: 61563305/100000000 run histories have been computed (61.5633 %) in 64.0167 minutes (1.06694 h) (NSig=149759)---> (5.77006e+07 run histories/h, 140363 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.580e+00_5.590e+00_1e8.root): 0.693906 h --  Estimated time for the full job: 1.76085 h ####
+ #### PROGRESS: 64415318/100000000 run histories have been computed (64.4153 %) in 64.0167 minutes (1.06694 h) (NSig=166105)---> (6.03736e+07 run histories/h, 155683 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.250e+00_5.260e+00_1e8.root): 0.649715 h --  Estimated time for the full job: 1.71666 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.130e+00_5.140e+00_1e8.root): 0.627956 h --  Estimated time for the full job: 1.6949 h ####
+ #### PROGRESS: 60664240/100000000 run histories have been computed (60.6642 %) in 64.0167 minutes (1.06694 h) (NSig=151899)---> (5.68579e+07 run histories/h, 142368 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.850e+00_5.860e+00_1e8.root): 0.648669 h --  Estimated time for the full job: 1.71561 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.400e+00_5.410e+00_1e8.root): 0.606371 h --  Estimated time for the full job: 1.67332 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.040e+00_5.050e+00_1e8.root): 0.545307 h --  Estimated time for the full job: 1.61225 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.550e+00_5.560e+00_1e8.root): 0.616928 h --  Estimated time for the full job: 1.68387 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.310e+00_5.320e+00_1e8.root): 0.574822 h --  Estimated time for the full job: 1.64177 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.460e+00_5.470e+00_1e8.root): 0.679119 h --  Estimated time for the full job: 1.74606 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.670e+00_5.680e+00_1e8.root): 0.684846 h --  Estimated time for the full job: 1.75179 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.880e+00_5.890e+00_1e8.root): 0.659451 h --  Estimated time for the full job: 1.7264 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.280e+00_5.290e+00_1e8.root): 0.594207 h --  Estimated time for the full job: 1.66115 h ####
+ #### PROGRESS: 63058885/100000000 run histories have been computed (63.0589 %) in 64.0167 minutes (1.06694 h) (NSig=166167)---> (5.91023e+07 run histories/h, 155741 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.760e+00_5.770e+00_1e8.root): 0.648008 h --  Estimated time for the full job: 1.71495 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.190e+00_5.200e+00_1e8.root): 0.60496 h --  Estimated time for the full job: 1.6719 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.940e+00_5.950e+00_1e8.root): 0.666141 h --  Estimated time for the full job: 1.73309 h ####
+ #### PROGRESS: 62192095/100000000 run histories have been computed (62.1921 %) in 64.0167 minutes (1.06694 h) (NSig=153748)---> (5.82899e+07 run histories/h, 144101 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.340e+00_5.350e+00_1e8.root): 0.589408 h --  Estimated time for the full job: 1.65635 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.640e+00_5.650e+00_1e8.root): 0.691826 h --  Estimated time for the full job: 1.75877 h ####
+ #### PROGRESS: 66900125/100000000 run histories have been computed (66.9001 %) in 64.0167 minutes (1.06694 h) (NSig=175547)---> (6.27025e+07 run histories/h, 164532 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.100e+00_5.110e+00_1e8.root): 0.625037 h --  Estimated time for the full job: 1.69198 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.820e+00_5.830e+00_1e8.root): 0.648618 h --  Estimated time for the full job: 1.71556 h ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.160e+00_5.170e+00_1e8.root): 0.527887 h --  Estimated time for the full job: 1.59483 h ####
+ #### PROGRESS: 63440951/100000000 run histories have been computed (63.441 %) in 64.0167 minutes (1.06694 h) (NSig=161106)---> (5.94604e+07 run histories/h, 150998 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.520e+00_5.530e+00_1e8.root): 0.614847 h --  Estimated time for the full job: 1.68179 h ####
+ #### PROGRESS: 63592180/100000000 run histories have been computed (63.5922 %) in 64.0167 minutes (1.06694 h) (NSig=169336)---> (5.96021e+07 run histories/h, 158711 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.010e+00_5.020e+00_1e8.root): 0.610847 h --  Estimated time for the full job: 1.67779 h ####
+ #### PROGRESS: 63901254/100000000 run histories have been computed (63.9013 %) in 64.0167 minutes (1.06694 h) (NSig=162355)---> (5.98918e+07 run histories/h, 152168 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.490e+00_5.500e+00_1e8.root): 0.602732 h --  Estimated time for the full job: 1.66968 h ####
+ #### PROGRESS: 62243636/100000000 run histories have been computed (62.2436 %) in 64.0167 minutes (1.06694 h) (NSig=162874)---> (5.83382e+07 run histories/h, 152655 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.220e+00_5.230e+00_1e8.root): 0.647198 h --  Estimated time for the full job: 1.71414 h ####
+ #### PROGRESS: 61551660/100000000 run histories have been computed (61.5517 %) in 64.0167 minutes (1.06694 h) (NSig=150498)---> (5.76897e+07 run histories/h, 141055 sig/h) ####
+ #### Estimated time left to complete the job (outputs/GR01/Carbon-20-635_v01/Out_GR01_5.910e+00_5.920e+00_1e8.root): 0.666469 h --  Estimated time for the full job: 1.73341 h ####
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.160e+00_5.170e+00_1e8.root with 100000000 run histories terminated after 1.59444 h , TotalNSignals = 262099 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.040e+00_5.050e+00_1e8.root with 100000000 run histories terminated after 1.61306 h , TotalNSignals = 265899 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.310e+00_5.320e+00_1e8.root with 100000000 run histories terminated after 1.63 h , TotalNSignals = 259174 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.340e+00_5.350e+00_1e8.root with 100000000 run histories terminated after 1.65611 h , TotalNSignals = 257866 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.490e+00_5.500e+00_1e8.root with 100000000 run histories terminated after 1.65806 h , TotalNSignals = 254142 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.280e+00_5.290e+00_1e8.root with 100000000 run histories terminated after 1.66139 h , TotalNSignals = 259845 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.400e+00_5.410e+00_1e8.root with 100000000 run histories terminated after 1.66333 h , TotalNSignals = 256187 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.190e+00_5.200e+00_1e8.root with 100000000 run histories terminated after 1.66667 h , TotalNSignals = 261591 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.010e+00_5.020e+00_1e8.root with 100000000 run histories terminated after 1.67417 h , TotalNSignals = 266086 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.130e+00_5.140e+00_1e8.root with 100000000 run histories terminated after 1.68028 h , TotalNSignals = 264192 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.520e+00_5.530e+00_1e8.root with 100000000 run histories terminated after 1.68139 h , TotalNSignals = 253939 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.550e+00_5.560e+00_1e8.root with 100000000 run histories terminated after 1.68278 h , TotalNSignals = 252787 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.070e+00_5.080e+00_1e8.root with 100000000 run histories terminated after 1.68472 h , TotalNSignals = 264893 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.100e+00_5.110e+00_1e8.root with 100000000 run histories terminated after 1.6875 h , TotalNSignals = 263309 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.610e+00_5.620e+00_1e8.root with 100000000 run histories terminated after 1.68833 h , TotalNSignals = 251206 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.430e+00_5.440e+00_1e8.root with 100000000 run histories terminated after 1.70083 h , TotalNSignals = 255701 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.220e+00_5.230e+00_1e8.root with 100000000 run histories terminated after 1.7075 h , TotalNSignals = 261431 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.760e+00_5.770e+00_1e8.root with 100000000 run histories terminated after 1.70806 h , TotalNSignals = 246782 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.250e+00_5.260e+00_1e8.root with 100000000 run histories terminated after 1.71028 h , TotalNSignals = 259925 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.910e+00_5.920e+00_1e8.root with 100000000 run histories terminated after 1.71222 h , TotalNSignals = 244589 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.820e+00_5.830e+00_1e8.root with 100000000 run histories terminated after 1.71278 h , TotalNSignals = 246414 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.850e+00_5.860e+00_1e8.root with 100000000 run histories terminated after 1.71389 h , TotalNSignals = 244851 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.370e+00_5.380e+00_1e8.root with 100000000 run histories terminated after 1.72278 h , TotalNSignals = 257479 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.880e+00_5.890e+00_1e8.root with 100000000 run histories terminated after 1.72333 h , TotalNSignals = 245173 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.940e+00_5.950e+00_1e8.root with 100000000 run histories terminated after 1.73083 h , TotalNSignals = 243175 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.670e+00_5.680e+00_1e8.root with 100000000 run histories terminated after 1.73611 h , TotalNSignals = 249324 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.460e+00_5.470e+00_1e8.root with 100000000 run histories terminated after 1.73806 h , TotalNSignals = 254323 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.640e+00_5.650e+00_1e8.root with 100000000 run histories terminated after 1.73917 h , TotalNSignals = 250143 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.580e+00_5.590e+00_1e8.root with 100000000 run histories terminated after 1.75194 h , TotalNSignals = 251474 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.700e+00_5.710e+00_1e8.root with 100000000 run histories terminated after 1.76972 h , TotalNSignals = 248699 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.730e+00_5.740e+00_1e8.root with 100000000 run histories terminated after 1.77194 h , TotalNSignals = 248798 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.790e+00_5.800e+00_1e8.root with 100000000 run histories terminated after 1.77722 h , TotalNSignals = 246543 ########
+ Deleting run action. Run terminated after 100000000 events
+ ######## Job with input outputs/GR01/Carbon-20-635_v01/Out_GR01_5.970e+00_5.980e+00_1e8.root with 100000000 run histories terminated after 1.82167 h , TotalNSignals = 243208 ########
