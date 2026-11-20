@@ -1,0 +1,8 @@
+/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/myC6D6.dir
+/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/C6D6project.dir
+/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/edit_cache.dir
+/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/rebuild_cache.dir
+/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/list_install_components.dir
+/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/install.dir
+/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/install/local.dir
+/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/install/strip.dir

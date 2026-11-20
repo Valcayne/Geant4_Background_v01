@@ -1,0 +1,74 @@
+
+
+#include "C6D6UserInput02.hh"
+
+
+C6D6UserInput* C6D6UserInput::theInstance = 0;
+
+C6D6UserInput::C6D6UserInput(){
+
+  //Default variables for all the input values:
+  
+
+}
+
+int C6D6UserInput::Read(char* inpfilename){
+
+  ifstream in(inpfilename);
+  if(!in.good()){
+    cout<<" **** Error opening file <"<<inpfilename<<"> ****"<<endl;
+    exit(1);
+  }
+
+  string word;
+
+  while(in>>word){
+    if(word==string("END")){
+      break;
+    }
+    else if(word.c_str()[0]=='#'){
+      in.ignore(1000,'\n');
+    }
+    //==========================================================================
+    // Source:
+    //==========================================================================
+    else if(word==string("SOURCETYPE")){
+      in>>SourceType;
+    }
+    //Source position
+    else if(word==string("SOURCEPOS_CM")){
+      in>>sourcepos_x>>sourcepos_y>>sourcepos_z;
+      sourcepos_x*=cm; sourcepos_y*=cm; sourcepos_z*=cm;
+    }
+    else if(word==string("SOURCEVEC_CM")){
+      in>>sourcepos_vx>>sourcepos_vy>>sourcepos_vz;
+      sourcepos_vx*=cm; sourcepos_vy*=cm; sourcepos_vz*=cm;
+    }
+    else if(word==string("SOURCERAD_CM")){
+      in>>SourceRad;  SourceRad*=cm;
+    }
+    else if(word==string("SOURCEFNAME")){
+      in>>SourceFname;
+    }
+    //==========================================================================
+    // Geometry:
+    //==========================================================================
+
+
+    //==========================================================================
+    // Tallies:
+    //==========================================================================
+
+    
+}
+
+C6D6UserInput* C6D6UserInput::getInstance()
+{
+  if( !theInstance ){
+    // allocates the pointer of the singleton in case it does not exist
+    //cout<<"################ Creating C6D6UserInput object ################"<<endl;
+    theInstance = new C6D6UserInput();
+   }
+
+ return theInstance;
+}

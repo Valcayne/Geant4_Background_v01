@@ -1,0 +1,36 @@
+#include "MyStackingAction.hh"
+#include "G4Track.hh"
+#include "G4VProcess.hh"
+
+MyStackingAction::MyStackingAction()
+  : G4UserStackingAction()
+{
+  theInputManager=C6D6InputManager::getInstance();
+}
+
+MyStackingAction::~MyStackingAction()
+{
+}
+
+G4ClassificationOfNewTrack MyStackingAction::ClassifyNewTrack(const G4Track* aTrack)
+{
+    // 1. Si es una partícula primaria (del generador), se trackea normalmente
+    if (aTrack->GetParentID() == 0) {
+        return fUrgent;
+    }
+
+    // 2. Obtener el proceso que creó esta partícula secundaria
+    const G4VProcess* creatorProcess = aTrack->GetCreatorProcess();
+    
+    if (creatorProcess != nullptr) {
+        G4String processName = creatorProcess->GetProcessName();
+        
+        // 3. Si fue generada por captura neutrónica, la eliminamos
+        if (processName == "nCapture") {
+            return fKill; // Destruye el track de forma segura sin memory leaks
+        }
+    }
+
+    // 4. Cualquier otra secundaria de otros procesos sigue su curso normal
+    return fUrgent;
+}

@@ -1,0 +1,83 @@
+
+#include "C6D6SensitiveTarget.hh"
+#include "G4IonTable.hh"
+
+C6D6SensitiveTarget::C6D6SensitiveTarget(G4String SDname)
+    : G4VSensitiveDetector(SDname), hitsCollection(NULL), collectionID(-1) {
+  G4cout << "Creating SD with name: " << SDname << G4endl;
+  collectionName.insert(SDname);
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+C6D6SensitiveTarget::~C6D6SensitiveTarget() {}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void C6D6SensitiveTarget::Initialize(G4HCofThisEvent *HCE) {
+  hitsCollection =
+      new C6D6HitCollection(SensitiveDetectorName, collectionName[0]);
+  if (collectionID < 0) {
+    collectionID =
+        G4SDManager::GetSDMpointer()->GetCollectionID(hitsCollection);
+  }
+  HCE->AddHitsCollection(collectionID, hitsCollection);
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void C6D6SensitiveTarget::EndOfEvent(G4HCofThisEvent *HCE) {
+#ifdef DEBUG_TARGET_SD_HH
+  G4int nofHits = hitsCollection->entries();
+  G4cout << G4endl << "-------->SSDHits Collection: in this event they are "
+         << nofHits << " hits: " << G4endl;
+  for (G4int i = 0; i < nofHits; i++) {
+    (*hitsCollection)[i]->Print();
+  }
+#endif
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+G4bool C6D6SensitiveTarget::ProcessHits(G4Step *step,
+                                        G4TouchableHistory *ROhist) {
+
+  //Activation:
+  G4bool ActProd=false;
+  if(step->IsFirstStepInVolume()){
+    G4ParticleDefinition* particleDefinition = step->GetTrack()->GetDefinition();
+    if(G4IonTable::IsIon(particleDefinition)){
+      const G4Ions* ion = dynamic_cast<const G4Ions*>(particleDefinition);
+      G4int theZ=particleDefinition->GetAtomicNumber();
+      G4int theA=particleDefinition->GetAtomicMass();
+      
+      G4double ExcitationEnergy=ion->GetExcitationEnergy();
+      //G4cout<<particleDefinition->GetParticleName()<<"  "<<particleDefinition->GetAtomicNumber()<<"  "<<particleDefinition->GetAtomicMass()<<"  "<<ExcitationEnergy/MeV<<"  "<<step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName()<<G4endl;
+      
+      C6D6Hit *hit = new C6D6Hit();
+      hit->SetTimeInteraction(step->GetTrack()->GetGlobalTime() / ns);
+      hit->SetPositionInteracion(step->GetTrack()->GetPosition() / cm);
+      hit->SetCopyNumber(theZ*1000+theA);
+      hit->SetDepositedEnergy(ion->GetExcitationEnergy()/MeV);
+      hitsCollection->insert(hit);
+      ActProd=true;
+    }
+  }
+
+  // Get process in the interaction point
+  G4String processName =
+      step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
+
+  
+  // Not capture
+  if (processName != "nCapture" && processName != "nCaptureHP") return ActProd;
+
+  // Capture
+  C6D6Hit *hit = new C6D6Hit();
+  hit->SetTimeInteraction(step->GetPostStepPoint()->GetGlobalTime() / ns);
+  hit->SetPositionInteracion(step->GetPostStepPoint()->GetPosition() / cm);
+  hit->SetCopyNumber(-1);
+  hitsCollection->insert(hit);
+  
+  return true;
+}

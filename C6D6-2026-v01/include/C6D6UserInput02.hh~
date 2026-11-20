@@ -1,0 +1,23 @@
+#ifndef USERINPUT02_HH
+#define USERINPUT02_HH 1
+
+#include <fstream>
+#include <iostream>
+#include <string>
+
+#include "G4ThreeVector.hh"
+
+using namespace std;
+
+class C6D6UserInput{
+ public:
+  C6D6UserInput(char *inp_fname);
+  ~C6D6UserInput();
+
+ private:
+  static C6D6UserInput* theInstance;
+
+};
+
+#endif
+

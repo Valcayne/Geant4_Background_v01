@@ -1,0 +1,284 @@
+
+#include "C6D6PrimaryGeneratorAction.hh"
+
+C6D6PrimaryGeneratorAction::C6D6PrimaryGeneratorAction(){
+
+  theInputManager=C6D6InputManager::getInstance();
+  theZA=0;
+  
+  //Init, just in case:
+  SourcePos=G4ThreeVector(0.,0.,0.);
+  SourceDir=G4ThreeVector(0.,0.,1.);
+  SourceEne=1.*MeV;
+  
+  SourceType=theInputManager->GetSourceType();
+  theInputManager->GetSourcePos(sourcepos_x,sourcepos_y,sourcepos_z,sourcepos_zlength,sourcepos_xs,sourcepos_rad,source_angle,BIFFname);
+  theInputManager->GetSourceEne(source_Emin,source_Emax,source_Esample);
+  source_par=theInputManager->GetSourcePar();
+  NSourceFnames=theInputManager->GetSourceFnames(SourceFname);
+
+  if(BIFFname!="none"){
+    std::ifstream in(BIFFname.c_str());
+    G4double radius, cumulprob;
+    while(in>>radius>>cumulprob){
+      radius*=cm;
+      bif.push_back({radius,cumulprob});
+    }
+    in.close();
+  }
+  if(SourceType==4){ //fission products from a file
+    std::ifstream in(SourceFname[0].c_str());
+    if(!in.good()){G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);}
+    char word[1000];
+    G4int nFisYields,FisY_ZA,FisY_M;
+    G4double FisY_Cumul=0;
+    in>>word>>word>>word>>word>>word>>word>>word>>nFisYields;
+    in.ignore(1000,'\n');
+    for(G4int i=0;i<nFisYields;i++){
+      in>>FisY_ZA>>FisY_M>>FisY_Cumul>>word;
+      if(!in.good()){G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);}
+      theFP_ZA.push_back(FisY_ZA);
+      theFP_M.push_back(FisY_M);
+      theFP_Y_CumulProb.push_back(FisY_Cumul);
+    }
+    in.close();
+    for(G4int i=1;i<nFisYields;i++){
+      theFP_Y_CumulProb.at(i)+=theFP_Y_CumulProb.at(i-1);
+    }
+    for(G4int i=0;i<nFisYields;i++){
+      theFP_Y_CumulProb.at(i)/=theFP_Y_CumulProb.at(nFisYields-1);
+    }
+  }
+  
+  G4int n_particle = 1;
+  particleGun = new G4ParticleGun(n_particle);
+  if(SourceType==2){
+    //radioactive source
+  }
+  else{
+    G4ParticleDefinition* particle = G4ParticleTable::GetParticleTable()->FindParticle(source_par);
+    particleGun->SetParticleDefinition(particle);
+  }
+
+}
+
+
+C6D6PrimaryGeneratorAction::~C6D6PrimaryGeneratorAction() {
+  delete particleGun;
+}
+
+void C6D6PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent){
+
+  //G4cout<<" C6D6PrimaryGeneratorAction::GeneratePrimaries --- start "<<G4endl;
+  if(SourceType==1){ //one particle following the indications of the input file
+    SamplePosition();
+    SampleDirection();
+    SampleEnergy();
+    particleGun->SetParticlePosition(SourcePos);
+    particleGun->SetParticleMomentumDirection(SourceDir);
+    particleGun->SetParticleEnergy(SourceEne);
+    particleGun->GeneratePrimaryVertex(anEvent);
+  }
+  else if(SourceType==2){//radioactive source
+    if(theZA==0){
+      theZA=std::atoi(source_par);
+      G4int theZ=theZA/1000;
+      G4int theA=theZA-theZ*1000;
+      G4double ExcitationEnergy=0;
+      G4ParticleDefinition* ion=G4IonTable::GetIonTable()->GetIon(theZ,theA,ExcitationEnergy);
+      particleGun->SetParticleDefinition(ion);
+      particleGun->SetParticleCharge(0.*eplus);
+      particleGun->SetParticleEnergy(0*eV);
+      particleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
+    }
+    SamplePosition();
+    particleGun->SetParticlePosition(SourcePos);
+    particleGun->GeneratePrimaryVertex(anEvent);
+  }
+  else if(SourceType==3){//NuDEX
+    SamplePosition();
+    G4int Npar;
+    G4double ParticleEnergy,ParticleTime;
+    char ParticleType;
+    if(!in1.is_open()){
+      in1.open(SourceFname[0].c_str());
+      if(!in1.good()){G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);}
+    }
+    in1>>Npar;
+    if(!in1.good()){
+      in1.close();
+      in1.open(SourceFname[0].c_str());
+      if(!in1.good()){G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);}
+      in1>>Npar;
+    }
+    for(G4int i=0;i<Npar;i++){
+      in1>>ParticleType>>ParticleEnergy>>ParticleTime;
+      if(ParticleType=='g'){
+	particleGun->SetParticleDefinition(G4ParticleTable::GetParticleTable()->FindParticle("gamma"));
+      }
+      else if(ParticleType=='e'){
+	particleGun->SetParticleDefinition(G4ParticleTable::GetParticleTable()->FindParticle("e-"));
+      }
+      else{
+	G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);
+      }
+      source_angle=180.*degree;
+      SampleDirection();
+      particleGun->SetParticlePosition(SourcePos);
+      particleGun->SetParticleMomentumDirection(SourceDir);
+      particleGun->SetParticleEnergy(ParticleEnergy*MeV);
+      particleGun->SetParticleTime(ParticleTime*ns);
+      particleGun->GeneratePrimaryVertex(anEvent);
+    }
+  }
+  else if(SourceType==4){//fission products
+    G4double rand = G4UniformRand();
+    G4int NProd=theFP_ZA.size();
+    G4int i_fisProd=NProd-1;
+    for(G4int i=0;i<NProd;i++){
+      if(rand<theFP_Y_CumulProb.at(i)){
+	i_fisProd=i; break;
+      }
+    }
+    G4int theZA=theFP_ZA.at(i_fisProd);
+    G4int theZ=theZA/1000;
+    G4int theA=theZA-theZ*1000;
+    G4double ExcitationEnergy=0;
+    G4ParticleDefinition* ion=G4IonTable::GetIonTable()->GetIon(theZ,theA,ExcitationEnergy);
+    particleGun->SetParticleDefinition(ion);
+    SamplePosition();
+    particleGun->SetParticlePosition(SourcePos);
+    particleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
+    particleGun->SetParticleEnergy(0);
+    particleGun->GeneratePrimaryVertex(anEvent);
+  }
+  else if(SourceType==5){//gammas del CGMF
+    SamplePosition();
+    G4double theA=0,theZ=0,theExcEne=0,theSpin=0,theParity=0,theEkin1=0,theEkin2=0;
+    G4int nneu1=0,ngam=0,nneu2=0;
+    G4double ux,uy,uz,Eg,Tg;
+    if(!in1.is_open()){
+      in1.open(SourceFname[0].c_str());
+      in1.ignore(10000,'\n');
+      if(!in1.good()){G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);}
+    }
+    in1>>theA>>theZ>>theExcEne>>theSpin>>theParity>>theEkin1>>theEkin2>>nneu1>>ngam>>nneu2;
+    if(!in1.good()){
+      in1.close();
+      in1.open(SourceFname[0].c_str());
+      in1.ignore(10000,'\n');
+      if(!in1.good()){G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);}
+      in1>>theA>>theZ>>theExcEne>>theSpin>>theParity>>theEkin1>>theEkin2>>nneu1>>ngam>>nneu2;
+    }
+    //G4cout<<anEvent->GetEventID()<<"  "<<theA<<"  "<<theZ<<"  "<<nneu1<<"  "<<ngam<<"  "<<nneu2<<G4endl;
+    in1>>ux; in1.ignore(10000,'\n');
+    if(nneu1>0){in1.ignore(10000,'\n');} //neutrones LAB
+    if(nneu1>0){in1.ignore(10000,'\n');} //neutrones CMS
+    for(G4int i=0;i<ngam;i++){
+      in1>>ux>>uy>>uz>>Eg>>Tg;
+      //G4cout<<" ----- "<<ux<<"  "<<uy<<"  "<<uz<<"  "<<Eg<<"  "<<Tg<<G4endl;
+      if(Eg<=0){Eg=1.e-6;}
+      SourceDir=G4ThreeVector(ux,uy,uz);
+      particleGun->SetParticleDefinition(G4ParticleTable::GetParticleTable()->FindParticle("gamma"));
+      particleGun->SetParticlePosition(SourcePos);
+      particleGun->SetParticleMomentumDirection(SourceDir);
+      particleGun->SetParticleEnergy(Eg*MeV);
+      particleGun->SetParticleTime(Tg*s);
+      particleGun->GeneratePrimaryVertex(anEvent);
+    }
+    if(ngam==0){
+      particleGun->SetParticleDefinition(G4ParticleTable::GetParticleTable()->FindParticle("gamma"));
+      particleGun->SetParticlePosition(SourcePos);
+      particleGun->SetParticleMomentumDirection(SourceDir);
+      particleGun->SetParticleEnergy(1*eV);
+      particleGun->SetParticleTime(0);
+      particleGun->GeneratePrimaryVertex(anEvent);
+    }
+    if(nneu2>0){in1>>ux; in1.ignore(10000,'\n');}
+  }
+  else{
+    G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);
+  }
+  //G4cout<<" C6D6PrimaryGeneratorAction::GeneratePrimaries --- end "<<G4endl;
+
+}
+
+void C6D6PrimaryGeneratorAction::SamplePosition(){
+
+  //We sample the radius:
+  G4double Radius=0;
+  if(sourcepos_rad>0){
+    if(bif.size()>0){ //then sample according to the beam profile
+      do {
+	G4double rand = G4UniformRand();
+	for (auto i = 1; i < bif.size(); ++i) {
+	  const auto [r_max, p_max] = bif.at(i);
+	  if (p_max > rand) {
+	    const auto [r_min, p_min] = bif.at(i - 1);
+	    Radius = r_min + (rand - p_min) * (r_max - r_min) / (p_max - p_min);
+	    break;
+	  }
+	}
+      } while (Radius > sourcepos_rad);
+    }
+    else{
+      Radius=sqrt(G4UniformRand())*sourcepos_rad;
+    }
+  }
+
+  //We sample the position in z:
+  G4double zmin=-sourcepos_zlength/2.;
+  G4double zmax=+sourcepos_zlength/2.;
+  G4double Zval=zmin;
+  if(zmin<zmax){
+    if(sourcepos_xs==0){ // uniform sampling between zmin and zmax
+      Zval=zmin+G4UniformRand()*(zmax-zmin);
+    }
+    else{ // exponential distribution (large resonances)
+      do{
+	Zval=zmin+G4RandExponential::shoot(1./sourcepos_xs);
+      }while(Zval>zmax);
+    }
+  }
+  G4double phi_pos = CLHEP::twopi * G4UniformRand();
+  G4double xpos=sourcepos_x+Radius*cos(phi_pos);
+  G4double ypos=sourcepos_y+Radius*sin(phi_pos);
+  G4double zpos=sourcepos_z+Zval;
+
+  SourcePos=G4ThreeVector(xpos,ypos,zpos);
+  
+}
+
+
+void C6D6PrimaryGeneratorAction::SampleDirection(){
+
+    G4double aperture = source_angle; 
+    G4double costheta=1.-(1.-cos(aperture))*G4UniformRand();
+    double sintheta=sqrt(1.-costheta*costheta);
+    G4double phi = G4UniformRand()*2.*3.14159265359;
+    G4double dir_ux = sintheta*cos(phi);
+    G4double dir_uy = sintheta*sin(phi);
+    G4double dir_uz = costheta;
+
+    SourceDir=G4ThreeVector(dir_ux,dir_uy,dir_uz);
+}
+
+
+void C6D6PrimaryGeneratorAction::SampleEnergy(){
+
+  SourceEne=source_Emin;
+  if(source_Emin<source_Emax){
+    if(source_Esample==0){ //linear sampling
+      SourceEne=source_Emin+(source_Emax-source_Emin)*G4UniformRand();
+    }
+    else if(source_Esample>0){ //log sampling
+      SourceEne=source_Emin*pow(source_Emax/source_Emin,G4UniformRand());
+    }
+    else{
+      G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);
+    }
+  }
+  
+}
+
+

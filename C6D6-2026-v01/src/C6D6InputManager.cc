@@ -1,0 +1,303 @@
+
+
+#include "C6D6InputManager.hh"
+
+
+C6D6InputManager* C6D6InputManager::theInstance = 0;
+
+C6D6InputManager::C6D6InputManager(){
+
+  //Default variables for all the input values:
+  EARName="EAR1_2024_BigSampleHolder";
+  TargetName="NoTarget";
+  TotalNC6D6Det=0;
+  for(G4int i=0;i<MAXNDET;i++){
+    flagC6D6[i]=0; zC6D6[i]=0; thetaC6D6[i]=0; phiC6D6[i]=0;
+  }
+  for(G4int i=0;i<100;i++){
+    IsC6D6TypeDefined[i]=false;
+  }
+
+  SourceType=1;
+  sourcepos_x=0; sourcepos_y=0; sourcepos_z=0;
+  sourcepos_zlength=0; sourcepos_xs=0;
+  sourcepos_rad=0; source_angle=180*degree;
+  BIFFname="none";
+  source_Emin=14*MeV; source_Emax=14*MeV; source_Esample=0;
+  source_par="gamma";
+  NSourceFnames=0;
+  SourceFname[0]="Not defined";
+
+  NEvents=1000;
+  NDump=-1;
+  CutForGamma=1.*mm;
+  CutForProton=1.*mm;
+  Seed=1234567;
+  
+  OutFname="output.root";
+  for(G4int i=0;i<10;i++){OutputInfo[i]=0;}
+  OutputInfo[0]=1;
+  for(G4int i=0;i<MAXNDET;i++){
+    Eres_a1[i]=0; Eres_a2[i]=0;
+  }
+  Interactive=false;
+}
+
+int C6D6InputManager::Read(char* inpfilename){
+
+  InputFname=inpfilename;
+  ifstream in(inpfilename);
+  if(!in.good()){
+    cout<<" **** Error opening file <"<<inpfilename<<"> ****"<<endl;
+    exit(1);
+  }
+
+  G4String word;
+  G4double array_d[1000];
+  G4int array_i[1000];
+  G4String array_s[1000];
+  
+  while(in>>word){
+    if(word==string("END")){
+      break;
+    }
+    else if(word.c_str()[0]=='#'){
+      in.ignore(1000,'\n');
+    }
+    //==========================================================================
+    // Geometry:
+    //==========================================================================
+    else if(word=="EAR_NAME"){
+      in>>EARName;
+    }
+    else if(word=="TARGET_NAME"){
+      in>>TargetName;
+    }
+    else if(word=="CONCRETE_TYPE"){
+      G4int nEntries=ReadLine_d(in,array_d);
+      ConcreteType=(G4int)(array_d[0]+0.01);
+      for(G4int i=1;i<nEntries;i++){ConcreteVals.push_back(array_d[i]);}
+    }
+    else if(word=="EAR1SCALEFACTOR"){
+      in>>EAR1ScaleFactor;
+    }
+    else if (word == "NumberDetectors") {
+      in>>TotalNC6D6Det;
+      G4int DetN=0;
+      for (G4int i = 1; i < (TotalNC6D6Det + 1); i++) {
+        in>>word;
+        if(word=="B6D6"){flagC6D6[i]=1; IsC6D6TypeDefined[1]=true;}
+	else if(word=="L6D6"){flagC6D6[i]=2; IsC6D6TypeDefined[2]=true;}
+	else if(word=="S6D6"){flagC6D6[i]=3; IsC6D6TypeDefined[3]=true;}
+	else if(word=="ESTI"){flagC6D6[i]=4; IsC6D6TypeDefined[4]=true;}
+	else if(word=="ECLABR3"){flagC6D6[i]=5; IsC6D6TypeDefined[5]=true;}
+	else{G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" --> "<<word<<" ##########"<<G4endl; exit(1);}
+        in>>DetN;
+        if(DetN!=i){G4cout <<"########## ERROR: Detector numbers are not in order i=" << i<<" DetN=" <<DetN<<" ##########"<<G4endl; exit(-1); }
+        if(DetN>MAXNDET){G4cout<<"########## ERROR: MaxNDet is "<<MAXNDET<<" ##########"<<G4endl; exit(-1); }
+	in>>word>>zC6D6[i]>>word>>thetaC6D6[i]>>word>>phiC6D6[i];
+	//zC6D6[i]*=cm; thetaC6D6[i]*=degree; phiC6D6[i]*=degree; //van sin unidades, que lo ha programado otro
+      }
+    }
+    //==========================================================================
+    // Source:
+    //==========================================================================
+    else if(word=="SOURCETYPE"){
+      in>>SourceType;
+    }
+    //Source position
+    else if(word=="SOURCEPOS_CM"){
+      in>>sourcepos_x>>sourcepos_y>>sourcepos_z;
+      sourcepos_x*=cm; sourcepos_y*=cm; sourcepos_z*=cm;
+    }
+    else if(word=="SOURCEZ_CM"){
+      G4int nEntries=ReadLine_d(in,array_d);
+      if(nEntries>0){sourcepos_zlength=array_d[0]; sourcepos_zlength*=cm;}
+      if(nEntries>1){sourcepos_xs=array_d[1]; sourcepos_xs/=cm;}
+    }
+    else if(word==string("SOURCERAD_CM")){
+      in>>sourcepos_rad;  sourcepos_rad*=cm;
+      G4int nEntries=ReadLine_s(in,array_s);
+      if(nEntries>0){BIFFname=array_s[0];}
+    }
+    //Source angle:
+    else if(word=="SOURCEANGLE_DEG"){
+      in>>source_angle; source_angle*=degree;
+    }
+    //Source Energy:
+    else if(word=="SOURCEENE_MEV"){
+      G4int nEntries=ReadLine_d(in,array_d);
+      if(nEntries>0){source_Emin=array_d[0]; source_Emin*=MeV; source_Emax=source_Emin;}
+      if(nEntries>1){source_Emax=array_d[1]; source_Emax*=MeV;}
+      if(nEntries>2){source_Esample=array_d[2];} //0: linear, >0: log, <0: error
+      if(source_Emax<0){ //then is not Emax, but a "Delta-E"
+	source_Emax/=MeV;
+	source_Emax*=-1;
+	if(source_Emax<=1){G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);}
+	source_Emax=source_Emin*source_Emax;
+      }
+    }
+    else if(word=="SOURCEPARNAME"){
+      in>>source_par;
+    }
+    else if(word=="SOURCEFNAMES"){
+      NSourceFnames=ReadLine_s(in,SourceFname);
+    }
+    //==========================================================================
+    // Physics:
+    //==========================================================================
+    else if(word=="PHYSICSLISTNAME"){
+      in>>PhysicsListName;
+    }
+    else if(word=="PHYSICSLISTOPT1"){
+      in>>PhysicsListOpt1;
+    }
+    else if(word=="PHYSICSLISTOPT2"){
+      in>>PhysicsListOpt2;
+    }
+    else if(word=="PHYSICSLISTOPT3"){
+      in>>PhysicsListOpt3;
+    }
+    else if(word=="PRINT_NEUTRON_HISTORY"){
+      in>>PrintNeutronHistory;
+      if(PrintNeutronHistory!=0){TrackNeutronHistory=1;}
+    }
+    //==========================================================================
+    // Other:
+    //==========================================================================
+    else if(word=="ENERGYRESOLUTION"){
+      G4int DetN=0;
+      in>>DetN; in>>Eres_a1[DetN]>>Eres_a2[DetN]; Eres_a1[DetN]*=MeV;
+    }
+    else if(word=="NEVENTS"){
+      G4int nEntries=ReadLine_i(in,array_i);
+      if(nEntries>0){NEvents=array_i[0];}
+      if(nEntries>1){NDump=array_i[1];}
+    }
+    else if(word=="PRODUCTIONCUTS_MM"){
+      in>>CutForGamma>>CutForProton; CutForGamma*=mm; CutForProton*=mm;
+    }
+    else if(word=="SEED"){
+      in>>Seed;
+    }
+    else if(word=="OUTPUTFNAME"){
+      in>>OutFname;
+    }
+    else if(word=="OUTPUTINFO"){
+      ReadLine_i(in,OutputInfo);
+      if(OutputInfo[1]==4){TrackNeutronHistory=1;}
+    }
+    else if(word=="INTERACTIVE"){
+      Interactive=true;
+    }
+    else{
+      G4cout<<" ########### ERROR reading input file. Last word was "<<word<<" ###########"<<G4endl;
+      exit(1);
+    } 
+  }
+  in.close();
+  return 0;
+}
+
+
+void C6D6InputManager::Print(){
+
+  G4cout<<G4endl;
+  G4cout<<"*************************************************************"<<G4endl;
+  G4cout<<" INPUT VALUES: ("<<InputFname<<")"<<G4endl;
+  G4cout<<"-------------------------------------------------------------"<<G4endl;
+  G4cout<<" EAR-Target: "<<EARName<<" -  "<<TargetName<<G4endl;
+  G4cout<<" TotalNC6D6Det: "<<TotalNC6D6Det<<G4endl;
+  for(G4int i=1;i<=TotalNC6D6Det;i++){G4cout<<"   "<<flagC6D6[i]<<"  "<<zC6D6[i]<<"  "<<thetaC6D6[i]<<"  "<<phiC6D6[i]<<G4endl;}
+  G4cout<<"-------------------------------------------------------------"<<G4endl;
+  G4cout<<" SourceType: "<<SourceType<<G4endl;
+  G4cout<<" SourcePos (cm): "<<sourcepos_x/cm<<"  "<<sourcepos_y/cm<<"  "<<sourcepos_z/cm<<G4endl;
+  G4cout<<" SourceZ (cm,cm^{-1}): "<<sourcepos_zlength/cm<<"  "<<sourcepos_xs*cm<<G4endl;
+  G4cout<<" SourceRad (cm): "<<sourcepos_rad/cm<<G4endl;
+  G4cout<<" Aperture (degrees): "<<source_angle/degree<<G4endl;
+  G4cout<<" BIF-fname: "<<BIFFname<<G4endl;
+  G4cout<<" SourceEne (MeV): "<<source_Emin/MeV<<"  "<<source_Emax/MeV<<"  "<<source_Esample<<G4endl;
+  G4cout<<" SourcePar: "<<source_par<<G4endl;
+  G4cout<<" NSourceFnames: "<<NSourceFnames<<G4endl;
+  for(G4int i=0;i<NSourceFnames;i++){G4cout<<"  "<<SourceFname[i]<<G4endl;}
+  G4cout<<"-------------------------------------------------------------"<<G4endl;
+  G4cout<<" PhysicsListName: "<<PhysicsListName<<G4endl;
+  G4cout<<" PhysicsListOpt1: "<<PhysicsListOpt1<<G4endl;
+  G4cout<<" PhysicsListOpt2: "<<PhysicsListOpt2<<G4endl;
+  G4cout<<" PhysicsListOpt3: "<<PhysicsListOpt3<<G4endl;
+  G4cout<<"-------------------------------------------------------------"<<G4endl;
+  G4cout<<" NEvents: "<<NEvents<<G4endl;
+  G4cout<<" Production cuts (mm): "<<CutForGamma/mm<<"  "<<CutForProton/mm<<G4endl;
+  G4cout<<" Seed: "<<Seed<<G4endl;
+  G4cout<<" OutFname: "<<OutFname<<G4endl;
+  G4cout<<" OutputInfo: "<<OutputInfo[0]<<"  "<<OutputInfo[1]<<"  "<<OutputInfo[2]<<G4endl;
+  G4cout<<" Energy resolution:"<<G4endl;
+  for(G4int i=1;i<=TotalNC6D6Det;i++){G4cout<<"   "<<i<<"  "<<Eres_a1[i]/MeV<<"  "<<Eres_a2[i]<<G4endl;}
+  G4cout<<"*************************************************************"<<G4endl;
+  G4cout<<G4endl;
+
+}
+
+
+  
+C6D6InputManager* C6D6InputManager::getInstance(){
+  if( !theInstance ){
+    // allocates the pointer of the singleton in case it does not exist
+    //cout<<"################ Creating C6D6InputManager object ################"<<endl;
+    theInstance = new C6D6InputManager();
+   }
+
+ return theInstance;
+}
+
+
+G4int ReadLine_d(ifstream& in,G4double* vals){
+
+  string line;
+  getline(in,line);
+  std::istringstream iss;
+  iss.str(line);
+  G4double val;
+  G4int nvals=0;
+  while(iss>>val){
+    vals[nvals]=val;
+    nvals++;
+  }
+
+  return nvals;
+}
+
+
+G4int ReadLine_i(ifstream& in,G4int* vals){
+
+  string line;
+  getline(in,line);
+  std::istringstream iss;
+  iss.str(line);
+  G4int val;
+  G4int nvals=0;
+  while(iss>>val){
+    vals[nvals]=val;
+    nvals++;
+  }
+
+  return nvals;
+}
+
+
+G4int ReadLine_s(ifstream& in,string* vals){
+
+  string line;
+  getline(in,line);
+  std::istringstream iss;
+  iss.str(line);
+  string val;
+  G4int nvals=0;
+  while(iss>>val){
+    vals[nvals]=val;
+    nvals++;
+  }
+
+  return nvals;
+}
+
