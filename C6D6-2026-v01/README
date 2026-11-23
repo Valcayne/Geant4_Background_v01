@@ -1,4 +1,23 @@
 
+11/26 Victor
+
+Para compilar en el xula de Víctor:
+
+source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/share/Geant4/geant4make/geant4make.sh
+
+#La primera vez:
+spack load expat@2.5.0 %gcc@=8.5.0
+spack load glib@2.76.1 %gcc@=8.5.0
+spack load /5bo56mj
+spack load libxmu@1.1.4 %gcc@=8.5.0
+module load libx11-1.8.4-oneapi-2023.1.0-aj3pqdu
+
+
+
+cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/Geant4-11.3.2/ ../
+gmake -j20
+
+
 
 Marzo de 2025: comienzo a editar el código, a partir de versiones anteriores
 Octubre de 2026: creo un proyecto de esto en github
@@ -134,21 +153,6 @@ Notas:
     - 1 --> yes
 ##################################################################################################
 
-Para compilar en el xula de Víctor:
-
-source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/share/Geant4/geant4make/geant4make.sh
-
-La primera vez:
-spack load expat@2.5.0 %gcc@=8.5.0
-spack load glib@2.76.1 %gcc@=8.5.0
-spack load /5bo56mj
-spack load libxmu@1.1.4 %gcc@=8.5.0
-module load libx11-1.8.4-oneapi-2023.1.0-aj3pqdu
-
-
-
-cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/Geant4-11.3.2/ ../
-gmake -j20
 
 
 

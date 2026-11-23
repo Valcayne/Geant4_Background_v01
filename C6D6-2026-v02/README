@@ -1,0 +1,161 @@
+
+11/26 Victor
+
+Para compilar en el xula de Víctor:
+
+source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/share/Geant4/geant4make/geant4make.sh
+
+#La primera vez:
+spack load expat@2.5.0 %gcc@=8.5.0
+spack load glib@2.76.1 %gcc@=8.5.0
+spack load /5bo56mj
+spack load libxmu@1.1.4 %gcc@=8.5.0
+module load libx11-1.8.4-oneapi-2023.1.0-aj3pqdu
+
+
+
+cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/Geant4-11.3.2/ ../
+gmake -j20
+
+
+
+Marzo de 2025: comienzo a editar el código, a partir de versiones anteriores
+Octubre de 2026: creo un proyecto de esto en github
+
+----------------------------------------------------
+desde xula:
+ssh-keygen -t ed25519 -C "emilio.mendoza@ciemat.es"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/emiliomendozacembranos/C6D6-2025.git
+git remote set-url origin git@github.com:emiliomendozacembranos/C6D6-2025.git
+git push -u origin main
+
+git add .
+git commit -m "small changes"
+git push -u origin main
+
+
+Para pasar de github aquí:
+git pull origin main 
+----------------------------------------------------
+
+xula:
+source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.2.1_install/share/Geant4/geant4make/geant4make.sh
+cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.2.1_install/lib64/Geant4-11.2.1/ ../
+gmake
+
+source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2_install/share/Geant4/geant4make/geant4make.sh
+cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2_install/lib64/Geant4-11.3.2/ ../
+gmake
+
+source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod01_install/share/Geant4/geant4make/geant4make.sh
+cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod01_install/lib64/Geant4-11.3.2/ ../
+gmake
+
+Aquí se corrigen fallos de geant4-v11.3.2:
+source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/share/Geant4/geant4make/geant4make.sh
+cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/Geant4-11.3.2/ ../
+gmake
+
+
+source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.0_install/share/Geant4/geant4make/geant4make.sh
+cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.0_install/lib64/Geant4-11.3.0/ ../
+gmake
+
+En mi PC:
+source /home/emendoza/programs/geant4/geant4-v11.4.0_install/share/Geant4/geant4make/geant4make.sh
+cmake -DGeant4_DIR=/home/emendoza/programs/geant4/geant4-v11.4.0_install/lib/Geant4-11.4.0/ ../
+make
+
+
+##################################################################################################
+
+Descripción del input:
+
+EAR_NAME EARName
+TARGET_NAME TargetName
+CONCRETE_TYPE ConcreteType [H_fraction=0.01]
+EAR1SCALEFACTOR EAR1ScaleFactor
+NumberDetectors [...]
+
+  + EARName: 1 (pocas cosas), EAR1_2024_BigSampleHolder (muchas cosas), EAR1_2024_BigSampleHolder_noWalls (sin paredes ni TAC)
+  + TargetName: NoTarget, u238, Pb-45-1, Pb-45-2, gold, calibration, Bi-20-1, Pb204-45-1, Pb206-45-1, Pb207-45-1, Pb208-45-1, Pb-45-2, Pb206-45-5, Graphite-45-1, Graphite-20-635
+  + ConcreteType: distintas composiciones del hormigón
+     --> 1: definición original (mala)
+     --> 2: PDG. En esta opción se le puede cambiar la fracción de H. (Realmente por defecto es un 1%, y si se le mete otro valor habrá renormalización y demás, pero si no nos vamos mucho del 1% será la fracción de H en masa).
+     ---> 3-8: otros hormigones, que me ha dado Gemini
+  
+--------------------------------------
+
+SOURCETYPE Stype
+  + Stype=1: one particle following the indications of the input file
+  + Stype=2: radioactive source
+  + Stype=3: NuDEX
+  + Stype=4: fission products
+  + Stype=5: gammas del CGMF
+
+SOURCEPOS_CM sourcepos_x  sourcepos_y  sourcepos_z
+SOURCEZ_CM (sourcepos_zlength) (sourcepos_xs)
+SOURCERAD_CM sourcepos_rad (BIFFname)
+SOURCEANGLE_DEG source_angle
+SOURCEENE_MEV (source_Emin) (source_Emax) (source_Esample)
+SOURCEPARNAME source_par
+SOURCEFNAMES (SourceFname1) (SourceFname2) ...
+
+--------------------------------------
+PHYSICSLISTNAME QGSP_BIC_HP
+PHYSICSLISTOPT1 PhysicsListOpt1
+PHYSICSLISTOPT2 PhysicsListOpt2
+PHYSICSLISTOPT3 PhysicsListOpt3
+PRINT_NEUTRON_HISTORY PrintNeutronHistory
+
+NEVENTS (NEvents) (NDump)
+PRODUCTIONCUTS_MM CutForGamma CutForProton
+SEED Seed
+OUTPUTFNAME OutFname
+OUTPUTINFO (CreateH1) (CreateH2) (CreateNTuple) 
+INTERACTIVE 
+ENERGYRESOLUTION DetN Eres_a1 Eres_a2 
+--------------------------------------
+
+Notas:
+  + EAR1ScaleFactor: se multiplican las dimensiones de la EAR1 por ese factor, para ver los beneficios de tener una sala más grande.
+  + si source_Emax<0, entonces source_Emax=source_Emin*(-source_Emax);
+  + source_Esample: 0: linear, >0: log, <0: error
+  + NDump: los resultados se guardan cada NDump eventos (creo que no funciona ---> no, no funciona)
+  + sourcepos_xs es para calcular la penetrabilidad. Es la sección eficaz macroscópica, en cm^{-1}, que se calcula como Sigma=rho*Na/Pm*sigma
+  + sourcepos_zlength: la fuente se tira uniformemente (o según sourcepos_xs) entre sourcepos_z-sourcepos_zlength/2. y sourcepos_z+sourcepos_zlength/2.
+  + Física: la estoy cambiando a mano en myC6D6.cc. Cuidado, que he descubierto que NuDEX sólo funciona con QGSP_BERT_HP, pero los resultados que se obtienen no están bien + no funcionan del todo bien los cortes. --> es mejor QGSP_BIC_HP, pero entonces NuDEX no funciona.
+  + Cambio lo de la física para que se pueda meter cualquiera de las de "por defecto": QGSP_BIC_HP, QGSP_BERT_HP, QGSP_INCLXX_HP, FTFP_BERT_HP, FTFP_INCLXX_HP, Shielding ...
+  + PhysicsListOpt1: si 0, normal; si 1, se desactiva el RadDecay de la muestra; si 2, se desactiva el RadDecay en todos los volúmenes.
+  + PhysicsListOpt2: si 0, normal; si 1, fuera Doppler.
+  + PhysicsListOpt3: si 0, normal; si 1, kill nCapture secondaries in the logic_target.
+  + PrintNeutronHistory: si !=1, nada; si =1, la saca por pantalla.
+  + CreateH1:
+    - 0 --> no
+    - 1 --> yes
+  + CreateH2:
+    - 0 --> no
+    - 1 --> yes, TOF-Edep for all detectors
+    - 2 --> yes, TOF-Edep only for DetN==0 (all)
+    - 3 --> yes, TOF-Edep only for DetN==0 + TOF-Act
+    - 4 --> yes, TOF-Edep only for DetN==0 + TOF-Edep for specific cases
+  + CreateNTuple:
+    - 0 --> no
+    - 1 --> yes
+##################################################################################################
+
+
+
+
+
+
+

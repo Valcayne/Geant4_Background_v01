@@ -1,0 +1,910 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 4.18.0-372.32.1.el8_6.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is IntelLLVM, found in:
+        /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/3.26.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icpx 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is IntelLLVM, found in:
+        /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/3.26.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7b3fd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b3fd.dir/build.make CMakeFiles/cmTC_7b3fd.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB'
+        Building C object CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx   -v -MD -MT CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -c /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Intel(R) oneAPI DPC++/C++ Compiler 2023.1.0 (2023.1.0.20230320)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm
+        Configuration file: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../bin/icx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
+        Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         (in-process)
+         "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB -resource-dir /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16 -dependency-file CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -sys-header-deps -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include -I/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include -internal-isystem /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include -internal-isystem /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -no-opaque-pointers -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -x c /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.0 based upon LLVM 16.0.0git default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include
+         /mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_7b3fd
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b3fd.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx  -v CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -o cmTC_7b3fd 
+        Intel(R) oneAPI DPC++/C++ Compiler 2023.1.0 (2023.1.0.20230320)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm
+        Configuration file: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../bin/icx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
+        Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7b3fd /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib -L/lib -L/usr/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/x64 -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/host/linux64/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/linux64/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include]
+          add: [/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include]
+        collapse include dir [/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include] ==> [/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include;/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB]
+        ignore line: []
+        ignore line: [Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7b3fd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b3fd.dir/build.make CMakeFiles/cmTC_7b3fd.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB']
+        ignore line: [Building C object CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx   -v -MD -MT CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -c /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2023.1.0 (2023.1.0.20230320)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm]
+        ignore line: [Configuration file: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../bin/icx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB -resource-dir /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16 -dependency-file CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -sys-header-deps -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include -I/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include -internal-isystem /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include -internal-isystem /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-RgJwIB -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -no-opaque-pointers -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -x c /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.0 based upon LLVM 16.0.0git default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include]
+        ignore line: [ /mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_7b3fd]
+        ignore line: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b3fd.dir/link.txt --verbose=1]
+        ignore line: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx  -v CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -o cmTC_7b3fd ]
+        ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2023.1.0 (2023.1.0.20230320)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm]
+        ignore line: [Configuration file: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../bin/icx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7b3fd /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib -L/lib -L/usr/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/x64 -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/host/linux64/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/linux64/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7b3fd] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib]
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/x64] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/host/linux64/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/linux64/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin] ==> ignore
+          arg [CMakeFiles/cmTC_7b3fd.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lsvml] ==> lib [svml]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-Bstatic] ==> search static
+          arg [-lirng] ==> lib [irng]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-Bstatic] ==> search static
+          arg [-limf] ==> lib [imf]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lirc] ==> lib [irc]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-ldl] ==> lib [dl]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lirc_s] ==> lib [irc_s]
+          arg [-Bdynamic] ==> search dynamic
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8] ==> [/usr/lib/gcc/x86_64-redhat-linux/8]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> [/usr/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib]
+        implicit libs: [svml;irng;imf;m;gcc;gcc_s;irc;dl;gcc;gcc_s;c;gcc;gcc_s;irc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib;/usr/lib/gcc/x86_64-redhat-linux/8;/usr/lib64;/lib64;/usr/lib;/lib;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_87522/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_87522.dir/build.make CMakeFiles/cmTC_87522.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT'
+        Building CXX object CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icpx   -v -MD -MT CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -c /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Intel(R) oneAPI DPC++/C++ Compiler 2023.1.0 (2023.1.0.20230320)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm
+        Configuration file: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../bin/icpx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
+        Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         (in-process)
+         "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/clang++" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT -resource-dir /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16 -dependency-file CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include -I/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include -internal-isystem /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward -internal-isystem /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -no-opaque-pointers -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -x c++ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 based upon LLVM 16.0.0git default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include
+         /mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include
+         /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8
+         /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward
+         /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_87522
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87522.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icpx  -v CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_87522 
+        Intel(R) oneAPI DPC++/C++ Compiler 2023.1.0 (2023.1.0.20230320)
+        Target: x86_64-unknown-linux-gnu
+        Thread model: posix
+        InstalledDir: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm
+        Configuration file: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../bin/icpx.cfg
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
+        Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_87522 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib -L/lib -L/usr/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/x64 -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/host/linux64/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/linux64/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include]
+          add: [/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward]
+          add: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include]
+        collapse include dir [/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include] ==> [/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/include]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8] ==> [/usr/include/c++/8]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux] ==> [/usr/include/c++/8/x86_64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward] ==> [/usr/include/c++/8/backward]
+        collapse include dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include;/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/include;/usr/include/c++/8;/usr/include/c++/8/x86_64-redhat-linux;/usr/include/c++/8/backward;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT]
+        ignore line: []
+        ignore line: [Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_87522/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_87522.dir/build.make CMakeFiles/cmTC_87522.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT']
+        ignore line: [Building CXX object CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icpx   -v -MD -MT CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -c /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2023.1.0 (2023.1.0.20230320)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm]
+        ignore line: [Configuration file: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../bin/icpx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/clang++" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -fveclib=SVML -mframe-pointer=none -menable-no-infs -menable-no-nans -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -ffast-math -ffinite-math-only -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -mllvm -x86-enable-unaligned-vector-move=true -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT -resource-dir /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16 -dependency-file CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include -I/mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include -I/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include -internal-isystem /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward -internal-isystem /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-S1rffT -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -no-opaque-pointers -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt=1 -floopopt-pipeline=light -mllvm -intel-abi-compatible=true -o CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -x c++ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.0 based upon LLVM 16.0.0git default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/include]
+        ignore line: [ /mnt/lustre/localsoft/hdf5-V1.14.3-oneapi/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/zlib-1.2.13-iogzjoqvug4n4pylhaf3xsdpvs2wwcud/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/pkgconf-1.9.5-vwu5nv4iz5oh4aqxsvgjnusn7ag5toxr/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libaec-1.0.6-bxqbachc63ugwtruaejyxkei2zwiamqm/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxmu-1.1.4-wss4pouo3czvkz4gwobnm5tbiexmn7av/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libx11-1.8.4-lm4p7le7g7u2btptzza7v6qysvfiewl5/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/python-3.10.10-ze5tho3bqaggy3kl6uku3a3353sb37j6/include]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward]
+        ignore line: [ /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/clang/16/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_87522]
+        ignore line: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87522.dir/link.txt --verbose=1]
+        ignore line: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icpx  -v CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_87522 ]
+        ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2023.1.0 (2023.1.0.20230320)]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm]
+        ignore line: [Configuration file: /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../bin/icpx.cfg]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-redhat-linux/8]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_87522 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib -L/lib -L/usr/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/x64 -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/host/linux64/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/linux64/lib -rpath /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_87522] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin]
+          arg [-L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib] ==> dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib]
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/x64] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/host/linux64/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib/oclfpga/linux64/lib] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin] ==> ignore
+          arg [CMakeFiles/cmTC_87522.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-Bstatic] ==> search static
+          arg [-lsvml] ==> lib [svml]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-Bstatic] ==> search static
+          arg [-lirng] ==> lib [irng]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-Bstatic] ==> search static
+          arg [-limf] ==> lib [imf]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-Bstatic] ==> search static
+          arg [-lirc] ==> lib [irc]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-ldl] ==> lib [dl]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-Bstatic] ==> search static
+          arg [-lirc_s] ==> lib [irc_s]
+          arg [-Bdynamic] ==> search dynamic
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../compiler/lib/intel64_lin] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8] ==> [/usr/lib/gcc/x86_64-redhat-linux/8]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> [/usr/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin-llvm/../lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin]
+        collapse library dir [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib] ==> [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib]
+        implicit libs: [svml;irng;stdc++;imf;m;gcc_s;gcc;irc;dl;gcc_s;gcc;c;gcc_s;gcc;irc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/compiler/lib/intel64_lin;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/lib;/usr/lib/gcc/x86_64-redhat-linux/8;/usr/lib64;/lib64;/usr/lib;/lib;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/libfabric/lib;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib]
+        implicit fwks: []
+      
+      
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/PTL/PTLConfig.cmake:56 (find_dependency)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Geant4Config.cmake:301 (find_dependency)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-991cET"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-991cET"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-991cET
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_21531/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_21531.dir/build.make CMakeFiles/cmTC_21531.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-991cET'
+        Building C object CMakeFiles/cmTC_21531.dir/src.c.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_21531.dir/src.c.o -MF CMakeFiles/cmTC_21531.dir/src.c.o.d -o CMakeFiles/cmTC_21531.dir/src.c.o -c /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-991cET/src.c
+        Linking C executable cmTC_21531
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21531.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx CMakeFiles/cmTC_21531.dir/src.c.o -o cmTC_21531 
+        CMakeFiles/cmTC_21531.dir/src.c.o: In function `main':
+        src.c:(.text+0x25): undefined reference to `pthread_create'
+        src.c:(.text+0x2f): undefined reference to `pthread_detach'
+        src.c:(.text+0x39): undefined reference to `pthread_cancel'
+        src.c:(.text+0x45): undefined reference to `pthread_join'
+        icx: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[1]: *** [CMakeFiles/cmTC_21531.dir/build.make:100: cmTC_21531] Error 1
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-991cET'
+        gmake: *** [Makefile:127: cmTC_21531/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindThreads.cmake:136 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindThreads.cmake:169 (_threads_check_flag_pthread)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/PTL/PTLConfig.cmake:56 (find_dependency)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Geant4Config.cmake:301 (find_dependency)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Check if compiler accepts -pthread"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-Qkm4QH"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-Qkm4QH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "THREADS_HAVE_PTHREAD_ARG"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-Qkm4QH
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_57a93/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_57a93.dir/build.make CMakeFiles/cmTC_57a93.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-Qkm4QH'
+        Building C object CMakeFiles/cmTC_57a93.dir/CheckForPthreads.c.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx    -MD -MT CMakeFiles/cmTC_57a93.dir/CheckForPthreads.c.o -MF CMakeFiles/cmTC_57a93.dir/CheckForPthreads.c.o.d -o CMakeFiles/cmTC_57a93.dir/CheckForPthreads.c.o -c /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-Qkm4QH/CheckForPthreads.c
+        Linking C executable cmTC_57a93
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57a93.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx CMakeFiles/cmTC_57a93.dir/CheckForPthreads.c.o -o cmTC_57a93  -pthread 
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-Qkm4QH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindX11.cmake:498 (check_library_exists)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Geant4Config.cmake:422 (find_dependency)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/lib/libX11.so;/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxext-1.3.3-cq2t2ab6spzv7wcyk36235y6b5tps2hb/lib/libXext.so"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qCqmJS"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qCqmJS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qCqmJS
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0d8b3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0d8b3.dir/build.make CMakeFiles/cmTC_0d8b3.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qCqmJS'
+        Building C object CMakeFiles/cmTC_0d8b3.dir/CheckFunctionExists.c.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -MD -MT CMakeFiles/cmTC_0d8b3.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_0d8b3.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_0d8b3.dir/CheckFunctionExists.c.o -c /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qCqmJS/CheckFunctionExists.c
+        Linking C executable cmTC_0d8b3
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d8b3.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_0d8b3.dir/CheckFunctionExists.c.o -o cmTC_0d8b3   -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/lib  -Wl,-rpath,/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/lib:/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxext-1.3.3-cq2t2ab6spzv7wcyk36235y6b5tps2hb/lib /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/lib/libX11.so /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/libxext-1.3.3-cq2t2ab6spzv7wcyk36235y6b5tps2hb/lib/libXext.so 
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qCqmJS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindX11.cmake:513 (check_function_exists)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Geant4Config.cmake:422 (find_dependency)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qt2Yri"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qt2Yri"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qt2Yri
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b9766/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b9766.dir/build.make CMakeFiles/cmTC_b9766.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qt2Yri'
+        Building C object CMakeFiles/cmTC_b9766.dir/CheckFunctionExists.c.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx   -DCHECK_FUNCTION_EXISTS=gethostbyname -MD -MT CMakeFiles/cmTC_b9766.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_b9766.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_b9766.dir/CheckFunctionExists.c.o -c /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qt2Yri/CheckFunctionExists.c
+        Linking C executable cmTC_b9766
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9766.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_b9766.dir/CheckFunctionExists.c.o -o cmTC_b9766 
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-qt2Yri'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindX11.cmake:527 (check_function_exists)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Geant4Config.cmake:422 (find_dependency)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-wvox09"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-wvox09"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-wvox09
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7ff79/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7ff79.dir/build.make CMakeFiles/cmTC_7ff79.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-wvox09'
+        Building C object CMakeFiles/cmTC_7ff79.dir/CheckFunctionExists.c.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx   -DCHECK_FUNCTION_EXISTS=connect -MD -MT CMakeFiles/cmTC_7ff79.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_7ff79.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_7ff79.dir/CheckFunctionExists.c.o -c /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-wvox09/CheckFunctionExists.c
+        Linking C executable cmTC_7ff79
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ff79.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_7ff79.dir/CheckFunctionExists.c.o -o cmTC_7ff79 
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-wvox09'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindX11.cmake:536 (check_function_exists)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Geant4Config.cmake:422 (find_dependency)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-mK0ZCU"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-mK0ZCU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-mK0ZCU
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d0530/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d0530.dir/build.make CMakeFiles/cmTC_d0530.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-mK0ZCU'
+        Building C object CMakeFiles/cmTC_d0530.dir/CheckFunctionExists.c.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx   -DCHECK_FUNCTION_EXISTS=remove -MD -MT CMakeFiles/cmTC_d0530.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_d0530.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_d0530.dir/CheckFunctionExists.c.o -c /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-mK0ZCU/CheckFunctionExists.c
+        Linking C executable cmTC_d0530
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0530.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_d0530.dir/CheckFunctionExists.c.o -o cmTC_d0530 
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-mK0ZCU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindX11.cmake:545 (check_function_exists)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Geant4Config.cmake:422 (find_dependency)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-zeqBG6"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-zeqBG6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-zeqBG6
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_efe59/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_efe59.dir/build.make CMakeFiles/cmTC_efe59.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-zeqBG6'
+        Building C object CMakeFiles/cmTC_efe59.dir/CheckFunctionExists.c.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx   -DCHECK_FUNCTION_EXISTS=shmat -MD -MT CMakeFiles/cmTC_efe59.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_efe59.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_efe59.dir/CheckFunctionExists.c.o -c /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-zeqBG6/CheckFunctionExists.c
+        Linking C executable cmTC_efe59
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efe59.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_efe59.dir/CheckFunctionExists.c.o -o cmTC_efe59 
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-zeqBG6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/FindX11.cmake:555 (check_library_exists)"
+      - "/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Geant4Config.cmake:422 (find_dependency)"
+      - "CMakeLists.txt:13 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-c7jAQ2"
+      binary: "/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-c7jAQ2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/cmake/Geant4/Modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-c7jAQ2
+        
+        Run Build Command(s):/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c08c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c08c2.dir/build.make CMakeFiles/cmTC_c08c2.dir/build
+        gmake[1]: Entering directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-c7jAQ2'
+        Building C object CMakeFiles/cmTC_c08c2.dir/CheckFunctionExists.c.o
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -MD -MT CMakeFiles/cmTC_c08c2.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c08c2.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c08c2.dir/CheckFunctionExists.c.o -c /mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-c7jAQ2/CheckFunctionExists.c
+        Linking C executable cmTC_c08c2
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/cmake-3.26.3-fdj4tpep7lw3uhesqvls7dwa2td4sxez/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c08c2.dir/link.txt --verbose=1
+        /mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/intel-oneapi-compilers-2023.1.0-6g2jkivucihw2lzbloyvig7gnmldj6vk/compiler/2023.1.0/linux/bin/icx  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_c08c2.dir/CheckFunctionExists.c.o -o cmTC_c08c2   -L/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/lib  -Wl,-rpath,/mnt/lustre/home/spack/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/libx11-1.8.4-aj3pqduvv2fzv7fo2yjbbrdshtniiary/lib -lICE 
+        gmake[1]: Leaving directory '/mnt/lustre/home/u6979/geant4_programs/C6D6-2026-v01/build-11.3.2-mod02/CMakeFiles/CMakeScratch/TryCompile-c7jAQ2'
+        
+      exitCode: 0
+...

@@ -1,0 +1,33 @@
+#ifndef C6D6RunAction_h
+#define C6D6RunAction_h
+
+#include "C6D6PrimaryGeneratorAction.hh"
+#include "C6D6InputManager.hh"
+#include "C6D6EventAction.hh"
+#include "G4Run.hh"
+#include "G4RunManager.hh"
+#include "G4Timer.hh"
+#include "G4UserRunAction.hh"
+#include "globals.hh"
+
+class G4Timer;
+class G4Run;
+
+class C6D6RunAction : public G4UserRunAction {
+ public:
+  C6D6RunAction(C6D6PrimaryGeneratorAction *pga);
+  virtual ~C6D6RunAction();
+
+ public:
+  virtual void BeginOfRunAction(const G4Run *aRun);
+  virtual void EndOfRunAction(const G4Run *aRun);
+
+ private:
+  C6D6InputManager* theInputManager;
+  C6D6PrimaryGeneratorAction *myPrimaryGenerator;
+
+  G4int TotalNEvents,NDet;
+  G4int OutInf01,OutInf02,OutInf03;
+};
+
+#endif

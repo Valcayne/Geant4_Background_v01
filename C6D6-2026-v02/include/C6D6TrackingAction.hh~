@@ -1,0 +1,21 @@
+#ifndef C6D6TrackingAction_h
+#define C6D6TrackingAction_h
+
+#include "G4UserTrackingAction.hh"
+
+class EventAction; // Forward declaration
+
+class C6D6TrackingAction : public G4UserTrackingAction {
+public:
+    C6D6TrackingAction(EventAction* eventAction);
+    virtual ~C6D6TrackingAction() = default;
+
+    virtual void PreUserTrackingAction(const G4Track*) override;
+    virtual void PostUserTrackingAction(const G4Track*) override;
+
+private:
+    EventAction* fEventAction;
+};
+
+
+#endif

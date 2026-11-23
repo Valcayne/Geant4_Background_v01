@@ -1,0 +1,260 @@
+
+#include "C6D6EventAction.hh"
+
+C6D6EventAction::C6D6EventAction(C6D6PrimaryGeneratorAction* primaryGenerator)
+    : NEvents(0), indexC6D6(-1), indexTarget(-1) {
+
+  theInputManager=C6D6InputManager::getInstance();
+  TotalNSignals=0;
+  TotalNCaptures=0;
+  TotalNActProd=0;
+  
+  // Primary Generator
+  myPrimaryGenerator = primaryGenerator;
+
+  // get number of events in file
+  NEventsToRun = theInputManager->GetNEventsToRun();
+  NDump = theInputManager->GetNDump();
+  /// get number of detectors in file
+  NDet = theInputManager->GetTotalNC6D6Detectors();
+  NextPrint_minutes=1;
+
+  SignalTimeWidth=20.*ns;
+  for(G4int i=0;i<NDet;i++){
+    SigEdep[i]=new G4double[MAXNSIG];
+    SigTimeMin[i]=new G4double[MAXNSIG];
+    SigTimeMax[i]=new G4double[MAXNSIG];
+  }
+
+  for(G4int i=1;i<=NDet;i++){
+    theInputManager->GetEnergyResolutionPars(i,Eres_a1[i],Eres_a2[i]);
+  }
+  InputFname=theInputManager->GetInputFname();
+  starttime=0;
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+C6D6EventAction::~C6D6EventAction() {
+  
+  for(G4int i=0;i<NDet;i++){
+    delete [] SigEdep[i];
+    delete [] SigTimeMin[i];
+    delete [] SigTimeMax[i];
+  }
+
+  double CompTime=difftime(time(NULL),starttime)/3600.; // s --> hours
+  G4cout<<" ######## Job with input "<<InputFname<<" with "<<NEventsToRun<<" run histories terminated after "<<CompTime<<" h , TotalNSignals = "<<TotalNSignals<<" ########"<<G4endl;
+    
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void C6D6EventAction::BeginOfEventAction(const G4Event* evt) {
+
+  
+  if(starttime==0){
+    starttime=time(NULL);
+  }
+
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+
+void C6D6EventAction::FromHitsToSignals(const G4Event* evt) {
+
+  for(G4int i=0;i<NDet;i++){
+    SigNSignals[i]=0;
+  }
+  
+  G4SDManager* sdManager = G4SDManager::GetSDMpointer();
+  if (indexC6D6 < 0)
+    indexC6D6 = sdManager->GetCollectionID("C6D6SensitiveDetector");
+  if (indexTarget < 0)
+    indexTarget = sdManager->GetCollectionID("C6D6SensitiveTarget");
+
+  G4HCofThisEvent* HCE = evt->GetHCofThisEvent();
+  
+  // Target info
+  C6D6HitCollection* hitsTargetCollection = 0;
+  TotalNCaptures=0;
+  TotalNActProd=0;
+  G4int PrevActProd=0;
+  if (HCE) hitsTargetCollection = (C6D6HitCollection*)(HCE->GetHC(indexTarget));
+  if (hitsTargetCollection) {
+    G4int NHits = hitsTargetCollection->entries();
+    for (int i = 0; i < NHits; i++) {
+      C6D6Hit* hit=(*hitsTargetCollection)[i];
+      if(hit->GetCopyNumber()<0){
+	TOFCaptures[TotalNCaptures]=hit->GetTime()*ns;
+	TotalNCaptures++;
+      }
+      else{
+	if(hit->GetCopyNumber()!=PrevActProd){
+	  ActProd[TotalNActProd]=hit->GetCopyNumber();
+	  PrevActProd=ActProd[TotalNActProd];
+	  TotalNActProd++;
+	}
+      }
+    }
+  }
+  
+  // Detectors info
+  C6D6HitCollection* hitsC6D6Collection = 0;
+  if (HCE) hitsC6D6Collection = (C6D6HitCollection*)(HCE->GetHC(indexC6D6));
+  if (hitsC6D6Collection) {
+    // Get info
+    const G4int numberHits = hitsC6D6Collection->entries();
+    for (int i = 0; i < numberHits; i++) {
+      C6D6Hit* hit = (*hitsC6D6Collection)[i];
+      G4int detectorN = hit->GetCopyNumber()-1;
+      G4double TOF = hit->GetTime()*ns;
+      G4double Edep = hit->GetEdep()*MeV;
+      G4String parName = hit->GetParticleName();
+      if(parName=="gamma" || parName=="e+" || parName=="e-"){
+	//------------------------------------------
+	//See if we add this Edep to some signal:
+	G4bool AlreadyAdded=false;
+	for(int i=0;i<SigNSignals[detectorN];i++){
+	  if(TOF>=(SigTimeMin[detectorN][i]-SignalTimeWidth) && TOF<=(SigTimeMax[detectorN][i]+SignalTimeWidth)){
+	    SigEdep[detectorN][i]+=Edep;
+	    if(TOF<SigTimeMin[detectorN][i]){SigTimeMin[detectorN][i]=TOF;}
+	    if(TOF>SigTimeMax[detectorN][i]){SigTimeMax[detectorN][i]=TOF;}
+	    AlreadyAdded=true;
+	    break;
+	  }
+	}
+	//If not, new signal:
+	if(!AlreadyAdded){//new signal
+	  G4int i_sig=SigNSignals[detectorN];
+	  SigNSignals[detectorN]++;
+	  if(SigNSignals[detectorN]>MAXNSIG){
+	    G4cout<<" ######## Error in "<<__FILE__<<", line "<<__LINE__<<" ########"<<G4endl; exit(1);
+	  }
+	  SigEdep[detectorN][i_sig]=Edep;
+	  SigTimeMin[detectorN][i_sig]=TOF;
+	  SigTimeMax[detectorN][i_sig]=TOF;
+	}
+	//------------------------------------------
+      }
+    }
+  }
+
+  //Energy resolution:
+  for(G4int i=0;i<NDet;i++){
+    TotalNSignals+=SigNSignals[i];
+    if(Eres_a1[i+1]>0 && Eres_a2[i+1]>0){
+      for(G4int j=0;j<SigNSignals[i];j++){
+	G4double sigma=sqrt(Eres_a1[i+1]*SigEdep[i][j]+Eres_a2[i+1]*SigEdep[i][j]*SigEdep[i][j]);
+	SigEdep[i][j]=G4RandGauss::shoot(SigEdep[i][j],sigma);
+	if(SigEdep[i][j]<0){SigEdep[i][j]=0;}
+      }
+    }
+  }
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+
+void C6D6EventAction::EndOfEventAction(const G4Event* evt) {
+
+  NEvents++;
+
+  const auto primary_particle = evt->GetPrimaryVertex(0)->GetPrimary(0);
+  G4double kineticEnergy = primary_particle->GetKineticEnergy();
+
+  FromHitsToSignals(evt);
+
+  G4AnalysisManager* theAnalysisManager = G4AnalysisManager::Instance();
+
+  //Señales:
+  //bool PrintAct=false;
+  for(G4int i=0;i<NDet;i++){
+    for(G4int j=0;j<SigNSignals[i];j++){
+      if(SigEdep[i][j]>0){
+	//if(SigTimeMin[i][j]/ns>15.e3 && SigTimeMin[i][j]/ns<50.e3 && SigEdep[i][j]>0.20*MeV){G4cout<<SigEdep[i][j]/MeV<<G4endl; PrintAct=true;}
+	if(theInputManager->GetOutputInfo(0)>0){ //Histogramas unidimensionales
+	  theAnalysisManager->FillH1(0,SigEdep[i][j]/MeV);
+	  theAnalysisManager->FillH1(i+1,SigEdep[i][j]/MeV);
+	  if(SigEdep[i][j]>0.15*MeV){
+	    theAnalysisManager->FillH1(NDet+2,SigTimeMin[i][j]/ns);
+	  }
+	}
+	if(theInputManager->GetOutputInfo(1)>0){ //Histogramas bidimensionales TOF-Edep histo
+	  theAnalysisManager->FillH2(0,SigTimeMin[i][j]/ns,SigEdep[i][j]/MeV);
+	  if(theInputManager->GetOutputInfo(1)==1){
+	    theAnalysisManager->FillH2(i+1,SigTimeMin[i][j]/ns,SigEdep[i][j]/MeV);
+	  }
+	  if(theInputManager->GetOutputInfo(1)==3){ //TOF-Act
+	    for (int k = 0; k < TotalNActProd; k++) {
+	      theAnalysisManager->FillH2(1,SigTimeMin[i][j]/ns,ActProd[k]);
+	    }
+	  }
+	}
+	if(theInputManager->GetOutputInfo(2)>0){ //N-tupla
+	  theAnalysisManager->FillNtupleDColumn(0, 0, NEvents);
+	  theAnalysisManager->FillNtupleDColumn(0, 1, i+1);
+	  theAnalysisManager->FillNtupleDColumn(0, 2, SigEdep[i][j]/MeV);
+	  theAnalysisManager->FillNtupleDColumn(0, 3, SigTimeMin[i][j]/ns);
+	  theAnalysisManager->AddNtupleRow(0);
+	}
+      }
+    }
+  }
+  
+  //No señales:
+  if(theInputManager->GetOutputInfo(0)>0){ //Histogramas unidimensionales
+    for (int i = 0; i < TotalNCaptures; i++) {
+      theAnalysisManager->FillH1(NDet+1,TOFCaptures[i]/ns);
+      theAnalysisManager->FillH1(NDet+4,kineticEnergy/eV);
+    }
+    for (int i = 0; i < TotalNActProd; i++) {
+      theAnalysisManager->FillH1(NDet+3,ActProd[i]);
+      //if(PrintAct){G4cout<<ActProd[i]<<G4endl;}
+    }
+    theAnalysisManager->FillH1(NDet+5,kineticEnergy/eV);
+  }
+  //if(PrintAct){G4cout<<" --------------------------- "<<G4endl; getchar();}
+
+  
+  //-------------------------------------------------------------
+  //Pint progress:
+  double CompTime=difftime(time(NULL),starttime)/60.; //minutes
+  if(CompTime>NextPrint_minutes){
+    PrintProgress();
+    NextPrint_minutes*=2;
+  }
+  //-------------------------------------------------------------
+  //Dump: (no funciona)
+  /*
+  if((NEvents%NDump)==0){
+    G4cout<<"holi"<<G4endl;
+    for(G4int i=0;i<=NDet;i++){
+      if(theInputManager->GetOutputInfo(0)>0){
+	tools::histo::h1d* h1=theAnalysisManager->GetH1(i);
+	h1->set_bin_content(0,NEvents,NEvents,NEvents,0,0);
+      }
+      if(theInputManager->GetOutputInfo(1)>0){
+	tools::histo::h2d* h2=theAnalysisManager->GetH2(i);
+	h2->set_bin_content(0,0,NEvents,NEvents,NEvents,0,0,0,0);
+      }
+    }
+    theAnalysisManager->Write();
+  }
+  */
+  //-------------------------------------------------------------
+
+
+}
+
+
+void C6D6EventAction::PrintProgress(){
+
+  double CompTime=difftime(time(NULL),starttime)/60.; //minutes
+
+  G4cout<<" #### PROGRESS: "<<NEvents<<"/"<<NEventsToRun<<" run histories have been computed ("<<NEvents*100./NEventsToRun<<" %) in "<<CompTime<<" minutes ("<<CompTime/60.<<" h) (NSig="<<TotalNSignals<<")---> ("<<NEvents*60./CompTime<<" run histories/h, "<<TotalNSignals*60./CompTime<<" sig/h) ####"<<G4endl;
+  G4cout<<" #### Estimated time left to complete the job ("<<theInputManager->GetInputFname()<<"): "<<CompTime*(NEventsToRun-NEvents)/(G4double)NEvents*1/60.<<" h --  Estimated time for the full job: "<<CompTime*NEventsToRun/(G4double)NEvents/60.<<" h ####"<<G4endl;
+  
+}
+

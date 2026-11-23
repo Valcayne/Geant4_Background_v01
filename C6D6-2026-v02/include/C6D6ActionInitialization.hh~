@@ -1,0 +1,22 @@
+#ifndef C6D6ActionInitialization_h
+#define C6D6ActionInitialization_h 1
+
+#include "C6D6EventAction.hh"
+#include "C6D6PrimaryGeneratorAction.hh"
+#include "C6D6RunAction.hh"
+#include "C6D6InputManager.hh"
+#include "G4VUserActionInitialization.hh"
+
+class C6D6ActionInitialization : public G4VUserActionInitialization {
+ public:
+  C6D6ActionInitialization();
+  virtual ~C6D6ActionInitialization();
+
+  virtual void BuildForMaster() const;
+  virtual void Build() const;
+
+ private:
+  C6D6InputManager *myUserInput;
+};
+
+#endif

@@ -1,0 +1,67 @@
+
+
+#include "C6D6TrackingAction.hh"
+#include "EventAction.hh"
+#include "G4Track.hh"
+#include "G4Neutron.hh"
+#include "G4VProcess.hh"
+#include "G4LogicalVolume.hh"
+#include "G4VPhysicalVolume.hh" // Importante para manejar los volúmenes
+
+C6D6TrackingAction::C6D6TrackingAction(EventAction* eventAction)
+: G4UserC6D6TrackingAction(), fEventAction(eventAction) {}
+
+void C6D6TrackingAction::PreUserC6D6TrackingAction(const G4Track*) {}
+
+void C6D6TrackingAction::PostUserC6D6TrackingAction(const G4Track* track) {
+    // Filtro eficiente de neutrones
+    if (track->GetDefinition() == G4Neutron::NeutronDefinition()) {
+        
+        NeutronHistory history;
+        history.trackID = track->GetTrackID();
+        history.vertexPosition = track->GetVertexPosition();
+        history.endPosition = track->GetPosition();
+
+        // 1. Proceso creador
+        if (track->GetCreatorProcess()) {
+            history.creatorProcess = track->GetCreatorProcess()->GetProcessName();
+        } else {
+            history.creatorProcess = "Primary Particle";
+        }
+
+        // 2. NUEVO: Volumen donde se creó el neutrón
+        if (track->GetLogicalVolumeAtVertex()) {
+            history.volumeCreated = track->GetLogicalVolumeAtVertex()->GetName();
+        } else {
+            history.volumeCreated = "Unknown Volume";
+        }
+
+        // 3. Proceso de finalización y NUEVO: Volumen donde murió
+        const G4Step* lastStep = track->GetStep();
+        if (lastStep) {
+            auto postStepPoint = lastStep->GetPostStepPoint();
+            
+            // Proceso del fin del track
+            if (postStepPoint->GetProcessDefinedStep()) {
+                history.endProcess = postStepPoint->GetProcessDefinedStep()->GetProcessName();
+            } else {
+                history.endProcess = "Out of World / Limit";
+            }
+
+            // Volumen físico del fin del track
+            G4VPhysicalVolume* endVolume = postStepPoint->GetPhysicalVolume();
+            if (endVolume) {
+                history.volumeDied = endVolume->GetName();
+            } else {
+                // Si sale del "World", el volumen físico es nulo (nullptr)
+                history.volumeDied = "OutOfWorld"; 
+            }
+        } else {
+            history.endProcess = "No steps recorded";
+            history.volumeDied = "Unknown";
+        }
+
+        // Enviar historial al EventAction
+        fEventAction->AddNeutronHistory(history);
+    }
+}

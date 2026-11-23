@@ -1,0 +1,8 @@
+
+
+#include "C6D6UserInput02.hh"
+
+
+C6D6UserInput* C6D6UserInput::theInstance = 0;
+
+C6D6UserInput::C6D6UserInput(char *inp_fname);

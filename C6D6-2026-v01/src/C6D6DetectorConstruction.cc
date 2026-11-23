@@ -4,10 +4,8 @@
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 C6D6DetectorConstruction::C6D6DetectorConstruction() {
-
-  theInputManager=C6D6InputManager::getInstance();
+  theInputManager = C6D6InputManager::getInstance();
   flagOverlaps = false;
-
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -20,14 +18,16 @@ G4VPhysicalVolume* C6D6DetectorConstruction::Construct() {
   // load materials
   LoadMaterials();
 
-  G4double EAR1ScaleFactor=theInputManager->GetEAR1ScaleFactor();
+  G4double EAR1ScaleFactor = theInputManager->GetEAR1ScaleFactor();
   // World
-  //G4Box* world = new G4Box("World", 4. * m, 4. * m, 11. * m);
-  //G4LogicalVolume* logic_world = new G4LogicalVolume(world, air, "World");
-  G4Box* world = new G4Box("World", 4. * m*EAR1ScaleFactor, 4. * m*EAR1ScaleFactor, 200. * m);
-  //G4LogicalVolume* logic_world = new G4LogicalVolume(world,vacuum_mat, "World");
+  // G4Box* world = new G4Box("World", 4. * m, 4. * m, 11. * m);
+  // G4LogicalVolume* logic_world = new G4LogicalVolume(world, air, "World");
+  G4Box* world = new G4Box("World", 4. * m * EAR1ScaleFactor,
+                           4. * m * EAR1ScaleFactor, 200. * m);
+  // G4LogicalVolume* logic_world = new G4LogicalVolume(world,vacuum_mat,
+  // "World");
   G4LogicalVolume* logic_world = new G4LogicalVolume(world, air, "World");
-  
+
   G4VPhysicalVolume* phys_world = new G4PVPlacement(
       0, G4ThreeVector(0, 0, 0), logic_world, "World", 0, false, 0);
   logic_world->SetVisAttributes(G4VisAttributes::GetInvisible());
@@ -190,34 +190,39 @@ G4VPhysicalVolume* C6D6DetectorConstruction::Construct() {
     ConstructTarget_natPb(logic_world);
   } else if (theInputManager->GetTargetName() == "Pb-45-1") {
     G4cout << "Build Pb-45-1 target" << G4endl;
-    ConstructTarget_natPb_v02(logic_world,45.*mm,1.*mm);
+    ConstructTarget_natPb_v02(logic_world, 45. * mm, 1. * mm);
   } else if (theInputManager->GetTargetName() == "Pb-45-2") {
     G4cout << "Build Pb-45-2 target" << G4endl;
-    ConstructTarget_natPb_v02(logic_world,45.*mm,2.*mm);
+    ConstructTarget_natPb_v02(logic_world, 45. * mm, 2. * mm);
   } else if (theInputManager->GetTargetName() == "Bi-20-1") {
     G4cout << "Build Bi-20-1 target" << G4endl;
-    ConstructTarget_Bi_v02(logic_world,20.*mm,1.*mm);
+    ConstructTarget_Bi_v02(logic_world, 20. * mm, 1. * mm);
   } else if (theInputManager->GetTargetName() == "Pb204-45-1") {
     G4cout << "Build Pb204-45-1 target" << G4endl;
-    ConstructTarget_monoIso(logic_world,45.*mm,1.*mm,11.34*g/cm3,82204);
+    ConstructTarget_monoIso(logic_world, 45. * mm, 1. * mm, 11.34 * g / cm3,
+                            82204);
   } else if (theInputManager->GetTargetName() == "Pb206-45-1") {
     G4cout << "Build Pb206-45-1 target" << G4endl;
-    ConstructTarget_monoIso(logic_world,45.*mm,1.*mm,11.34*g/cm3,82206);
+    ConstructTarget_monoIso(logic_world, 45. * mm, 1. * mm, 11.34 * g / cm3,
+                            82206);
   } else if (theInputManager->GetTargetName() == "Pb206-45-5") {
     G4cout << "Build Pb206-45-5 target" << G4endl;
-    ConstructTarget_monoIso(logic_world,45.*mm,5.*mm,11.34*g/cm3,82206);
+    ConstructTarget_monoIso(logic_world, 45. * mm, 5. * mm, 11.34 * g / cm3,
+                            82206);
   } else if (theInputManager->GetTargetName() == "Pb207-45-1") {
     G4cout << "Build Pb207-45-1 target" << G4endl;
-    ConstructTarget_monoIso(logic_world,45.*mm,1.*mm,11.34*g/cm3,82207);
+    ConstructTarget_monoIso(logic_world, 45. * mm, 1. * mm, 11.34 * g / cm3,
+                            82207);
   } else if (theInputManager->GetTargetName() == "Pb208-45-1") {
     G4cout << "Build Pb208-45-1 target" << G4endl;
-    ConstructTarget_monoIso(logic_world,45.*mm,1.*mm,11.34*g/cm3,82208);
+    ConstructTarget_monoIso(logic_world, 45. * mm, 1. * mm, 11.34 * g / cm3,
+                            82208);
   } else if (theInputManager->GetTargetName() == "Graphite-45-1") {
     G4cout << "Build Graphite-45-1 target" << G4endl;
-    ConstructTarget_Graphite_v02(logic_world,45.*mm,1.*mm);
+    ConstructTarget_Graphite_v02(logic_world, 45. * mm, 1. * mm);
   } else if (theInputManager->GetTargetName() == "Graphite-20-635") {
     G4cout << "Build Graphite-20-635 target" << G4endl;
-    ConstructTarget_Graphite_v02(logic_world,20.*mm,6.35*mm);
+    ConstructTarget_Graphite_v02(logic_world, 20. * mm, 6.35 * mm);
   } else if (theInputManager->GetTargetName() == "calibration") {
     G4cout << "Build  Calibration" << G4endl;
     ConstructTarget_Calibration(logic_world);
@@ -234,7 +239,8 @@ G4VPhysicalVolume* C6D6DetectorConstruction::Construct() {
   } else {
     G4cout
         << "ERROR: Target not defined or not added to the conditional" << G4endl
-        << "       Check target name in the input file ---> " <<theInputManager->GetTargetName()<< G4endl
+        << "       Check target name in the input file ---> "
+        << theInputManager->GetTargetName() << G4endl
         << "       Check if target is defined in the DetectorConstruction class"
         << G4endl
         << "       Check conditional in Construct of DetectorConstruction class"
@@ -244,7 +250,8 @@ G4VPhysicalVolume* C6D6DetectorConstruction::Construct() {
 
   int DetectorTypeC6D6[MAXNDET];
   G4double zC6D6[MAXNDET], thetaC6D6[MAXNDET], phiC6D6[MAXNDET];
-  theInputManager->GetC6D6Parameters(DetectorTypeC6D6, zC6D6, thetaC6D6, phiC6D6);
+  theInputManager->GetC6D6Parameters(DetectorTypeC6D6, zC6D6, thetaC6D6,
+                                     phiC6D6);
 
   if (theInputManager->IsB6D6Defined()) {
     ConstructB6D6(logic_world, DetectorTypeC6D6, thetaC6D6, phiC6D6, zC6D6);
@@ -263,9 +270,8 @@ G4VPhysicalVolume* C6D6DetectorConstruction::Construct() {
   }
 
   // print the table of materials
-  //G4cout << *(G4Material::GetMaterialTable()) << G4endl;
+  // G4cout << *(G4Material::GetMaterialTable()) << G4endl;
 
-  
   return phys_world;
 }
 
@@ -275,7 +281,7 @@ void C6D6DetectorConstruction::LoadMaterials() {
   // BEGIN MATERIALS LIST
   G4NistManager* materials_list =
       G4NistManager::Instance();  // Materials database
-  //air = materials_list->FindOrBuildMaterial("G4_AIR");
+  // air = materials_list->FindOrBuildMaterial("G4_AIR");
   Al = materials_list->FindOrBuildMaterial("G4_Al");
   Cu = materials_list->FindOrBuildMaterial("G4_Cu");
   H = materials_list->FindOrBuildMaterial("G4_H");
@@ -304,26 +310,26 @@ void C6D6DetectorConstruction::LoadMaterials() {
   V = materials_list->FindOrBuildMaterial("G4_V");
   S = materials_list->FindOrBuildMaterial("G4_S");
 
-  //Air without Argon, since skip missing isotopes doesn't work:
-  air = new G4Material("Air",1.290*mg/cm3 , 2);
-  air->AddMaterial(N, 70.0*perCent);
-  air->AddMaterial(O, 30.0*perCent);
+  // Air without Argon, since skip missing isotopes doesn't work:
+  air = new G4Material("Air", 1.290 * mg / cm3, 2);
+  air->AddMaterial(N, 70.0 * perCent);
+  air->AddMaterial(O, 30.0 * perCent);
 
-  
   quartz = materials_list->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
   kapton = materials_list->FindOrBuildMaterial("G4_KAPTON");
   MYLAR = materials_list->FindOrBuildMaterial("G4_MYLAR");
-  Brass= materials_list->FindOrBuildMaterial("G4_BRASS");
-  
-  LaBr3=new G4Material("LaBr3", 5.06 * g / cm3, 2);
-  LaBr3->AddElement(materials_list->FindOrBuildElement("La"),1);
-  LaBr3->AddElement(materials_list->FindOrBuildElement("Br"),3);
+  Brass = materials_list->FindOrBuildMaterial("G4_BRASS");
 
-  //Thermal hydrogen:
-  G4Element* H_therm = new G4Element("TS_H_of_Water", "H", 1., 1.0079 * g / mole);
-  H_thermal=new G4Material("H_Thermal", 1.00 * g / cm3, 1);
-  H_thermal->AddElement(H_therm,1.0);
-    
+  LaBr3 = new G4Material("LaBr3", 5.06 * g / cm3, 2);
+  LaBr3->AddElement(materials_list->FindOrBuildElement("La"), 1);
+  LaBr3->AddElement(materials_list->FindOrBuildElement("Br"), 3);
+
+  // Thermal hydrogen:
+  G4Element* H_therm =
+      new G4Element("TS_H_of_Water", "H", 1., 1.0079 * g / mole);
+  H_thermal = new G4Material("H_Thermal", 1.00 * g / cm3, 1);
+  H_thermal->AddElement(H_therm, 1.0);
+
   // Polyethylene doped with Natural Li
   PolDopedLi = new G4Material("PolDopedLi", 1.06 * g / cm3, 3);
 
@@ -436,9 +442,9 @@ void C6D6DetectorConstruction::LoadMaterials() {
   PP->AddMaterial(C, 0.333333);
   PP->AddMaterial(H, 0.666667);
 
-  
   // Concrete
-  if(theInputManager->GetConcreteType()==1){ //original definition (10% hidrogen in mass ...)
+  if (theInputManager->GetConcreteType() ==
+      1) {  // original definition (10% hidrogen in mass ...)
     concrete = new G4Material("concrete", 2.3 * g / cm3, 6);
     concrete->AddMaterial(Si, 0.227915);
     concrete->AddMaterial(O, 0.60541);
@@ -446,117 +452,127 @@ void C6D6DetectorConstruction::LoadMaterials() {
     concrete->AddMaterial(Ca, 0.04986);
     concrete->AddMaterial(Al, 0.014245);
     concrete->AddMaterial(Fe, 0.00285);
-  }
-  else if(theInputManager->GetConcreteType()==2){ //PDG o Geant4 o NIST (creo)
-    //--> https://pdg.lbl.gov/2025/AtomicNuclearProperties/HTML/shielding_concrete.html
+  } else if (theInputManager->GetConcreteType() ==
+             2) {  // PDG o Geant4 o NIST (creo)
+    //-->
+    //https://pdg.lbl.gov/2025/AtomicNuclearProperties/HTML/shielding_concrete.html
     concrete = new G4Material("concrete", 2.3 * g / cm3, 10);
-    G4double H_fraction=0.01;
-    G4double noH_fraction_nominal=0.99;
-    std::vector<G4double> ConcreteVals=theInputManager->GetConcreteValues();
-    if(ConcreteVals.size()>0){H_fraction=ConcreteVals[0];}
-    G4double noH_fraction=1-H_fraction;
-    concrete->AddMaterial(H_thermal,H_fraction);
-    concrete->AddMaterial(C,0.001000*noH_fraction/noH_fraction_nominal);
-    concrete->AddMaterial(O,0.529107*noH_fraction/noH_fraction_nominal);
-    concrete->AddMaterial(Na,0.016000*noH_fraction/noH_fraction_nominal);
-    concrete->AddMaterial(Mg,0.002000*noH_fraction/noH_fraction_nominal);
-    concrete->AddMaterial(Al,0.033872*noH_fraction/noH_fraction_nominal);
-    concrete->AddMaterial(Si,0.337021*noH_fraction/noH_fraction_nominal);
-    concrete->AddMaterial(K,0.013000*noH_fraction/noH_fraction_nominal);
-    concrete->AddMaterial(Ca,0.044000*noH_fraction/noH_fraction_nominal);
-    concrete->AddMaterial(Fe,0.014000*noH_fraction/noH_fraction_nominal);
-  }
-  else if(theInputManager->GetConcreteType()==3){ //Hormigón Portland Estándar (ICRU Report 49)
+    G4double H_fraction = 0.01;
+    G4double noH_fraction_nominal = 0.99;
+    std::vector<G4double> ConcreteVals = theInputManager->GetConcreteValues();
+    if (ConcreteVals.size() > 0) {
+      H_fraction = ConcreteVals[0];
+    }
+    G4double noH_fraction = 1 - H_fraction;
+    concrete->AddMaterial(H_thermal, H_fraction);
+    concrete->AddMaterial(C, 0.001000 * noH_fraction / noH_fraction_nominal);
+    concrete->AddMaterial(O, 0.529107 * noH_fraction / noH_fraction_nominal);
+    concrete->AddMaterial(Na, 0.016000 * noH_fraction / noH_fraction_nominal);
+    concrete->AddMaterial(Mg, 0.002000 * noH_fraction / noH_fraction_nominal);
+    concrete->AddMaterial(Al, 0.033872 * noH_fraction / noH_fraction_nominal);
+    concrete->AddMaterial(Si, 0.337021 * noH_fraction / noH_fraction_nominal);
+    concrete->AddMaterial(K, 0.013000 * noH_fraction / noH_fraction_nominal);
+    concrete->AddMaterial(Ca, 0.044000 * noH_fraction / noH_fraction_nominal);
+    concrete->AddMaterial(Fe, 0.014000 * noH_fraction / noH_fraction_nominal);
+  } else if (theInputManager->GetConcreteType() ==
+             3) {  // Hormigón Portland Estándar (ICRU Report 49)
     concrete = new G4Material("concrete", 2.3 * g / cm3, 11);
-    concrete->AddMaterial(H_thermal,0.022100);
-    concrete->AddMaterial(C,0.002484);
-    concrete->AddMaterial(O,0.574930);
-    concrete->AddMaterial(Na,0.015208);
-    concrete->AddMaterial(Mg,0.001266);
-    concrete->AddMaterial(Al,0.019953);
-    concrete->AddMaterial(Si,0.304627);
-    concrete->AddMaterial(S,0.008567);
-    concrete->AddMaterial(K,0.010045);
-    concrete->AddMaterial(Ca,0.042941);
-    concrete->AddMaterial(Fe,0.006435);
-  }
-  else if(theInputManager->GetConcreteType()==4){ //Hormigón Baritado / Pesado (Barite Concrete)
+    concrete->AddMaterial(H_thermal, 0.022100);
+    concrete->AddMaterial(C, 0.002484);
+    concrete->AddMaterial(O, 0.574930);
+    concrete->AddMaterial(Na, 0.015208);
+    concrete->AddMaterial(Mg, 0.001266);
+    concrete->AddMaterial(Al, 0.019953);
+    concrete->AddMaterial(Si, 0.304627);
+    concrete->AddMaterial(S, 0.008567);
+    concrete->AddMaterial(K, 0.010045);
+    concrete->AddMaterial(Ca, 0.042941);
+    concrete->AddMaterial(Fe, 0.006435);
+  } else if (theInputManager->GetConcreteType() ==
+             4) {  // Hormigón Baritado / Pesado (Barite Concrete)
     concrete = new G4Material("concrete", 3.5 * g / cm3, 9);
     concrete->AddMaterial(H_thermal, 0.003600);
-    concrete->AddMaterial(O,         0.320100);
-    concrete->AddMaterial(Mg,        0.001300);
-    concrete->AddMaterial(Al,        0.004200);
-    concrete->AddMaterial(Si,        0.017000);
-    concrete->AddMaterial(S,         0.107700);
-    concrete->AddMaterial(Ca,        0.050300);
-    concrete->AddMaterial(Fe,        0.047800);
-    concrete->AddMaterial(Ba,        0.448000);
-  }
-  else if(theInputManager->GetConcreteType()==5){ // Hormigón Magnetítico (Pesado, blindaje de rayos X/Gamma)
+    concrete->AddMaterial(O, 0.320100);
+    concrete->AddMaterial(Mg, 0.001300);
+    concrete->AddMaterial(Al, 0.004200);
+    concrete->AddMaterial(Si, 0.017000);
+    concrete->AddMaterial(S, 0.107700);
+    concrete->AddMaterial(Ca, 0.050300);
+    concrete->AddMaterial(Fe, 0.047800);
+    concrete->AddMaterial(Ba, 0.448000);
+  } else if (theInputManager->GetConcreteType() ==
+             5) {  // Hormigón Magnetítico (Pesado, blindaje de rayos X/Gamma)
     concrete = new G4Material("concrete", 3.53 * g / cm3, 9);
     concrete->AddMaterial(H_thermal, 0.005100);
-    concrete->AddMaterial(O,         0.339400);
-    concrete->AddMaterial(Mg,        0.003900);
-    concrete->AddMaterial(Al,        0.017900);
-    concrete->AddMaterial(Si,        0.021000);
-    concrete->AddMaterial(Ca,        0.061700);
-    concrete->AddMaterial(Ti,        0.006100);
-    concrete->AddMaterial(Mn,        0.002900);
-    concrete->AddMaterial(Fe,        0.542000);
-  }
-  else if(theInputManager->GetConcreteType()==6){ //Hormigón de Serpentina (Rico en Hidrógeno, moderador de neutrones)
+    concrete->AddMaterial(O, 0.339400);
+    concrete->AddMaterial(Mg, 0.003900);
+    concrete->AddMaterial(Al, 0.017900);
+    concrete->AddMaterial(Si, 0.021000);
+    concrete->AddMaterial(Ca, 0.061700);
+    concrete->AddMaterial(Ti, 0.006100);
+    concrete->AddMaterial(Mn, 0.002900);
+    concrete->AddMaterial(Fe, 0.542000);
+  } else if (theInputManager->GetConcreteType() ==
+             6) {  // Hormigón de Serpentina (Rico en Hidrógeno, moderador de
+                   // neutrones)
     concrete = new G4Material("concrete", 2.10 * g / cm3, 8);
     concrete->AddMaterial(H_thermal, 0.013900);
-    concrete->AddMaterial(O,         0.518600);
-    concrete->AddMaterial(Mg,        0.187800);
-    concrete->AddMaterial(Al,        0.008800);
-    concrete->AddMaterial(Si,        0.165200);
-    concrete->AddMaterial(S,         0.001000);
-    concrete->AddMaterial(Ca,        0.067300);
-    concrete->AddMaterial(Fe,        0.037400);
-  }
-  else if(theInputManager->GetConcreteType()==7){ //Hormigón de Caliza (Limestone Concrete)
+    concrete->AddMaterial(O, 0.518600);
+    concrete->AddMaterial(Mg, 0.187800);
+    concrete->AddMaterial(Al, 0.008800);
+    concrete->AddMaterial(Si, 0.165200);
+    concrete->AddMaterial(S, 0.001000);
+    concrete->AddMaterial(Ca, 0.067300);
+    concrete->AddMaterial(Fe, 0.037400);
+  } else if (theInputManager->GetConcreteType() ==
+             7) {  // Hormigón de Caliza (Limestone Concrete)
     concrete = new G4Material("concrete", 2.30 * g / cm3, 10);
     concrete->AddMaterial(H_thermal, 0.007800);
-    concrete->AddMaterial(C,         0.045600); // Mayor presencia de Carbono
-    concrete->AddMaterial(O,         0.511600);
-    concrete->AddMaterial(Na,        0.005500);
-    concrete->AddMaterial(Mg,        0.004400);
-    concrete->AddMaterial(Al,        0.011800);
-    concrete->AddMaterial(Si,        0.134500); // Menor cantidad de Silicio que el estándar
-    concrete->AddMaterial(K,         0.004900);
-    concrete->AddMaterial(Ca,        0.264700); // Muy alto en Calcio por el CaCO3
-    concrete->AddMaterial(Fe,        0.009200);
-  }
-  else if(theInputManager->GetConcreteType()==8){ // Hormigón de Ilmenita (Ilmenite Concrete)
+    concrete->AddMaterial(C, 0.045600);  // Mayor presencia de Carbono
+    concrete->AddMaterial(O, 0.511600);
+    concrete->AddMaterial(Na, 0.005500);
+    concrete->AddMaterial(Mg, 0.004400);
+    concrete->AddMaterial(Al, 0.011800);
+    concrete->AddMaterial(
+        Si, 0.134500);  // Menor cantidad de Silicio que el estándar
+    concrete->AddMaterial(K, 0.004900);
+    concrete->AddMaterial(Ca, 0.264700);  // Muy alto en Calcio por el CaCO3
+    concrete->AddMaterial(Fe, 0.009200);
+  } else if (theInputManager->GetConcreteType() ==
+             8) {  // Hormigón de Ilmenita (Ilmenite Concrete)
     concrete = new G4Material("concrete", 3.50 * g / cm3, 9);
     concrete->AddMaterial(H_thermal, 0.006000);
-    concrete->AddMaterial(O,         0.334000);
-    concrete->AddMaterial(Mg,        0.015000);
-    concrete->AddMaterial(Al,        0.018000);
-    concrete->AddMaterial(Si,        0.038000);
-    concrete->AddMaterial(Ca,        0.059000);
-    concrete->AddMaterial(Ti,        0.153000); // 15.3% de Titanio
-    concrete->AddMaterial(V,         0.002000); // Pequeña fracción de Vanadio
-    concrete->AddMaterial(Fe,        0.375000); // 37.5% de Hierro
-  }
-  else if(theInputManager->GetConcreteType()==9){ // Como el 2, pero las fracciones másicas se dan en el input
+    concrete->AddMaterial(O, 0.334000);
+    concrete->AddMaterial(Mg, 0.015000);
+    concrete->AddMaterial(Al, 0.018000);
+    concrete->AddMaterial(Si, 0.038000);
+    concrete->AddMaterial(Ca, 0.059000);
+    concrete->AddMaterial(Ti, 0.153000);  // 15.3% de Titanio
+    concrete->AddMaterial(V, 0.002000);   // Pequeña fracción de Vanadio
+    concrete->AddMaterial(Fe, 0.375000);  // 37.5% de Hierro
+  } else if (theInputManager->GetConcreteType() ==
+             9) {  // Como el 2, pero las fracciones másicas se dan en el input
     concrete = new G4Material("concrete", 2.3 * g / cm3, 10);
-    std::vector<G4double> ConcreteVals=theInputManager->GetConcreteValues();
-    if(ConcreteVals.size()<10){G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);}
-    concrete->AddMaterial(H_thermal,ConcreteVals[0]);
-    concrete->AddMaterial(C,ConcreteVals[1]);
-    concrete->AddMaterial(O,ConcreteVals[2]);
-    concrete->AddMaterial(Na,ConcreteVals[3]);
-    concrete->AddMaterial(Mg,ConcreteVals[4]);
-    concrete->AddMaterial(Al,ConcreteVals[5]);
-    concrete->AddMaterial(Si,ConcreteVals[6]);
-    concrete->AddMaterial(K,ConcreteVals[7]);
-    concrete->AddMaterial(Ca,ConcreteVals[8]);
-    concrete->AddMaterial(Fe,ConcreteVals[9]);
-  }
-  else{
-    G4cout<<" ########## ERROR in "<<__FILE__<<", line "<<__LINE__<<" ##########"<<G4endl; exit(1);
+    std::vector<G4double> ConcreteVals = theInputManager->GetConcreteValues();
+    if (ConcreteVals.size() < 10) {
+      G4cout << " ########## ERROR in " << __FILE__ << ", line " << __LINE__
+             << " ##########" << G4endl;
+      exit(1);
+    }
+    concrete->AddMaterial(H_thermal, ConcreteVals[0]);
+    concrete->AddMaterial(C, ConcreteVals[1]);
+    concrete->AddMaterial(O, ConcreteVals[2]);
+    concrete->AddMaterial(Na, ConcreteVals[3]);
+    concrete->AddMaterial(Mg, ConcreteVals[4]);
+    concrete->AddMaterial(Al, ConcreteVals[5]);
+    concrete->AddMaterial(Si, ConcreteVals[6]);
+    concrete->AddMaterial(K, ConcreteVals[7]);
+    concrete->AddMaterial(Ca, ConcreteVals[8]);
+    concrete->AddMaterial(Fe, ConcreteVals[9]);
+  } else {
+    G4cout << " ########## ERROR in " << __FILE__ << ", line " << __LINE__
+           << " ##########" << G4endl;
+    exit(1);
   }
   // Al alloy
   Al_alloy = new G4Material("Al_alloy", 2.7 * g / cm3, 9);
@@ -666,7 +682,6 @@ void C6D6DetectorConstruction::LoadMaterials() {
 
   AluminizedKaptonPRELIMINAR->AddMaterial(kapton, fractionmass = 90 * perCent);
   AluminizedKaptonPRELIMINAR->AddMaterial(Al, fractionmass = 10 * perCent);
-
 }
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -865,14 +880,14 @@ void C6D6DetectorConstruction::ConstructTarget_natPb(G4LogicalVolume* mother) {
   logicAlRing->SetVisAttributes(G4Colour::Gray());
 }
 
-
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void C6D6DetectorConstruction::ConstructTarget_natPb_v02(G4LogicalVolume* mother,G4double target_diameter,G4double target_thickness) {
-
+void C6D6DetectorConstruction::ConstructTarget_natPb_v02(
+    G4LogicalVolume* mother, G4double target_diameter,
+    G4double target_thickness) {
   // Solid
-  //G4double target_diameter = 20. * mm;
-  //G4double target_thickness = 2.1 * mm;
+  // G4double target_diameter = 20. * mm;
+  // G4double target_thickness = 2.1 * mm;
   G4Tubs* target = new G4Tubs("Target_natPb_v02", 0, target_diameter / 2,
                               target_thickness / 2, 0. * deg, 360. * deg);
   // Logic
@@ -883,7 +898,6 @@ void C6D6DetectorConstruction::ConstructTarget_natPb_v02(G4LogicalVolume* mother
       flagOverlaps);
   logic_target->SetVisAttributes(new G4VisAttributes(G4Colour::Gray()));
 
-
   // Aluminium rings (4 rings of 1 mm thickness put together)
   G4double al_ring_thickness = 1 * mm;
   G4Tubs* al_rings = new G4Tubs("Al_Rings", 35 * mm, 45 * mm,
@@ -893,26 +907,27 @@ void C6D6DetectorConstruction::ConstructTarget_natPb_v02(G4LogicalVolume* mother
   new G4PVPlacement(0, G4ThreeVector(0., 0., 0), logic_al_rings, "Al_Rings",
                     mother, false, 0, flagOverlaps);
   logic_al_rings->SetVisAttributes(G4Colour::Gray());
-
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void C6D6DetectorConstruction::ConstructTarget_monoIso(G4LogicalVolume* mother,G4double target_diameter,G4double target_thickness,G4double target_density,G4int theZA){
-
+void C6D6DetectorConstruction::ConstructTarget_monoIso(
+    G4LogicalVolume* mother, G4double target_diameter,
+    G4double target_thickness, G4double target_density, G4int theZA) {
   // Solid
-  //G4double target_diameter = 20. * mm;
-  //G4double target_thickness = 2.1 * mm;
+  // G4double target_diameter = 20. * mm;
+  // G4double target_thickness = 2.1 * mm;
   G4Tubs* target = new G4Tubs("Target_monoIsoPb", 0, target_diameter / 2,
                               target_thickness / 2, 0. * deg, 360. * deg);
 
-  G4int theZ=theZA/1000;
-  G4int theA=theZA-theZ*1000;
+  G4int theZ = theZA / 1000;
+  G4int theA = theZA - theZ * 1000;
   G4Isotope* theIso = new G4Isotope("Isotope", theZ, theA);
-  G4Element* theElement=new G4Element("TheEle","TheEle",1);
-  theElement->AddIsotope(theIso,1.);
-  G4Material* theMaterial = new G4Material("TheMaterial",target_density,1,kStateUndefined,293.*kelvin);
-  theMaterial->AddElement(theElement,1);
+  G4Element* theElement = new G4Element("TheEle", "TheEle", 1);
+  theElement->AddIsotope(theIso, 1.);
+  G4Material* theMaterial = new G4Material("TheMaterial", target_density, 1,
+                                           kStateUndefined, 293. * kelvin);
+  theMaterial->AddElement(theElement, 1);
 
   // Logic
   logic_target = new G4LogicalVolume(target, theMaterial, "Target");
@@ -922,7 +937,6 @@ void C6D6DetectorConstruction::ConstructTarget_monoIso(G4LogicalVolume* mother,G
       flagOverlaps);
   logic_target->SetVisAttributes(new G4VisAttributes(G4Colour::Gray()));
 
-
   // Aluminium rings (4 rings of 1 mm thickness put together)
   G4double al_ring_thickness = 1 * mm;
   G4Tubs* al_rings = new G4Tubs("Al_Rings", 35 * mm, 45 * mm,
@@ -932,20 +946,20 @@ void C6D6DetectorConstruction::ConstructTarget_monoIso(G4LogicalVolume* mother,G
   new G4PVPlacement(0, G4ThreeVector(0., 0., 0), logic_al_rings, "Al_Rings",
                     mother, false, 0, flagOverlaps);
   logic_al_rings->SetVisAttributes(G4Colour::Gray());
-
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void C6D6DetectorConstruction::ConstructTarget_Bi_v02(G4LogicalVolume* mother,G4double target_diameter,G4double target_thickness) {
-
+void C6D6DetectorConstruction::ConstructTarget_Bi_v02(
+    G4LogicalVolume* mother, G4double target_diameter,
+    G4double target_thickness) {
   // Solid
-  //G4double target_diameter = 20. * mm;
-  //G4double target_thickness = 2.1 * mm;
+  // G4double target_diameter = 20. * mm;
+  // G4double target_thickness = 2.1 * mm;
   G4Tubs* target = new G4Tubs("Target_Bi_v02", 0, target_diameter / 2,
                               target_thickness / 2, 0. * deg, 360. * deg);
   // Logic
-  G4Material* Bi=G4NistManager::Instance()->FindOrBuildMaterial("G4_Bi");
+  G4Material* Bi = G4NistManager::Instance()->FindOrBuildMaterial("G4_Bi");
 
   logic_target = new G4LogicalVolume(target, Bi, "Target");
   // Physic
@@ -954,7 +968,6 @@ void C6D6DetectorConstruction::ConstructTarget_Bi_v02(G4LogicalVolume* mother,G4
       flagOverlaps);
   logic_target->SetVisAttributes(new G4VisAttributes(G4Colour::Gray()));
 
-
   // Aluminium rings (4 rings of 1 mm thickness put together)
   G4double al_ring_thickness = 1 * mm;
   G4Tubs* al_rings = new G4Tubs("Al_Rings", 35 * mm, 45 * mm,
@@ -964,26 +977,25 @@ void C6D6DetectorConstruction::ConstructTarget_Bi_v02(G4LogicalVolume* mother,G4
   new G4PVPlacement(0, G4ThreeVector(0., 0., 0), logic_al_rings, "Al_Rings",
                     mother, false, 0, flagOverlaps);
   logic_al_rings->SetVisAttributes(G4Colour::Gray());
-
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void C6D6DetectorConstruction::ConstructTarget_Graphite_v02(G4LogicalVolume* mother,G4double target_diameter,G4double target_thickness) {
-
+void C6D6DetectorConstruction::ConstructTarget_Graphite_v02(
+    G4LogicalVolume* mother, G4double target_diameter,
+    G4double target_thickness) {
   // Solid
   G4Tubs* target = new G4Tubs("Target_Graphite_v02", 0, target_diameter / 2,
                               target_thickness / 2, 0. * deg, 360. * deg);
   // Logic
   G4NistManager* materials_list = G4NistManager::Instance();
   G4Material* graphite = materials_list->FindOrBuildMaterial("G4_GRAPHITE");
-  logic_target = new G4LogicalVolume(target,graphite, "Target");
+  logic_target = new G4LogicalVolume(target, graphite, "Target");
   // Physic
   /*G4VPhysicalVolume *phys_target =*/new G4PVPlacement(
       0, G4ThreeVector(0, 0, 0), logic_target, "Target", mother, false, 0,
       flagOverlaps);
   logic_target->SetVisAttributes(new G4VisAttributes(G4Colour::Gray()));
-
 
   // Aluminium rings (4 rings of 1 mm thickness put together)
   G4double al_ring_thickness = 1 * mm;
@@ -994,7 +1006,6 @@ void C6D6DetectorConstruction::ConstructTarget_Graphite_v02(G4LogicalVolume* mot
   new G4PVPlacement(0, G4ThreeVector(0., 0., 0), logic_al_rings, "Al_Rings",
                     mother, false, 0, flagOverlaps);
   logic_al_rings->SetVisAttributes(G4Colour::Gray());
-
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -1153,8 +1164,8 @@ void C6D6DetectorConstruction::ConstructTarget_U(G4LogicalVolume* mother,
   G4Box* target = new G4Box("Target_238U", target_x / 2, target_y / 2,
                             target_thickness / 2);
   logic_target = new G4LogicalVolume(target, U238, "Target");
-  new G4PVPlacement(0, G4ThreeVector(0, 0, 0), logic_target, "Target",
-                    mother, false, 0, flagOverlaps);
+  new G4PVPlacement(0, G4ThreeVector(0, 0, 0), logic_target, "Target", mother,
+                    false, 0, flagOverlaps);
   logic_target->SetVisAttributes(new G4VisAttributes(G4Colour::Red()));
 
   // Mylars
@@ -1186,7 +1197,8 @@ void C6D6DetectorConstruction::ConstructTarget_U(G4LogicalVolume* mother,
 void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
                                              G4int* flagL6D6,
                                              G4double* thetaL6D6,
-                                             G4double* phiL6D6, G4double* zL6D6) {
+                                             G4double* phiL6D6,
+                                             G4double* zL6D6) {
   cout << endl << "Construct L6D6 detectors" << endl;
   ///////////////////CARBON FIBER SHELL/////////////////
   // Maximum and minimum radii of the carbon fiber shell (big cilinder(1), small
@@ -1891,58 +1903,58 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   G4ThreeVector position1 =
       G4ThreeVector(0, 0, 134.5 * mm + 20 * mm + CFHolderShift);
   G4Transform3D transform1 = G4Transform3D(rotm1, position1);
-  new G4PVPlacement(transform1,      // rotation,position
-                    fLogicdetTube,   // its logical volume
+  new G4PVPlacement(transform1,           // rotation,position
+                    fLogicdetTube,        // its logical volume
                     "detTubeShell-L6D6",  // its name
-                    logicDetVol,     // its mother  volume
-                    false,           // no boolean operation
-                    0,               // copy number
-                    flagOverlaps);   // checking overlaps
+                    logicDetVol,          // its mother  volume
+                    false,                // no boolean operation
+                    0,                    // copy number
+                    flagOverlaps);        // checking overlaps
   ////////////detConeShell:2///////////////////////////////////
   G4ThreeVector position2 =
       G4ThreeVector(0, 0, 74.5 * mm + 20 * mm + CFHolderShift);
   G4Transform3D transform2 = G4Transform3D(rotm1, position2);
-  new G4PVPlacement(transform2,      // rotation,position
-                    fLogicdetCone,   // its logical volume
+  new G4PVPlacement(transform2,           // rotation,position
+                    fLogicdetCone,        // its logical volume
                     "detConeShell-L6D6",  // its name
-                    logicDetVol,     // its mother  volume
-                    false,           // no boolean operation
-                    0,               // copy number
-                    flagOverlaps);   // checking overlaps
+                    logicDetVol,          // its mother  volume
+                    false,                // no boolean operation
+                    0,                    // copy number
+                    flagOverlaps);        // checking overlaps
   ////////////////////PMTubeShell:3//////////////////////////////
   G4ThreeVector position3 =
       G4ThreeVector(0, 0, -42 * mm + 20 * mm + CFHolderShift);
   G4Transform3D transform3 = G4Transform3D(rotm1, position3);
-  new G4PVPlacement(transform3,     // rotation,position
-                    fLogicPMTube,   // its logical volume
+  new G4PVPlacement(transform3,          // rotation,position
+                    fLogicPMTube,        // its logical volume
                     "PMTubeShell-L6D6",  // its name
-                    logicDetVol,    // its mother  volume
-                    false,          // no boolean operation
-                    0,              // copy number
-                    flagOverlaps);  // checking overlaps
+                    logicDetVol,         // its mother  volume
+                    false,               // no boolean operation
+                    0,                   // copy number
+                    flagOverlaps);       // checking overlaps
   ////////////detWindow:4 (Front part of the CFiber shell)////////
   G4ThreeVector position4 =
       G4ThreeVector(0, 0, 180.0 * mm + 20 * mm + CFHolderShift);
   G4Transform3D transform4 = G4Transform3D(rotm1, position4);
-  new G4PVPlacement(transform4,       // rotation,position
-                    fLogicdetWindow,  // its logical volume
-                    "detWindow-L6D6",      // its name
-                    logicDetVol,      // its mother  volume
-                    false,            // no boolean operation
-                    0,                // copy number
-                    flagOverlaps);    // checking overlaps
+  new G4PVPlacement(transform4,        // rotation,position
+                    fLogicdetWindow,   // its logical volume
+                    "detWindow-L6D6",  // its name
+                    logicDetVol,       // its mother  volume
+                    false,             // no boolean operation
+                    0,                 // copy number
+                    flagOverlaps);     // checking overlaps
   /////////////////// Detector Base :20 ////////////////////////////
   //  G4double DetBase_pos=-144.5*mm-DetBase1_dZ;
   G4ThreeVector position20 =
       G4ThreeVector(0, 0, -144.5 * mm - DetBase1_dZ + 20 * mm + CFHolderShift);
   G4Transform3D transform20 = G4Transform3D(rotm1, position20);
-  new G4PVPlacement(transform20,    // rotation,position
-                    fLogicDetBase,  // its logical volume
-                    "DetBase-L6D6",      // its name
-                    logicDetVol,    // its mother  volume
-                    false,          // no boolean operation
-                    0,              // copy number
-                    flagOverlaps);  // checking overlaps
+  new G4PVPlacement(transform20,     // rotation,position
+                    fLogicDetBase,   // its logical volume
+                    "DetBase-L6D6",  // its name
+                    logicDetVol,     // its mother  volume
+                    false,           // no boolean operation
+                    0,               // copy number
+                    flagOverlaps);   // checking overlaps
   //////////////22:CF support for Expansion Volume////////////////////
   // vbs->overlap with AluminumTube
   //  G4ThreeVector position22 = G4ThreeVector(120*mm,0.,
@@ -1959,28 +1971,28 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   G4ThreeVector position23 = G4ThreeVector(
       CFAdapt_dZ + R1min, 0, tube2_dZ + R_torusCenter + CFHolderShift);
   G4Transform3D transform23 = G4Transform3D(rotm23, position23);
-  new G4PVPlacement(transform23,    //
-                    fLogicCFAdapt,  // its logical volume
-                    "CFAdapt-L6D6",      // its name
-                    logicDetVol,    // its mother  volume
-                    false,          // no boolean opera
-                    0,              // copy number
-                    flagOverlaps);  // checking overlaps
+  new G4PVPlacement(transform23,     //
+                    fLogicCFAdapt,   // its logical volume
+                    "CFAdapt-L6D6",  // its name
+                    logicDetVol,     // its mother  volume
+                    false,           // no boolean opera
+                    0,               // copy number
+                    flagOverlaps);   // checking overlaps
   ////////////////////////// Aluminium Tube for expansion Volume:24/////////
   new G4PVPlacement(0,
                     G4ThreeVector(120 * mm, 0, CFHolderShift),  // Translation
-                    fLogicAluminiumTube,  // its logical volume
-                    "AluminiumTube-L6D6",      // its name
-                    logicDetVol,          // its mother  volume
-                    false,                // no boolean operation
-                    0,                    // copy number
-                    flagOverlaps);        // checking overlaps
+                    fLogicAluminiumTube,   // its logical volume
+                    "AluminiumTube-L6D6",  // its name
+                    logicDetVol,           // its mother  volume
+                    false,                 // no boolean operation
+                    0,                     // copy number
+                    flagOverlaps);         // checking overlaps
   /////////////////////////Expansion Volume Cilinder
   ///:25///////////////////////////////
   new G4PVPlacement(
       0, G4ThreeVector(120 * mm, 0, -tube2_dZ - expVol_dZ + CFHolderShift),
       fLogicExpVol,   // its logical volume
-      "ExpVol-L6D6",       // its name
+      "ExpVol-L6D6",  // its name
       logicDetVol,    // its mother  volume
       false,          // no boolean operation
       0,              // copy number
@@ -1991,7 +2003,7 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   G4Transform3D transform5 = G4Transform3D(rotm1, position5);
   new G4PVPlacement(transform5,      // rotation,position
                     fLogicPMWindow,  // its logical volume
-                    "PMW-L6D6",           // its name
+                    "PMW-L6D6",      // its name
                     logicDetVol,     // its mother  volume
                     false,           // no boolean operation
                     0,               // copy number
@@ -2003,7 +2015,7 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   G4Transform3D transform10 = G4Transform3D(rotm1, position10);
   new G4PVPlacement(transform10,      // rotation,position
                     fLogicPMWindow2,  // its logical volume
-                    "PMW2-L6D6",           // its name
+                    "PMW2-L6D6",      // its name
                     logicDetVol,      // its mother  volume
                     false,            // no boolean operation
                     0,                // copy number
@@ -2024,136 +2036,136 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   ///:26///////////////////////////////
   new G4PVPlacement(0,                                          // no rotation
                     G4ThreeVector(120 * mm, 0, CFHolderShift),  // Translation
-                    fLogicC6D6ExpTube,  // its logical volume
-                    "C6D6ExpTube-L6D6",      // its name
-                    logicDetVol,        // its mother  volume
-                    false,              // no boolean operation
-                    0,                  // copy number
-                    flagOverlaps);      // checking overlaps
+                    fLogicC6D6ExpTube,   // its logical volume
+                    "C6D6ExpTube-L6D6",  // its name
+                    logicDetVol,         // its mother  volume
+                    false,               // no boolean operation
+                    0,                   // copy number
+                    flagOverlaps);       // checking overlaps
   /////////////////////////Expansion Volume C6D6
   ///:27///////////////////////////////
   new G4PVPlacement(
       0,  // no rotation
       G4ThreeVector(120 * mm, 0,
                     -tube2_dZ - expVol_dZ + 0.5 * expVol_thick + CFHolderShift),
-      fLogicExpVolC6D6,  // its logical volume
-      "ExpVolC6D6-L6D6",      // its name
-      logicDetVol,       // its mother  volume
-      false,             // no boolean operation
-      0,                 // copy number
-      flagOverlaps);     // checking overlaps
+      fLogicExpVolC6D6,   // its logical volume
+      "ExpVolC6D6-L6D6",  // its name
+      logicDetVol,        // its mother  volume
+      false,              // no boolean operation
+      0,                  // copy number
+      flagOverlaps);      // checking overlaps
   ////////////////////PMShield1Tube:11/////////////////////////////////////////
   G4double PMS1Tube_pos = -1 * PMS1_dZ + 60.5 * mm;  //=0.912*mm;
   G4ThreeVector position11 =
       G4ThreeVector(0, 0, PMS1Tube_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform11 = G4Transform3D(rotm1, position11);
-  new G4PVPlacement(transform11,     // rotation,position
-                    fLogicPMS1Tube,  // its logical volume
-                    "PMS1Tube-L6D6",      // its name
-                    logicDetVol,     // its mother  volume
-                    false,           // no boolean operation
-                    0,               // copy number
-                    flagOverlaps);   // checking overlaps
+  new G4PVPlacement(transform11,      // rotation,position
+                    fLogicPMS1Tube,   // its logical volume
+                    "PMS1Tube-L6D6",  // its name
+                    logicDetVol,      // its mother  volume
+                    false,            // no boolean operation
+                    0,                // copy number
+                    flagOverlaps);    // checking overlaps
   ////////////////////PMShield1Bottom:12/////////////////////////////////////////
   G4double PMS1Bottom_pos =
       -2 * PMS1_dZ + 60.5 * mm + 0.5 * PMS1_thick;  //= -58.405mm;
   G4ThreeVector position12 =
       G4ThreeVector(0, 0, PMS1Bottom_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform12 = G4Transform3D(rotm1, position12);
-  new G4PVPlacement(transform12,       // rotation,position
-                    fLogicPMS1Bottom,  // its logical volume
-                    "PMS1Bottom-L6D6",      // its name
-                    logicDetVol,       // its mother  volume
-                    false,             // no boolean operation
-                    0,                 // copy number
-                    flagOverlaps);     // checking overlaps
+  new G4PVPlacement(transform12,        // rotation,position
+                    fLogicPMS1Bottom,   // its logical volume
+                    "PMS1Bottom-L6D6",  // its name
+                    logicDetVol,        // its mother  volume
+                    false,              // no boolean operation
+                    0,                  // copy number
+                    flagOverlaps);      // checking overlaps
   ////////////////////PMShield2Tube:13/////////////////////////////////////////
   G4double PMS2Tube_pos = PMS1Bottom_pos + 0.5 * PMS1_thick + PMS2_dZ;  //
   G4ThreeVector position13 =
       G4ThreeVector(0, 0, PMS2Tube_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform13 = G4Transform3D(rotm1, position13);
-  new G4PVPlacement(transform13,     // rotation,position
-                    fLogicPMS2Tube,  // its logical volume
-                    "PMS2Tube-L6D6",      // its name
-                    logicDetVol,     // its mother  volume
-                    false,           // no boolean operation
-                    0,               // copy number
-                    flagOverlaps);   // checking overlaps
+  new G4PVPlacement(transform13,      // rotation,position
+                    fLogicPMS2Tube,   // its logical volume
+                    "PMS2Tube-L6D6",  // its name
+                    logicDetVol,      // its mother  volume
+                    false,            // no boolean operation
+                    0,                // copy number
+                    flagOverlaps);    // checking overlaps
   ////////////////////PMShield2Bottom:14/////////////////////////////////////////
   G4double PMS2Bottom_pos =
       PMS1Bottom_pos + 0.5 * PMS1_thick + 0.5 * PMS2_thick;
   G4ThreeVector position14 =
       G4ThreeVector(0, 0, PMS2Bottom_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform14 = G4Transform3D(rotm1, position14);
-  new G4PVPlacement(transform14,       // rotation,position
-                    fLogicPMS2Bottom,  // its logical volume
-                    "PMS2Bottom-L6D6",      // its name
-                    logicDetVol,       // its mother  volume
-                    false,             // no boolean operation
-                    0,                 // copy number
-                    flagOverlaps);     // checking overlaps
+  new G4PVPlacement(transform14,        // rotation,position
+                    fLogicPMS2Bottom,   // its logical volume
+                    "PMS2Bottom-L6D6",  // its name
+                    logicDetVol,        // its mother  volume
+                    false,              // no boolean operation
+                    0,                  // copy number
+                    flagOverlaps);      // checking overlaps
   ///////////////////////////////////PMContentVolume:15///////////////////////////////////
   G4double PMContent_pos = 15.324 * mm;
   G4ThreeVector position15 =
       G4ThreeVector(0, 0, PMContent_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform15 = G4Transform3D(rotm1, position15);
-  new G4PVPlacement(transform15,      // rotation,position
-                    fLogicPMContent,  // its logical volume
-                    "PMContent-L6D6",      // its name
-                    logicDetVol,      // its mother  volume
-                    false,            // no boolean operation
-                    0,                // copy number
-                    flagOverlaps);    // checking overlaps
+  new G4PVPlacement(transform15,       // rotation,position
+                    fLogicPMContent,   // its logical volume
+                    "PMContent-L6D6",  // its name
+                    logicDetVol,       // its mother  volume
+                    false,             // no boolean operation
+                    0,                 // copy number
+                    flagOverlaps);     // checking overlaps
   /////////////PMAdapt1: 16///////////////////////////////
   G4double PMAdapt1_pos = 45.5 * mm;
   G4ThreeVector position16 =
       G4ThreeVector(0, 0, PMAdapt1_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform16 = G4Transform3D(rotm1, position16);
-  new G4PVPlacement(transform16,      // rotation,position
-                    fLogicPMAdapt1,   // its logical volume
+  new G4PVPlacement(transform16,           // rotation,position
+                    fLogicPMAdapt1,        // its logical volume
                     "PMAdapt1Shell-L6D6",  // its name
-                    logicDetVol,      // its mother  volume
-                    false,            // no boolean operation
-                    0,                // copy number
-                    flagOverlaps);    // checking overlaps
+                    logicDetVol,           // its mother  volume
+                    false,                 // no boolean operation
+                    0,                     // copy number
+                    flagOverlaps);         // checking overlaps
   /////////////PMAdapt2:17//////////////////////////////
   G4double PMAdapt2_pos = 50.5 * mm;
   G4ThreeVector position17 =
       G4ThreeVector(0, 0, PMAdapt2_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform17 = G4Transform3D(rotm1, position17);
-  new G4PVPlacement(transform17,      // rotation,position
-                    fLogicPMAdapt2,   // its logical volume
+  new G4PVPlacement(transform17,           // rotation,position
+                    fLogicPMAdapt2,        // its logical volume
                     "PMAdapt2Shell-L6D6",  // its name
-                    logicDetVol,      // its mother  volume
-                    false,            // no boolean operation
-                    0,                // copy number
-                    flagOverlaps);    // checking overlaps
+                    logicDetVol,           // its mother  volume
+                    false,                 // no boolean operation
+                    0,                     // copy number
+                    flagOverlaps);         // checking overlaps
   /////////////Voltage divider:18///////////////////////////////
   G4double VoltageDiv_pos =
       PMS1Bottom_pos - VoltageDiv1_dZ - 0.5 * PMS1_thick;  //=-71.18*mm;
   G4ThreeVector position18 =
       G4ThreeVector(0, 0, VoltageDiv_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform18 = G4Transform3D(rotm1, position18);
-  new G4PVPlacement(transform18,       // rotation,position
-                    fLogicVoltageDiv,  // its logical volume
-                    "VoltageDiv-L6D6",      // its name
-                    logicDetVol,       // its mother  volume
-                    false,             // no boolean operation
-                    0,                 // copy number
-                    flagOverlaps);     // checking overlaps
+  new G4PVPlacement(transform18,        // rotation,position
+                    fLogicVoltageDiv,   // its logical volume
+                    "VoltageDiv-L6D6",  // its name
+                    logicDetVol,        // its mother  volume
+                    false,              // no boolean operation
+                    0,                  // copy number
+                    flagOverlaps);      // checking overlaps
   /////////////SupportRing:19///////////////////////////////
   G4double SuppRing_pos =
       VoltageDiv_pos - PMSupportRing_dZ - VoltageDiv1_dZ;  //=-98.68*mm
   G4ThreeVector position19 =
       G4ThreeVector(0, 0, SuppRing_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform19 = G4Transform3D(rotm1, position19);
-  new G4PVPlacement(transform19,     // rotation,position
-                    fLogicSuppRing,  // its logical volume
-                    "SuppRing-L6D6",      // its name
-                    logicDetVol,     // its mother  volume
-                    false,           // no boolean operation
-                    0,               // copy number
-                    flagOverlaps);   // checking overlaps
+  new G4PVPlacement(transform19,      // rotation,position
+                    fLogicSuppRing,   // its logical volume
+                    "SuppRing-L6D6",  // its name
+                    logicDetVol,      // its mother  volume
+                    false,            // no boolean operation
+                    0,                // copy number
+                    flagOverlaps);    // checking overlaps
 
   /////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////     ATRIBUTES
@@ -2194,16 +2206,14 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   fLogicPMContent->SetVisAttributes(PMContentVisAtt);
 }
 
-
-
 void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
-                                             G4int* flagLABR,
+                                                G4int* flagLABR,
 
-                                             G4double* thetaLABR,
+                                                G4double* thetaLABR,
 
-                                             G4double* phiLABR, G4double* zLABR) {
-
+                                                G4double* phiLABR,
+                                                G4double* zLABR) {
   //////////////////////////////////
 
   //=================================================================================================
@@ -2224,77 +2234,89 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   G4double LengthLABR = 50.8 * mm;
 
-  G4double RadiusLABR = 38.1 / 2.0 * mm; // 1.5 inch diameter
+  G4double RadiusLABR = 38.1 / 2.0 * mm;  // 1.5 inch diameter
 
-  G4double TotalLengthLABRDevice = 249.0 * mm; // according to drawing
+  G4double TotalLengthLABRDevice = 249.0 * mm;  // according to drawing
 
   // Teflon (PTFE) reflector around crystal (covering front but not back)
 
-  G4double ThicknessTeflonLABR = 1.0 * mm; // 1 mm thick
+  G4double ThicknessTeflonLABR = 1.0 * mm;  // 1 mm thick
 
   G4double RadiusTeflonLABR = RadiusLABR + ThicknessTeflonLABR;
 
-  G4double halfLengthTeflonLABR = (LengthLABR + ThicknessTeflonLABR - 0.01) * mm / 2.0; // 1 mm longer than the crystal to cover the front face
+  G4double halfLengthTeflonLABR =
+      (LengthLABR + ThicknessTeflonLABR - 0.01) * mm /
+      2.0;  // 1 mm longer than the crystal to cover the front face
 
   // Quartz window after the LaBr3 crystal
 
-  G4double RadiusQuartzLABR = RadiusLABR; // same radius as the LaBr3 crystal
+  G4double RadiusQuartzLABR = RadiusLABR;  // same radius as the LaBr3 crystal
 
-  G4double halfLengthQuartzLABR = 5.0 / 2.0 * mm; // 5 mm thick according to Luxium
+  G4double halfLengthQuartzLABR =
+      5.0 / 2.0 * mm;  // 5 mm thick according to Luxium
 
   // PMT:
 
-  G4double RadiusPMTLABR = RadiusLABR; // same radius as the LaBr3 crystal
+  G4double RadiusPMTLABR = RadiusLABR;  // same radius as the LaBr3 crystal
 
-  G4double halfLengthPMTLABR = 96.0 / 2.0 * mm; // 76 mm thick, PMT 9215B (ET Enterprises)
+  G4double halfLengthPMTLABR =
+      96.0 / 2.0 * mm;  // 76 mm thick, PMT 9215B (ET Enterprises)
 
   // PMT magnetic shield (Mu-metal):
 
-  G4double RadiusMuMetalLABR = 56.0 / 2.0 * mm; // 56 mm diameter, according to ET Enterprises
+  G4double RadiusMuMetalLABR =
+      56.0 / 2.0 * mm;  // 56 mm diameter, according to ET Enterprises
 
-  G4double halfLengthMuMetalLABR = halfLengthPMTLABR; // same length as the PMT
+  G4double halfLengthMuMetalLABR = halfLengthPMTLABR;  // same length as the PMT
 
   // Al case thickness:
 
-  G4double ThicknessAlcase = 0.5 * mm; // 0.5 mm thick acc. to drawing
+  G4double ThicknessAlcase = 0.5 * mm;  // 0.5 mm thick acc. to drawing
 
   // Al case for LaBr3 crystal:
 
-  G4double RadiusAlCaseLABR = 57.0 / 2.0 * mm; // 57 mm diameter, according to drawing
+  G4double RadiusAlCaseLABR =
+      57.0 / 2.0 * mm;  // 57 mm diameter, according to drawing
 
-  G4double halfLengthAlCaseLABR = 52.0 / 2.0 * mm; // 52 mm length
+  G4double halfLengthAlCaseLABR = 52.0 / 2.0 * mm;  // 52 mm length
 
   // Aluminum disk in front
 
-  G4double RadiusAlCaseFrontDisk = RadiusAlCaseLABR - 0.1 * mm; // slightly smaller than the Al case to avoid overlaps
+  G4double RadiusAlCaseFrontDisk =
+      RadiusAlCaseLABR -
+      0.1 * mm;  // slightly smaller than the Al case to avoid overlaps
 
   G4double halfLengthAlCaseFrontDisk = ThicknessAlcase / 2.0;
 
   // Al case for PMT:
 
-  G4double RadiusAlCasePMTLABR = 59.0 / 2.0 * mm; // 59 mm diameter
+  G4double RadiusAlCasePMTLABR = 59.0 / 2.0 * mm;  // 59 mm diameter
 
-  G4double halfLengthAlCasePMTLABR = 77.0 / 2.0 * mm; // 77 mm length
+  G4double halfLengthAlCasePMTLABR = 77.0 / 2.0 * mm;  // 77 mm length
 
   // Al case cylinder for voltage divider:
 
-  G4double RadiusAlCaseVDLABR = 74.0 / 2.0 * mm; // 74 mm diameter, according to drawing
+  G4double RadiusAlCaseVDLABR =
+      74.0 / 2.0 * mm;  // 74 mm diameter, according to drawing
 
   G4double halfLengthAlCaseVDLABR = 90.0 / 2.0 * mm;
 
   // Al case rear disk:
 
-  G4double RadiusAlCaseRearDiskLABR = RadiusAlCaseVDLABR - 0.1 * mm; // slightly smaller than the Al case to avoid overlaps
+  G4double RadiusAlCaseRearDiskLABR =
+      RadiusAlCaseVDLABR -
+      0.1 * mm;  // slightly smaller than the Al case to avoid overlaps
 
   G4double halfLengthAlCaseRearDiskLABR = ThicknessAlcase / 2.0;
 
   // Brass rings:
 
-  G4double RadiusBrassRing1LABR = 68.0 / 2.0 * mm; // 68 mm diameter, according to drawing
+  G4double RadiusBrassRing1LABR =
+      68.0 / 2.0 * mm;  // 68 mm diameter, according to drawing
 
-  G4double RadiusBrassRing2LABR = 82.0 / 2.0 * mm; // 82 mm diameter
+  G4double RadiusBrassRing2LABR = 82.0 / 2.0 * mm;  // 82 mm diameter
 
-  G4double halfLengthBrassRingLABR = 15.0 / 2.0 * mm; // 15 mm length
+  G4double halfLengthBrassRingLABR = 15.0 / 2.0 * mm;  // 15 mm length
 
   // Calculate total length of LaBr3 device (without voltage divider):
 
@@ -2306,13 +2328,16 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   LengthDetector += 2.0 * halfLengthPMTLABR;
 
-  LengthDetector += ThicknessTeflonLABR; // teflon thickness in one side
+  LengthDetector += ThicknessTeflonLABR;  // teflon thickness in one side
 
   // Voltage divider, no info. I deduce its diameter and length from Al case:
 
-  G4double RadiusVoltageDividerLABR = RadiusAlCaseVDLABR - ThicknessAlcase; // just inside the Al case
+  G4double RadiusVoltageDividerLABR =
+      RadiusAlCaseVDLABR - ThicknessAlcase;  // just inside the Al case
 
-  G4double halfLengthVoltageDividerLABR = TotalLengthLABRDevice / 2.0 - LengthDetector / 2.0 - ThicknessAlcase / 2.0;
+  G4double halfLengthVoltageDividerLABR = TotalLengthLABRDevice / 2.0 -
+                                          LengthDetector / 2.0 -
+                                          ThicknessAlcase / 2.0;
 
   // Update LengthDetector:
 
@@ -2342,19 +2367,21 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   G4ThreeVector positionLABR =
 
-      G4ThreeVector(0 * cm, 0. * cm, LengthDetector / 2.0 - LengthLABR / 2.0
+      G4ThreeVector(0 * cm, 0. * cm,
+                    LengthDetector / 2.0 - LengthLABR / 2.0
 
-                                                                         - ThicknessAlcase
+                        - ThicknessAlcase
 
-                                                                         - ThicknessTeflonLABR);
+                        - ThicknessTeflonLABR);
 
   // Teflon reflector:
 
-    G4ThreeVector positionTeflonLABR =
+  G4ThreeVector positionTeflonLABR =
 
-            G4ThreeVector(0 * cm, 0. * cm, LengthDetector / 2.0 - halfLengthTeflonLABR
+      G4ThreeVector(0 * cm, 0. * cm,
+                    LengthDetector / 2.0 - halfLengthTeflonLABR
 
-                                                                         - ThicknessAlcase);
+                        - ThicknessAlcase);
 
   // AlCase LaBr3 crystal front cylinder:
 
@@ -2366,47 +2393,60 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   // Brass Ring 1 between crystal and PMT:
 
-  G4ThreeVector positionBrassRing1LABR = G4ThreeVector(0. * cm, 0. * cm,
+  G4ThreeVector positionBrassRing1LABR =
+      G4ThreeVector(0. * cm, 0. * cm,
 
-                    LengthDetector / 2.0 - 2.0 * halfLengthAlCaseLABR - halfLengthBrassRingLABR);
+                    LengthDetector / 2.0 - 2.0 * halfLengthAlCaseLABR -
+                        halfLengthBrassRingLABR);
 
   // Quartz window after the LaBr3 crystal:
 
-  G4ThreeVector positionQuartzLABR = G4ThreeVector(0. * cm, 0. * cm,
+  G4ThreeVector positionQuartzLABR = G4ThreeVector(
+      0. * cm, 0. * cm,
 
-                    LengthDetector / 2.0 - ThicknessAlcase - ThicknessTeflonLABR - LengthLABR - halfLengthQuartzLABR);
+      LengthDetector / 2.0 - ThicknessAlcase - ThicknessTeflonLABR -
+          LengthLABR - halfLengthQuartzLABR);
 
   // PMT and Mu-metal shield:
 
-  G4ThreeVector positionPMTLABR = G4ThreeVector(0. * cm, 0. * cm,
+  G4ThreeVector positionPMTLABR =
+      G4ThreeVector(0. * cm, 0. * cm,
 
-                    -1.0 * LengthDetector / 2.0 + 2.0 * halfLengthVoltageDividerLABR + halfLengthPMTLABR);
+                    -1.0 * LengthDetector / 2.0 +
+                        2.0 * halfLengthVoltageDividerLABR + halfLengthPMTLABR);
 
-  G4ThreeVector positionMuMetalLABR = positionPMTLABR; // same position as PMT
+  G4ThreeVector positionMuMetalLABR = positionPMTLABR;  // same position as PMT
 
   // Al case for PMT:
 
-  G4ThreeVector positionAlCasePMTLABR = G4ThreeVector(0. * cm, 0. * cm,
+  G4ThreeVector positionAlCasePMTLABR = G4ThreeVector(
+      0. * cm, 0. * cm,
 
-                    LengthDetector / 2.0 - 2.0 * halfLengthAlCaseLABR - 2.0 * halfLengthBrassRingLABR - halfLengthAlCasePMTLABR);
+      LengthDetector / 2.0 - 2.0 * halfLengthAlCaseLABR -
+          2.0 * halfLengthBrassRingLABR - halfLengthAlCasePMTLABR);
 
   // Voltage divider:
 
-  G4ThreeVector positionVoltageDividerLABR = G4ThreeVector(0. * cm, 0. * cm,
+  G4ThreeVector positionVoltageDividerLABR =
+      G4ThreeVector(0. * cm, 0. * cm,
 
-                    -1.0 * LengthDetector / 2.0 + ThicknessAlcase + halfLengthVoltageDividerLABR);
+                    -1.0 * LengthDetector / 2.0 + ThicknessAlcase +
+                        halfLengthVoltageDividerLABR);
 
   // Al case for voltage divider:
 
-  G4ThreeVector positionAlCaseVDLABR = G4ThreeVector(0. * cm, 0. * cm,
+  G4ThreeVector positionAlCaseVDLABR =
+      G4ThreeVector(0. * cm, 0. * cm,
 
                     -1.0 * LengthDetector / 2.0 + halfLengthAlCaseVDLABR);
 
   // Brass Ring 2 between PMT and voltage divider:
 
-  G4ThreeVector positionBrassRing2LABR = G4ThreeVector(0. * cm, 0. * cm,
+  G4ThreeVector positionBrassRing2LABR =
+      G4ThreeVector(0. * cm, 0. * cm,
 
-                    -1.0 * LengthDetector / 2.0 + 2.0 * halfLengthAlCaseVDLABR + halfLengthBrassRingLABR);
+                    -1.0 * LengthDetector / 2.0 + 2.0 * halfLengthAlCaseVDLABR +
+                        halfLengthBrassRingLABR);
 
   //=======================
 
@@ -2426,9 +2466,9 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
       new G4LogicalVolume(ssolidDetVol,  // its solid
 
-                          vacuum,        // its material
+                          vacuum,  // its material
 
-                          "sdetVol");    // its name
+                          "sdetVol");  // its name
 
   slogicDetVol->SetVisAttributes(G4VisAttributes::GetInvisible());
 
@@ -2439,7 +2479,6 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
   G4double detVol_dZ = LengthDetector / 2.0;
 
   for (int i = 1; i < (theInputManager->GetTotalNC6D6Detectors() + 1); i++) {
-
     G4RotationMatrix rotLABR[50];
 
     G4double rLABR[50];
@@ -2451,40 +2490,42 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
     char name[1000];
 
     if (flagLABR[i] == 7) {
-
       G4cout << "Build LABR_" << i << " thetaLABR= " << thetaLABR[i]
 
              << " phiLABRz= " << phiLABR[i] << " z= " << zLABR[i] << G4endl;
 
-    //   rotLABR[i] = G4RotationMatrix();
+      //   rotLABR[i] = G4RotationMatrix();
 
-    //   rotLABR[i].rotateY(thetaLABR[i] * deg);
+      //   rotLABR[i].rotateY(thetaLABR[i] * deg);
 
-    //   rotLABR[i].rotateZ(phiLABR[i] * deg);
+      //   rotLABR[i].rotateZ(phiLABR[i] * deg);
 
       rLABR[i] = detVol_dZ + zLABR[i] * cm;
 
       posLABR[i] = G4ThreeVector(
 
-           rLABR[i] * sin(thetaLABR[i] * deg) * cos(phiLABR[i] * deg),
+          rLABR[i] * sin(thetaLABR[i] * deg) * cos(phiLABR[i] * deg),
 
-           rLABR[i] * sin(thetaLABR[i] * deg) * sin(phiLABR[i] * deg),
+          rLABR[i] * sin(thetaLABR[i] * deg) * sin(phiLABR[i] * deg),
 
-           rLABR[i] * cos(thetaLABR[i] * deg));
+          rLABR[i] * cos(thetaLABR[i] * deg));
 
       sprintf(name, "LABR_%d", i);
 
-      G4cout << posLABR[i].x()/cm <<", "
+      G4cout << posLABR[i].x() / cm << ", "
 
-      << posLABR[i].y()/cm <<", " << posLABR[i].z()/cm << G4endl;
+             << posLABR[i].y() / cm << ", " << posLABR[i].z() / cm << G4endl;
 
       // Orientate detector to point towards origin (target):
 
-      G4ThreeVector zAxis = -1.0 * posLABR[i].unit(); // direction from detector to origin
+      G4ThreeVector zAxis =
+          -1.0 * posLABR[i].unit();  // direction from detector to origin
 
-      G4ThreeVector xAxis = G4ThreeVector(0,0,1).cross(zAxis);
+      G4ThreeVector xAxis = G4ThreeVector(0, 0, 1).cross(zAxis);
 
-      if (xAxis.mag() < 1e-6) {xAxis = G4ThreeVector(1, 0, 0);} // degenerated case
+      if (xAxis.mag() < 1e-6) {
+        xAxis = G4ThreeVector(1, 0, 0);
+      }  // degenerated case
 
       xAxis = xAxis.unit();
 
@@ -2500,14 +2541,12 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
                         mother,  // its
 
-                        false,   // no boolean operation
+                        false,  // no boolean operation
 
-                        i,       // copy number
+                        i,  // copy number
 
                         flagOverlaps);
-
     }
-
   }
 
   //-------------------------------------------------------------------------------------------------------
@@ -2516,43 +2555,52 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   // Details: union of the front disk and the cylinder
 
-  G4Tubs *solidAlCaseFrontLABR = new G4Tubs("AlFrontLABR", 0, RadiusAlCaseFrontDisk,
+  G4Tubs* solidAlCaseFrontLABR =
+      new G4Tubs("AlFrontLABR", 0, RadiusAlCaseFrontDisk,
 
-                                            halfLengthAlCaseFrontDisk, 0. * deg, 360. * deg);
+                 halfLengthAlCaseFrontDisk, 0. * deg, 360. * deg);
 
-  G4Tubs *solidPrimAlCaseLABR = new G4Tubs("PrimAlCaseLABR", RadiusAlCaseLABR - ThicknessAlcase, RadiusAlCaseLABR,
+  G4Tubs* solidPrimAlCaseLABR = new G4Tubs(
+      "PrimAlCaseLABR", RadiusAlCaseLABR - ThicknessAlcase, RadiusAlCaseLABR,
 
-                                            halfLengthAlCaseLABR, 0. * deg, 360. * deg);
+      halfLengthAlCaseLABR, 0. * deg, 360. * deg);
 
   G4UnionSolid* solidAlCaseCrystalLABR =
 
-    new G4UnionSolid("AlCaseCrystalLABR",
+      new G4UnionSolid(
+          "AlCaseCrystalLABR",
 
-                      solidPrimAlCaseLABR,  // reference solid A
+          solidPrimAlCaseLABR,  // reference solid A
 
-                      solidAlCaseFrontLABR, // solid B to be added
+          solidAlCaseFrontLABR,  // solid B to be added
 
-                      0, G4ThreeVector(0,0,halfLengthAlCaseLABR-halfLengthAlCaseFrontDisk)); // position of B relative to A
+          0,
+          G4ThreeVector(
+              0, 0,
+              halfLengthAlCaseLABR -
+                  halfLengthAlCaseFrontDisk));  // position of B relative to A
 
-  G4LogicalVolume *logicAlCaseFrontLABR = new G4LogicalVolume(solidAlCaseCrystalLABR, Al, "AlCaseCrystalLABR");
+  G4LogicalVolume* logicAlCaseFrontLABR =
+      new G4LogicalVolume(solidAlCaseCrystalLABR, Al, "AlCaseCrystalLABR");
 
   G4RotationMatrix rotm_AlCaseFrontLABR = G4RotationMatrix(0, 0, 0);
 
-  G4Transform3D transform_AlCaseFrontLABR = G4Transform3D(rotm_AlCaseFrontLABR, positionAlCaseFrontLABR);
+  G4Transform3D transform_AlCaseFrontLABR =
+      G4Transform3D(rotm_AlCaseFrontLABR, positionAlCaseFrontLABR);
 
   new G4PVPlacement(transform_AlCaseFrontLABR,  // rotation,position
 
-                    logicAlCaseFrontLABR,       // its logical volume
+                    logicAlCaseFrontLABR,  // its logical volume
 
-                    "AlCaseCrystalLABR",        // its name
+                    "AlCaseCrystalLABR",  // its name
 
-                    slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                    false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                    0,                      // copy number
+                    0,  // copy number
 
-                    flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
   G4VisAttributes* AlCaseFrontLABRVisAtt =
 
@@ -2564,29 +2612,33 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   // Al case for PMT placement:
 
-  G4Tubs *solidAlCasePMTLABR = new G4Tubs("AlCasePMTLABR", RadiusAlCasePMTLABR - ThicknessAlcase, RadiusAlCasePMTLABR,
+  G4Tubs* solidAlCasePMTLABR =
+      new G4Tubs("AlCasePMTLABR", RadiusAlCasePMTLABR - ThicknessAlcase,
+                 RadiusAlCasePMTLABR,
 
-                                            halfLengthAlCasePMTLABR, 0. * deg, 360. * deg);
+                 halfLengthAlCasePMTLABR, 0. * deg, 360. * deg);
 
-  G4LogicalVolume *logicAlCasePMTLABR = new G4LogicalVolume(solidAlCasePMTLABR, Al, "AlCasePMTLABR");
+  G4LogicalVolume* logicAlCasePMTLABR =
+      new G4LogicalVolume(solidAlCasePMTLABR, Al, "AlCasePMTLABR");
 
   G4RotationMatrix rotm_AlCasePMTLABR = G4RotationMatrix(0, 0, 0);
 
-  G4Transform3D transform_AlCasePMTLABR = G4Transform3D(rotm_AlCasePMTLABR, positionAlCasePMTLABR);
+  G4Transform3D transform_AlCasePMTLABR =
+      G4Transform3D(rotm_AlCasePMTLABR, positionAlCasePMTLABR);
 
   new G4PVPlacement(transform_AlCasePMTLABR,  // rotation,position
 
-                    logicAlCasePMTLABR,       // its logical volume
+                    logicAlCasePMTLABR,  // its logical volume
 
-                    "AlCasePMTLABR",          // its name
+                    "AlCasePMTLABR",  // its name
 
-                    slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                    false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                    0,                      // copy number
+                    0,  // copy number
 
-                    flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
   G4VisAttributes* AlCasePMTLABRVisAtt =
 
@@ -2598,49 +2650,58 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   // Brass ring 1 placement:
 
-  G4Tubs *solidPrimRing1LABR = new G4Tubs("BrassRing1LABR", RadiusAlCaseLABR, RadiusBrassRing1LABR,
+  G4Tubs* solidPrimRing1LABR =
+      new G4Tubs("BrassRing1LABR", RadiusAlCaseLABR, RadiusBrassRing1LABR,
 
-                                            halfLengthBrassRingLABR, 0. * deg, 360. * deg);
+                 halfLengthBrassRingLABR, 0. * deg, 360. * deg);
 
   // Subtract Al case for PMT:
 
-  auto innerAlCasePMT = new G4Tubs("InnerAlCasePMTLABR", 0, RadiusAlCasePMTLABR - ThicknessAlcase,
+  auto innerAlCasePMT =
+      new G4Tubs("InnerAlCasePMTLABR", 0, RadiusAlCasePMTLABR - ThicknessAlcase,
 
-                                    halfLengthBrassRingLABR, 0. * deg, 360. * deg);
+                 halfLengthBrassRingLABR, 0. * deg, 360. * deg);
 
   G4SubtractionSolid* solidBrassRing1LABR =
 
-    new G4SubtractionSolid("BrassRing1LABR",
+      new G4SubtractionSolid(
+          "BrassRing1LABR",
 
-                              solidPrimRing1LABR,  // reference solid A
+          solidPrimRing1LABR,  // reference solid A
 
-                              innerAlCasePMT, // solid B to be subtracted
+          innerAlCasePMT,  // solid B to be subtracted
 
-                              0, G4ThreeVector(0,0,-1.0*halfLengthBrassRingLABR)); // position of B relative to A
+          0,
+          G4ThreeVector(
+              0, 0,
+              -1.0 * halfLengthBrassRingLABR));  // position of B relative to A
 
-  G4LogicalVolume *logicBrassRing1LABR = new G4LogicalVolume(solidBrassRing1LABR, Brass, "BrassRing1LABR");
+  G4LogicalVolume* logicBrassRing1LABR =
+      new G4LogicalVolume(solidBrassRing1LABR, Brass, "BrassRing1LABR");
 
   G4RotationMatrix rotm_BrassRing1LABR = G4RotationMatrix(0, 0, 0);
 
-  G4Transform3D transform_BrassRing1LABR = G4Transform3D(rotm_BrassRing1LABR, positionBrassRing1LABR);
+  G4Transform3D transform_BrassRing1LABR =
+      G4Transform3D(rotm_BrassRing1LABR, positionBrassRing1LABR);
 
   new G4PVPlacement(transform_BrassRing1LABR,  // rotation,position
 
-                    logicBrassRing1LABR,       // its logical volume
+                    logicBrassRing1LABR,  // its logical volume
 
-                    "BrassRing1LABR",          // its name
+                    "BrassRing1LABR",  // its name
 
-                    slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                    false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                    0,                      // copy number
+                    0,  // copy number
 
-                    flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
   G4VisAttributes* BrassRing1LABRVisAtt =
 
-      new G4VisAttributes(G4Colour(181.0/255.0, 166.0/255.0, 66.0/255.0));  // Brass-like color
+      new G4VisAttributes(G4Colour(181.0 / 255.0, 166.0 / 255.0,
+                                   66.0 / 255.0));  // Brass-like color
 
   logicBrassRing1LABR->SetVisAttributes(BrassRing1LABRVisAtt);
 
@@ -2650,43 +2711,52 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   // Details: union of the rear disk and the cylinder
 
-  G4Tubs *solidAlCaseRearDiskLABR = new G4Tubs("AlRearDiskLABR", 0, RadiusAlCaseRearDiskLABR,
+  G4Tubs* solidAlCaseRearDiskLABR =
+      new G4Tubs("AlRearDiskLABR", 0, RadiusAlCaseRearDiskLABR,
 
-                                            halfLengthAlCaseRearDiskLABR, 0. * deg, 360. * deg);
+                 halfLengthAlCaseRearDiskLABR, 0. * deg, 360. * deg);
 
-  G4Tubs *solidPrimAlCaseVDLABR = new G4Tubs("AlCaseVDLABR", RadiusAlCaseVDLABR - ThicknessAlcase, RadiusAlCaseVDLABR,
+  G4Tubs* solidPrimAlCaseVDLABR = new G4Tubs(
+      "AlCaseVDLABR", RadiusAlCaseVDLABR - ThicknessAlcase, RadiusAlCaseVDLABR,
 
-                                            halfLengthAlCaseVDLABR, 0. * deg, 360. * deg);
+      halfLengthAlCaseVDLABR, 0. * deg, 360. * deg);
 
   G4UnionSolid* solidAlCaseVDLABR =
 
-    new G4UnionSolid("AlCaseVDLABR",
+      new G4UnionSolid(
+          "AlCaseVDLABR",
 
-                      solidPrimAlCaseVDLABR,  // reference solid A
+          solidPrimAlCaseVDLABR,  // reference solid A
 
-                      solidAlCaseRearDiskLABR, // solid B to be added
+          solidAlCaseRearDiskLABR,  // solid B to be added
 
-                      0, G4ThreeVector(0,0,-1.0*halfLengthAlCaseVDLABR+halfLengthAlCaseRearDiskLABR)); // position of B relative to A
+          0,
+          G4ThreeVector(0, 0,
+                        -1.0 * halfLengthAlCaseVDLABR +
+                            halfLengthAlCaseRearDiskLABR));  // position of B
+                                                             // relative to A
 
-  G4LogicalVolume *logicAlCaseVDLABR = new G4LogicalVolume(solidAlCaseVDLABR, Al, "AlCaseVDLABR");
+  G4LogicalVolume* logicAlCaseVDLABR =
+      new G4LogicalVolume(solidAlCaseVDLABR, Al, "AlCaseVDLABR");
 
   G4RotationMatrix rotm_AlCaseVDLABR = G4RotationMatrix(0, 0, 0);
 
-  G4Transform3D transform_AlCaseVDLABR = G4Transform3D(rotm_AlCaseVDLABR, positionAlCaseVDLABR);
+  G4Transform3D transform_AlCaseVDLABR =
+      G4Transform3D(rotm_AlCaseVDLABR, positionAlCaseVDLABR);
 
   new G4PVPlacement(transform_AlCaseVDLABR,  // rotation,position
 
-                    logicAlCaseVDLABR,       // its logical volume
+                    logicAlCaseVDLABR,  // its logical volume
 
-                    "AlCaseVDLABR",          // its name
+                    "AlCaseVDLABR",  // its name
 
-                    slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                    false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                    0,                      // copy number
+                    0,  // copy number
 
-                    flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
   G4VisAttributes* AlCaseVDLABRVisAtt =
 
@@ -2698,49 +2768,58 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   // Brass ring 2 placement:
 
-  G4Tubs *solidPrimRing2LABR = new G4Tubs("BrassRing2LABR", RadiusAlCasePMTLABR, RadiusBrassRing2LABR,
+  G4Tubs* solidPrimRing2LABR =
+      new G4Tubs("BrassRing2LABR", RadiusAlCasePMTLABR, RadiusBrassRing2LABR,
 
-                                            halfLengthBrassRingLABR, 0. * deg, 360. * deg);
+                 halfLengthBrassRingLABR, 0. * deg, 360. * deg);
 
   // Subtract Al case for voltage divider:
 
-  auto innerAlCaseVD = new G4Tubs("InnerAlCaseVDLABR", 0, RadiusAlCaseVDLABR - ThicknessAlcase,
+  auto innerAlCaseVD =
+      new G4Tubs("InnerAlCaseVDLABR", 0, RadiusAlCaseVDLABR - ThicknessAlcase,
 
-                                    halfLengthBrassRingLABR, 0. * deg, 360. * deg);
+                 halfLengthBrassRingLABR, 0. * deg, 360. * deg);
 
   G4SubtractionSolid* solidBrassRing2LABR =
 
-    new G4SubtractionSolid("BrassRing2LABR",
+      new G4SubtractionSolid(
+          "BrassRing2LABR",
 
-                            solidPrimRing2LABR,  // reference solid A
+          solidPrimRing2LABR,  // reference solid A
 
-                            innerAlCaseVD, // solid B to be subtracted
+          innerAlCaseVD,  // solid B to be subtracted
 
-                            0, G4ThreeVector(0,0,-1.0 * halfLengthBrassRingLABR)); // position of B relative to A
+          0,
+          G4ThreeVector(
+              0, 0,
+              -1.0 * halfLengthBrassRingLABR));  // position of B relative to A
 
-  G4LogicalVolume *logicBrassRing2LABR = new G4LogicalVolume(solidBrassRing2LABR, Brass, "BrassRing2LABR");
+  G4LogicalVolume* logicBrassRing2LABR =
+      new G4LogicalVolume(solidBrassRing2LABR, Brass, "BrassRing2LABR");
 
   G4RotationMatrix rotm_BrassRing2LABR = G4RotationMatrix(0, 0, 0);
 
-  G4Transform3D transform_BrassRing2LABR = G4Transform3D(rotm_BrassRing2LABR, positionBrassRing2LABR);
+  G4Transform3D transform_BrassRing2LABR =
+      G4Transform3D(rotm_BrassRing2LABR, positionBrassRing2LABR);
 
   new G4PVPlacement(transform_BrassRing2LABR,  // rotation,position
 
-                    logicBrassRing2LABR,       // its logical volume
+                    logicBrassRing2LABR,  // its logical volume
 
-                    "BrassRing2LABR",          // its name
+                    "BrassRing2LABR",  // its name
 
-                    slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                    false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                    0,                      // copy number
+                    0,  // copy number
 
-                    flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
   G4VisAttributes* BrassRing2LABRVisAtt =
 
-      new G4VisAttributes(G4Colour(181.0/255.0, 166.0/255.0, 66.0/255.0));  // Brass-like color
+      new G4VisAttributes(G4Colour(181.0 / 255.0, 166.0 / 255.0,
+                                   66.0 / 255.0));  // Brass-like color
 
   logicBrassRing2LABR->SetVisAttributes(BrassRing2LABRVisAtt);
 
@@ -2748,67 +2827,74 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   // Quartz window placement:
 
-  G4Tubs *solidQuartzLABR = new G4Tubs("QuartzLABR", 0, RadiusQuartzLABR, halfLengthQuartzLABR,
+  G4Tubs* solidQuartzLABR =
+      new G4Tubs("QuartzLABR", 0, RadiusQuartzLABR, halfLengthQuartzLABR,
 
-                                        0. * deg, 360. * deg);
+                 0. * deg, 360. * deg);
 
-    G4LogicalVolume *logicQuartzLABR = new G4LogicalVolume(solidQuartzLABR, Quartz, "QuartzLABR");
+  G4LogicalVolume* logicQuartzLABR =
+      new G4LogicalVolume(solidQuartzLABR, Quartz, "QuartzLABR");
 
-    G4RotationMatrix rotm_QuartzLABR = G4RotationMatrix(0, 0, 0);
+  G4RotationMatrix rotm_QuartzLABR = G4RotationMatrix(0, 0, 0);
 
-    G4Transform3D transform_QuartzLABR = G4Transform3D(rotm_QuartzLABR, positionQuartzLABR);
+  G4Transform3D transform_QuartzLABR =
+      G4Transform3D(rotm_QuartzLABR, positionQuartzLABR);
 
-    new G4PVPlacement(transform_QuartzLABR,  // rotation,position
+  new G4PVPlacement(transform_QuartzLABR,  // rotation,position
 
-                                        logicQuartzLABR,       // its logical volume
+                    logicQuartzLABR,  // its logical volume
 
-                                        "QuartzLABR",          // its name
+                    "QuartzLABR",  // its name
 
-                                        slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                                        false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                                        0,                      // copy number
+                    0,  // copy number
 
-                                        flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
-    G4VisAttributes* QuartzLABRVisAtt =
+  G4VisAttributes* QuartzLABRVisAtt =
 
-            new G4VisAttributes(G4Colour(0.7, 0.2, 0.0, 0.8));  // Orange, opacity 80%
+      new G4VisAttributes(G4Colour(0.7, 0.2, 0.0, 0.8));  // Orange, opacity 80%
 
   logicQuartzLABR->SetVisAttributes(QuartzLABRVisAtt);
 
-    //-------------------------------------------------------------------------------------------------------
+  //-------------------------------------------------------------------------------------------------------
 
   // PMT placement:
 
-  G4Tubs *solidPMTLABR = new G4Tubs("PMTLABR", 0, RadiusPMTLABR, halfLengthPMTLABR,
+  G4Tubs* solidPMTLABR =
+      new G4Tubs("PMTLABR", 0, RadiusPMTLABR, halfLengthPMTLABR,
 
-                                        0. * deg, 360. * deg);
+                 0. * deg, 360. * deg);
 
-  G4LogicalVolume *logicPMTLABR = new G4LogicalVolume(solidPMTLABR, kovar_mat, "PMTLABR");
+  G4LogicalVolume* logicPMTLABR =
+      new G4LogicalVolume(solidPMTLABR, kovar_mat, "PMTLABR");
 
   G4RotationMatrix rotm_PMTLABR = G4RotationMatrix(0, 0, 0);
 
-  G4Transform3D transform_PMTLABR = G4Transform3D(rotm_PMTLABR, positionPMTLABR);
+  G4Transform3D transform_PMTLABR =
+      G4Transform3D(rotm_PMTLABR, positionPMTLABR);
 
   new G4PVPlacement(transform_PMTLABR,  // rotation,position
 
-                    logicPMTLABR,       // its logical volume
+                    logicPMTLABR,  // its logical volume
 
-                    "PMTLABR",          // its name
+                    "PMTLABR",  // its name
 
-                    slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                    false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                    0,                      // copy number
+                    0,  // copy number
 
-                    flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
   G4VisAttributes* PMTLABRVisAtt =
 
-      new G4VisAttributes(G4Colour(243.0/255.0, 199.0/255.0, 54.0/255.0));  // Yellow-ish
+      new G4VisAttributes(
+          G4Colour(243.0 / 255.0, 199.0 / 255.0, 54.0 / 255.0));  // Yellow-ish
 
   logicPMTLABR->SetVisAttributes(PMTLABRVisAtt);
 
@@ -2816,29 +2902,32 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   // Mu-metal shield placement:
 
-  G4Tubs *solidMuMetalLABR = new G4Tubs("MuMetalLABR", RadiusPMTLABR, RadiusMuMetalLABR, halfLengthMuMetalLABR,
+  G4Tubs* solidMuMetalLABR = new G4Tubs(
+      "MuMetalLABR", RadiusPMTLABR, RadiusMuMetalLABR, halfLengthMuMetalLABR,
 
-                                        0. * deg, 360. * deg);
+      0. * deg, 360. * deg);
 
-  G4LogicalVolume *logicMuMetalLABR = new G4LogicalVolume(solidMuMetalLABR, Mumetal, "MuMetalLABR");
+  G4LogicalVolume* logicMuMetalLABR =
+      new G4LogicalVolume(solidMuMetalLABR, Mumetal, "MuMetalLABR");
 
   G4RotationMatrix rotm_MuMetalLABR = G4RotationMatrix(0, 0, 0);
 
-  G4Transform3D transform_MuMetalLABR = G4Transform3D(rotm_MuMetalLABR, positionMuMetalLABR);
+  G4Transform3D transform_MuMetalLABR =
+      G4Transform3D(rotm_MuMetalLABR, positionMuMetalLABR);
 
   new G4PVPlacement(transform_MuMetalLABR,  // rotation,position
 
-                    logicMuMetalLABR,       // its logical volume
+                    logicMuMetalLABR,  // its logical volume
 
-                    "MuMetalLABR",          // its name
+                    "MuMetalLABR",  // its name
 
-                    slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                    false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                    0,                      // copy number
+                    0,  // copy number
 
-                    flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
   G4VisAttributes* MuMetalLABRVisAtt =
 
@@ -2850,33 +2939,38 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   // Voltage divider placement:
 
-  G4Tubs *solidVoltageDividerLABR = new G4Tubs("VoltageDividerLABR", 0, RadiusVoltageDividerLABR, halfLengthVoltageDividerLABR,
+  G4Tubs* solidVoltageDividerLABR =
+      new G4Tubs("VoltageDividerLABR", 0, RadiusVoltageDividerLABR,
+                 halfLengthVoltageDividerLABR,
 
-                                        0. * deg, 360. * deg);
+                 0. * deg, 360. * deg);
 
-  G4LogicalVolume *logicVoltageDividerLABR = new G4LogicalVolume(solidVoltageDividerLABR, PP, "VoltageDividerLABR");
+  G4LogicalVolume* logicVoltageDividerLABR =
+      new G4LogicalVolume(solidVoltageDividerLABR, PP, "VoltageDividerLABR");
 
   G4RotationMatrix rotm_VoltageDividerLABR = G4RotationMatrix(0, 0, 0);
 
-  G4Transform3D transform_VoltageDividerLABR = G4Transform3D(rotm_VoltageDividerLABR, positionVoltageDividerLABR);
+  G4Transform3D transform_VoltageDividerLABR =
+      G4Transform3D(rotm_VoltageDividerLABR, positionVoltageDividerLABR);
 
   new G4PVPlacement(transform_VoltageDividerLABR,  // rotation,position
 
-                    logicVoltageDividerLABR,       // its logical volume
+                    logicVoltageDividerLABR,  // its logical volume
 
-                    "VoltageDividerLABR",          // its name
+                    "VoltageDividerLABR",  // its name
 
-                    slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                    false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                    0,                      // copy number
+                    0,  // copy number
 
-                    flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
   G4VisAttributes* VoltageDividerLABRVisAtt =
 
-      new G4VisAttributes(G4Colour(11.0/255.0, 228.0/255.0, 55.0/255.0));  // Green
+      new G4VisAttributes(
+          G4Colour(11.0 / 255.0, 228.0 / 255.0, 55.0 / 255.0));  // Green
 
   logicVoltageDividerLABR->SetVisAttributes(VoltageDividerLABRVisAtt);
 
@@ -2902,17 +2996,17 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   new G4PVPlacement(transform_LABR,  // rotation,position
 
-                    ECLaBrflogicC6D6,     // its logical volume
+                    ECLaBrflogicC6D6,  // its logical volume
 
-                    "LABR",          // its name
+                    "LABR",  // its name
 
-                    slogicDetVol,    // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                    false,           // no boolean operation
+                    false,  // no boolean operation
 
-                    0,               // copy number
+                    0,  // copy number
 
-                    flagOverlaps);   // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
   G4VisAttributes* LABRVisAtt = new G4VisAttributes(G4Colour(0., 1.0, 1.0));  //
 
@@ -2928,52 +3022,54 @@ void C6D6DetectorConstruction::ConstructECLABR3(G4LogicalVolume* mother,
 
   G4cout << "Volume of LABR " << 0.000001 * VolumeinLABR << " Litres" << G4endl;
 
-    //-------------------------------------------------------------------------------------------------------
+  //-------------------------------------------------------------------------------------------------------
 
-    // Teflon reflector placement:
+  // Teflon reflector placement:
 
-    G4Tubs *solidPrimTeflonLABR = new G4Tubs("PrimaryTeflonLABR", 0, RadiusTeflonLABR,
+  G4Tubs* solidPrimTeflonLABR =
+      new G4Tubs("PrimaryTeflonLABR", 0, RadiusTeflonLABR,
 
-                                                                                halfLengthTeflonLABR, 0. * deg, 360. * deg);
+                 halfLengthTeflonLABR, 0. * deg, 360. * deg);
 
-    // Subtract LaBr3 solid:
+  // Subtract LaBr3 solid:
 
-    G4SubtractionSolid *solidTeflonLABR =
+  G4SubtractionSolid* solidTeflonLABR =
 
-        new G4SubtractionSolid("TeflonLABR", solidPrimTeflonLABR, solidLABR, 0,
+      new G4SubtractionSolid(
+          "TeflonLABR", solidPrimTeflonLABR, solidLABR, 0,
 
-                                                      G4ThreeVector(0, 0, halfLengthTeflonLABR - LengthLABR / 2.0 - ThicknessTeflonLABR));
+          G4ThreeVector(
+              0, 0,
+              halfLengthTeflonLABR - LengthLABR / 2.0 - ThicknessTeflonLABR));
 
-    G4LogicalVolume *logicTeflonLABR = new G4LogicalVolume(solidTeflonLABR, Teflon, "TeflonLABR");
+  G4LogicalVolume* logicTeflonLABR =
+      new G4LogicalVolume(solidTeflonLABR, Teflon, "TeflonLABR");
 
-    G4RotationMatrix rotm_TeflonLABR = G4RotationMatrix(0, 0, 0);
+  G4RotationMatrix rotm_TeflonLABR = G4RotationMatrix(0, 0, 0);
 
-    G4Transform3D transform_TeflonLABR = G4Transform3D(rotm_TeflonLABR, positionTeflonLABR);
+  G4Transform3D transform_TeflonLABR =
+      G4Transform3D(rotm_TeflonLABR, positionTeflonLABR);
 
-    new G4PVPlacement(transform_TeflonLABR,  // rotation,position
+  new G4PVPlacement(transform_TeflonLABR,  // rotation,position
 
-                                        logicTeflonLABR,       // its logical volume
+                    logicTeflonLABR,  // its logical volume
 
-                                        "TeflonLABR",          // its name
+                    "TeflonLABR",  // its name
 
-                                        slogicDetVol,           // its mother  volume
+                    slogicDetVol,  // its mother  volume
 
-                                        false,                  // no boolean operation
+                    false,  // no boolean operation
 
-                                        0,                      // copy number
+                    0,  // copy number
 
-                                        flagOverlaps);          // checking overlaps
+                    flagOverlaps);  // checking overlaps
 
-    G4VisAttributes* TeflonLABRVisAtt =
+  G4VisAttributes* TeflonLABRVisAtt =
 
-            new G4VisAttributes(G4Colour(0.0, 0.0, 0.0));  // Black
+      new G4VisAttributes(G4Colour(0.0, 0.0, 0.0));  // Black
 
-    logicTeflonLABR->SetVisAttributes(TeflonLABRVisAtt);
-
+  logicTeflonLABR->SetVisAttributes(TeflonLABRVisAtt);
 }
-
-
-
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -3002,7 +3098,8 @@ void C6D6DetectorConstruction::ConstructsTED5Holder(G4LogicalVolume* mother) {
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void C6D6DetectorConstruction::ConstructAlColumn(G4LogicalVolume* mother,
-                                                 G4double posX, G4int columnID) {
+                                                 G4double posX,
+                                                 G4int columnID) {
   G4double halfLengthAlHolderSupport = 1.3 * m;
   G4double minRadiusAlHolderSupport = 0 * mm;
   G4double maxRadiusAlHolderSupport = 12.5 * mm;
@@ -3053,27 +3150,28 @@ void C6D6DetectorConstruction::ConstructAlColumnZ0(G4LogicalVolume* mother,
 }
 
 void C6D6DetectorConstruction::ConstructRoofWalls(G4LogicalVolume* mother) {
-
-  G4double EAR1ScaleFactor=theInputManager->GetEAR1ScaleFactor();
+  G4double EAR1ScaleFactor = theInputManager->GetEAR1ScaleFactor();
 
   // Distances
-  G4double lateral_width = 4. * m *EAR1ScaleFactor;
-  G4double longitudinal_length = 7.7 * m*EAR1ScaleFactor;
-  G4double ceiling_height = 3.7 * m*EAR1ScaleFactor;  // from floor to highest point
-  G4double vertical_shift = 0.815 * m*EAR1ScaleFactor;
-  G4double lateral_shift = 0.821 * m*EAR1ScaleFactor;
+  G4double lateral_width = 4. * m * EAR1ScaleFactor;
+  G4double longitudinal_length = 7.7 * m * EAR1ScaleFactor;
+  G4double ceiling_height =
+      3.7 * m * EAR1ScaleFactor;  // from floor to highest point
+  G4double vertical_shift = 0.815 * m * EAR1ScaleFactor;
+  G4double lateral_shift = 0.821 * m * EAR1ScaleFactor;
   G4double floor_thickness = 1.5 * m;
   G4double ceiling_thickness = 1.5 * m;
   G4double front_wall_thickness = 1.5 * m;
   G4double rear_wall_thickness = 1.5 * m;
   G4double side_wall_thickness = 1.5 * m;
-  G4double side_wall_height = 2.5 * m*EAR1ScaleFactor;
+  G4double side_wall_height = 2.5 * m * EAR1ScaleFactor;
   G4double sample_longitudinal_distance =
-      2.224 * m*EAR1ScaleFactor;  // from beamline-entry wall ("front" wall)
+      2.224 * m * EAR1ScaleFactor;  // from beamline-entry wall ("front" wall)
   G4double sample_lateral_projection =
-      1.546 * m*EAR1ScaleFactor;  // from side-wall 1 ("right" wall)
+      1.546 * m * EAR1ScaleFactor;  // from side-wall 1 ("right" wall)
   G4double sample_height_projection =
-      2.144 * m*EAR1ScaleFactor;  // projection on a beamline-entry wall ("front" wall)
+      2.144 * m *
+      EAR1ScaleFactor;  // projection on a beamline-entry wall ("front" wall)
   G4double directional_length =
       sqrt(pow(lateral_shift, 2) + pow(vertical_shift, 2) +
            pow(longitudinal_length, 2));
@@ -3662,14 +3760,14 @@ void C6D6DetectorConstruction::ConstructBeamLineEAR1_2024_BigSampleHolder(
   G4double vacuum_length[vacuums], vacuum_diameter[vacuums];
   G4ThreeVector vacuum_position[vacuums];
   // Far before sample
-  //vacuum_length[0] = pipe_length[0] + pipe_length[2];
-  vacuum_length[0] = 200*m+DistanceFrontPipesToSample;
+  // vacuum_length[0] = pipe_length[0] + pipe_length[2];
+  vacuum_length[0] = 200 * m + DistanceFrontPipesToSample;
   vacuum_diameter[0] = inner_beamline_diameter;
   vacuum_position[0] = G4ThreeVector(
       0. * cm, 0. * cm, DistanceFrontPipesToSample - vacuum_length[0] / 2.0);
   // after sample
-  //vacuum_length[1] = pipe_length[4];
-  vacuum_length[1] = 200*m-DistanceBackPipesToSample;
+  // vacuum_length[1] = pipe_length[4];
+  vacuum_length[1] = 200 * m - DistanceBackPipesToSample;
   vacuum_diameter[1] = inner_beamline_diameter;
   vacuum_position[1] = G4ThreeVector(
       0. * cm, 0. * cm, DistanceBackPipesToSample + vacuum_length[1] / 2.0);
@@ -5257,7 +5355,8 @@ void C6D6DetectorConstruction::
 void C6D6DetectorConstruction::ConstructB6D6(G4LogicalVolume* mother,
                                              G4int* flagB6D6,
                                              G4double* thetaB6D6,
-                                             G4double* phiB6D6, G4double* zB6D6) {
+                                             G4double* phiB6D6,
+                                             G4double* zB6D6) {
   cout << endl << "Construct B6D6 detectors" << endl;
 
   G4double minRadius = 0;
@@ -6730,7 +6829,8 @@ void C6D6DetectorConstruction::ConstructB6D6(G4LogicalVolume* mother,
 void C6D6DetectorConstruction::ConstructS6D6(G4LogicalVolume* mother,
                                              G4int* flagS6D6,
                                              G4double* thetaS6D6,
-                                             G4double* phiS6D6, G4double* zS6D6) {
+                                             G4double* phiS6D6,
+                                             G4double* zS6D6) {
   //////////////////////////////////
 
   //=================================================================================================
@@ -7170,7 +7270,8 @@ void C6D6DetectorConstruction::ConstructS6D6(G4LogicalVolume* mother,
 void C6D6DetectorConstruction::ConstructESTI(G4LogicalVolume* mother,
                                              G4int* flagESTI,
                                              G4double* thetaESTI,
-                                             G4double* phiESTI, G4double* zESTI) {
+                                             G4double* phiESTI,
+                                             G4double* zESTI) {
   //////////////////////////////////
 
   //=================================================================================================
