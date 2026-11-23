@@ -90,6 +90,8 @@ class C6D6DetectorConstruction : public G4VUserDetectorConstruction {
   void ConstructTarget_Er(G4LogicalVolume* mother, G4int isotope = 0,
                           double target_diameter_mm = 13,
                           double targer_thickness_mm = 0.3);
+  void ConstructTarget_EmptyEr(G4LogicalVolume* mother);
+
   void ConstructTarget_Sm(G4LogicalVolume* mother, G4int isotope = 0,
                           double target_diameter_mm = 13,
                           double targer_thickness_mm = 0.3);

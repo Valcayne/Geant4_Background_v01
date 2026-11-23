@@ -1,6 +1,12 @@
 
 11/26 Victor
 
+
+C6D6-2026-v02$ 
+He añadido las muestras de Erbio,Ta o Sm necesario para calcular los fondos
+
+
+
 Para compilar en el xula de Víctor:
 
 source /mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/share/Geant4/geant4make/geant4make.sh

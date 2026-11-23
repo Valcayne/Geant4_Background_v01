@@ -232,7 +232,11 @@ G4VPhysicalVolume* C6D6DetectorConstruction::Construct() {
     G4cout << "Build test target" << G4endl;
     G4cout << "WARNING: \"test\" target selected!" << G4endl
            << "        Runing with gold target." << G4endl;
+  } else if (theInputManager->GetTargetName() == "EmptyEr") {
+    G4cout << "Build EmptyEr target" << G4endl;
+    ConstructTarget_EmptyEr(logic_world);
   }
+
   // #################################Sm Samples
   else if (theInputManager->GetTargetName() == "Sm_25_5") {
     G4cout << "Build Sm_25_5 target" << G4endl;
@@ -243,8 +247,119 @@ G4VPhysicalVolume* C6D6DetectorConstruction::Construct() {
   } else if (theInputManager->GetTargetName() == "Sm_20_15") {
     G4cout << "Build Sm_20_500 target" << G4endl;
     ConstructTarget_Sm(logic_world, 0, 20, 0.0015);
+  } else if (theInputManager->GetTargetName() == "Er") {
+    G4cout << "Build Er target" << G4endl;
+    ConstructTarget_Er(logic_world);
+  } else if (theInputManager->GetTargetName() == "Er166") {
+    G4cout << "Build 166Er target" << G4endl;
+    ConstructTarget_Er(logic_world, 166);
+  } else if (theInputManager->GetTargetName() == "Er167") {
+    G4cout << "Build 167Er target" << G4endl;
+    ConstructTarget_Er(logic_world, 167);
+  }
+  /////////////
+  else if (theInputManager->GetTargetName() == "Ta_2_10") {
+    ConstructTarget_Ta(logic_world, 2, 10);
+  } else if (theInputManager->GetTargetName() == "Ta_4_10") {
+    ConstructTarget_Ta(logic_world, 4, 10);
+  } else if (theInputManager->GetTargetName() == "Ta_2_100") {
+    ConstructTarget_Ta(logic_world, 2, 100);
+  } else if (theInputManager->GetTargetName() == "Ta_4_100") {
+    ConstructTarget_Ta(logic_world, 4, 100);
+  } else if (theInputManager->GetTargetName() == "Ta_2_500") {
+    ConstructTarget_Ta(logic_world, 2, 500);
+  } else if (theInputManager->GetTargetName() == "Ta_4_500") {
+    ConstructTarget_Ta(logic_world, 4, 500);
+  } else if (theInputManager->GetTargetName() == "Er_2_10000") {
+    G4cout << "Build Er_2_1000 target" << G4endl;
+    ConstructTarget_Er(logic_world, 0, 20, 10.0);
+  } else if (theInputManager->GetTargetName() == "Er_2_1000") {
+    G4cout << "Build Er_2_1000 target" << G4endl;
+    ConstructTarget_Er(logic_world, 0, 20, 1.0);
+  } else if (theInputManager->GetTargetName() == "Er_2_500") {
+    G4cout << "Build Er_2_1000 target" << G4endl;
+    ConstructTarget_Er(logic_world, 0, 20, 0.5);
+  } else if (theInputManager->GetTargetName() == "Er_2_100") {
+    G4cout << "Build Er_2_1000 target" << G4endl;
+    ConstructTarget_Er(logic_world, 0, 20, 0.1);
+  } else if (theInputManager->GetTargetName() == "Er_2_25") {
+    G4cout << "Build Er_2_25 target" << G4endl;
+    ConstructTarget_Er(logic_world, 0, 20, 0.025);
+  } else if (theInputManager->GetTargetName() == "Er_2_1") {
+    G4cout << "Build Er_2_25 target" << G4endl;
+    ConstructTarget_Er(logic_world, 0, 20, 0.001);
+  } else if (theInputManager->GetTargetName() == "Au_2_20") {
+    ConstructTarget_Au(logic_world, 2, 20);
+  } else if (theInputManager->GetTargetName() == "Au_2_207") {
+    ConstructTarget_Au(logic_world, 2, 207);
+  } else if (theInputManager->GetTargetName() == "Au_2_100") {
+    ConstructTarget_Au(logic_world, 2, 100);
+  } else if (theInputManager->GetTargetName() == "Au_4_200") {
+    ConstructTarget_Au(logic_world, 4, 200);
+  } else if (theInputManager->GetTargetName() == "Au_13_200") {
+    ConstructTarget_Au(logic_world, 1.3, 200);
+  } else if (theInputManager->GetTargetName() == "Au_13_100") {
+    ConstructTarget_Au(logic_world, 1.3, 100);
+  } else if (theInputManager->GetTargetName() == "Au_2_200") {
+    ConstructTarget_Au(logic_world, 2, 200);
+  } else if (theInputManager->GetTargetName() == "Au_1_200") {
+    ConstructTarget_Au(logic_world, 1, 200);
+  } else if (theInputManager->GetTargetName() == "Au_25_100") {
+    ConstructTarget_Au(logic_world, 2.5, 100);
+  }
+  ///////// 2023 samples only with one mylar
+
+  else if (theInputManager->GetTargetName() == "23Ta_2_10") {
+    ConstructTarget_23Ta(logic_world, 2, 10);
+  } else if (theInputManager->GetTargetName() == "23Ta_4_10") {
+    ConstructTarget_23Ta(logic_world, 4, 10);
+  } else if (theInputManager->GetTargetName() == "23Ta_2_100") {
+    ConstructTarget_23Ta(logic_world, 2, 100);
+  } else if (theInputManager->GetTargetName() == "23Ta_4_100") {
+    ConstructTarget_23Ta(logic_world, 4, 100);
+  } else if (theInputManager->GetTargetName() == "23Ta_2_500") {
+    ConstructTarget_23Ta(logic_world, 2, 500);
+  } else if (theInputManager->GetTargetName() == "23Ta_4_500") {
+    ConstructTarget_23Ta(logic_world, 4, 500);
+  } else if (theInputManager->GetTargetName() == "23Er_2_10000") {
+    G4cout << "Build 23Er_2_1000 target" << G4endl;
+    ConstructTarget_23Er(logic_world, 0, 20, 10.0);
+  } else if (theInputManager->GetTargetName() == "23Er_2_1000") {
+    G4cout << "Build 23Er_2_1000 target" << G4endl;
+    ConstructTarget_23Er(logic_world, 0, 20, 1.0);
+  } else if (theInputManager->GetTargetName() == "23Er_2_500") {
+    G4cout << "Build 23Er_2_1000 target" << G4endl;
+    ConstructTarget_23Er(logic_world, 0, 20, 0.5);
+  } else if (theInputManager->GetTargetName() == "23Er_2_100") {
+    G4cout << "Build 23Er_2_1000 target" << G4endl;
+    ConstructTarget_23Er(logic_world, 0, 20, 0.1);
+  } else if (theInputManager->GetTargetName() == "23Er_2_25") {
+    G4cout << "Build 23Er_2_25 target" << G4endl;
+    ConstructTarget_23Er(logic_world, 0, 20, 0.025);
+  } else if (theInputManager->GetTargetName() == "23Er_2_1") {
+    G4cout << "Build 23Er_2_25 target" << G4endl;
+    ConstructTarget_23Er(logic_world, 0, 20, 0.001);
+  } else if (theInputManager->GetTargetName() == "23Au_2_20") {
+    ConstructTarget_23Au(logic_world, 2, 20);
+  } else if (theInputManager->GetTargetName() == "23Au_2_207") {
+    ConstructTarget_23Au(logic_world, 2, 207);
+  } else if (theInputManager->GetTargetName() == "23Au_2_100") {
+    ConstructTarget_23Au(logic_world, 2, 100);
+  } else if (theInputManager->GetTargetName() == "23Au_4_200") {
+    ConstructTarget_23Au(logic_world, 4, 200);
+  } else if (theInputManager->GetTargetName() == "23Au_13_200") {
+    ConstructTarget_23Au(logic_world, 1.3, 200);
+  } else if (theInputManager->GetTargetName() == "23Au_2_200") {
+    ConstructTarget_23Au(logic_world, 2, 200);
+  } else if (theInputManager->GetTargetName() == "23Au_1_200") {
+    ConstructTarget_23Au(logic_world, 1, 200);
   }
 
+  else if (theInputManager->GetTargetName() == "23Au_2_3000") {
+    ConstructTarget_23Au(logic_world, 2, 3000);
+  } else if (theInputManager->GetTargetName() == "23Au_2_20000") {
+    ConstructTarget_23Au(logic_world, 2, 20000);
+  }
   // #################################
 
   else {
@@ -1059,6 +1174,29 @@ void C6D6DetectorConstruction::ConstructTarget_Er(G4LogicalVolume* mother,
   logic_al_rings->SetVisAttributes(G4Colour::Gray());
 }
 
+void C6D6DetectorConstruction::ConstructTarget_EmptyEr(
+    G4LogicalVolume* mother) {
+  // Mylars
+  G4float mylar_thickness = 6 * um;
+  G4Tubs* mylar =
+      new G4Tubs("Mylar", 0, 25 * mm, mylar_thickness / 2, 0, 360 * deg);
+  G4LogicalVolume* logic_mylar = new G4LogicalVolume(mylar, MYLAR, "Mylar");
+  new G4PVPlacement(0, G4ThreeVector(0., 0., -mylar_thickness / 2 - 0.001 * mm),
+                    logic_mylar, "Front_Mylar", mother, false, 0, flagOverlaps);
+  new G4PVPlacement(0, G4ThreeVector(0., 0., mylar_thickness / 2 + 0.001 * mm),
+                    logic_mylar, "Back_Mylar", mother, false, 0, flagOverlaps);
+  logic_mylar->SetVisAttributes(new G4VisAttributes(G4Colour(1, 1, 0, 0.25)));
+
+  // Aluminium rings (2 rings of 1 mm thickness put together)
+  G4float al_ring_thickness = 1 * mm;
+  G4Tubs* al_rings = new G4Tubs("Al_Rings", 25 * mm, 30 * mm,
+                                2 * al_ring_thickness / 2, 0, 360 * deg);
+  G4LogicalVolume* logic_al_rings =
+      new G4LogicalVolume(al_rings, Al, "Al_Rings");
+  new G4PVPlacement(0, G4ThreeVector(0., 0., 0), logic_al_rings, "Al_Rings",
+                    mother, false, 0, flagOverlaps);
+  logic_al_rings->SetVisAttributes(G4Colour::Gray());
+}
 void C6D6DetectorConstruction::ConstructTarget_Sm(G4LogicalVolume* mother,
                                                   G4int isotope,
                                                   double target_diameter_mm,
