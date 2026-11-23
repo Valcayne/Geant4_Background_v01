@@ -18,6 +18,16 @@ cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_i
 gmake -j20
 
 
+Compilar en local 
+mkdir buildLocal
+cd build
+rm -r *
+cmake ../
+make
+cd ../
+
+
+
 
 Marzo de 2025: comienzo a editar el código, a partir de versiones anteriores
 Octubre de 2026: creo un proyecto de esto en github
