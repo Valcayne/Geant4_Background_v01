@@ -24,9 +24,8 @@ G4VPhysicalVolume* C6D6DetectorConstruction::Construct() {
   // G4LogicalVolume* logic_world = new G4LogicalVolume(world, air, "World");
   G4Box* world = new G4Box("World", 4. * m * EAR1ScaleFactor,
                            4. * m * EAR1ScaleFactor, 200. * m);
-  // G4LogicalVolume* logic_world = new G4LogicalVolume(world,vacuum_mat,
-  // "World");
-  G4LogicalVolume* logic_world = new G4LogicalVolume(world, air, "World");
+  G4LogicalVolume* logic_world =
+      new G4LogicalVolume(world, vacuum_mat, "World");
 
   G4VPhysicalVolume* phys_world = new G4PVPlacement(
       0, G4ThreeVector(0, 0, 0), logic_world, "World", 0, false, 0);
@@ -220,9 +219,6 @@ G4VPhysicalVolume* C6D6DetectorConstruction::Construct() {
   } else if (theInputManager->GetTargetName() == "Graphite-45-1") {
     G4cout << "Build Graphite-45-1 target" << G4endl;
     ConstructTarget_Graphite_v02(logic_world, 45. * mm, 1. * mm);
-  } else if (theInputManager->GetTargetName() == "Graphite-20-635") {
-    G4cout << "Build Graphite-20-635 target" << G4endl;
-    ConstructTarget_Graphite_v02(logic_world, 20. * mm, 6.35 * mm);
   } else if (theInputManager->GetTargetName() == "calibration") {
     G4cout << "Build  Calibration" << G4endl;
     ConstructTarget_Calibration(logic_world);
@@ -281,7 +277,7 @@ void C6D6DetectorConstruction::LoadMaterials() {
   // BEGIN MATERIALS LIST
   G4NistManager* materials_list =
       G4NistManager::Instance();  // Materials database
-  // air = materials_list->FindOrBuildMaterial("G4_AIR");
+  air = materials_list->FindOrBuildMaterial("G4_AIR");
   Al = materials_list->FindOrBuildMaterial("G4_Al");
   Cu = materials_list->FindOrBuildMaterial("G4_Cu");
   H = materials_list->FindOrBuildMaterial("G4_H");
@@ -307,13 +303,6 @@ void C6D6DetectorConstruction::LoadMaterials() {
   Pb = materials_list->FindOrBuildMaterial("G4_Pb");
   Li = materials_list->FindOrBuildMaterial("G4_Li");
   Na = materials_list->FindOrBuildMaterial("G4_Na");
-  V = materials_list->FindOrBuildMaterial("G4_V");
-  S = materials_list->FindOrBuildMaterial("G4_S");
-
-  // Air without Argon, since skip missing isotopes doesn't work:
-  air = new G4Material("Air", 1.290 * mg / cm3, 2);
-  air->AddMaterial(N, 70.0 * perCent);
-  air->AddMaterial(O, 30.0 * perCent);
 
   quartz = materials_list->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
   kapton = materials_list->FindOrBuildMaterial("G4_KAPTON");
@@ -443,8 +432,7 @@ void C6D6DetectorConstruction::LoadMaterials() {
   PP->AddMaterial(H, 0.666667);
 
   // Concrete
-  if (theInputManager->GetConcreteType() ==
-      1) {  // original definition (10% hidrogen in mass ...)
+  if (theInputManager->GetConcreteType() == 1) {  // original definition
     concrete = new G4Material("concrete", 2.3 * g / cm3, 6);
     concrete->AddMaterial(Si, 0.227915);
     concrete->AddMaterial(O, 0.60541);
@@ -452,123 +440,20 @@ void C6D6DetectorConstruction::LoadMaterials() {
     concrete->AddMaterial(Ca, 0.04986);
     concrete->AddMaterial(Al, 0.014245);
     concrete->AddMaterial(Fe, 0.00285);
-  } else if (theInputManager->GetConcreteType() ==
-             2) {  // PDG o Geant4 o NIST (creo)
+  } else if (theInputManager->GetConcreteType() == 2) {  // PDG
     //-->
     //https://pdg.lbl.gov/2025/AtomicNuclearProperties/HTML/shielding_concrete.html
     concrete = new G4Material("concrete", 2.3 * g / cm3, 10);
-    G4double H_fraction = 0.01;
-    G4double noH_fraction_nominal = 0.99;
-    std::vector<G4double> ConcreteVals = theInputManager->GetConcreteValues();
-    if (ConcreteVals.size() > 0) {
-      H_fraction = ConcreteVals[0];
-    }
-    G4double noH_fraction = 1 - H_fraction;
-    concrete->AddMaterial(H_thermal, H_fraction);
-    concrete->AddMaterial(C, 0.001000 * noH_fraction / noH_fraction_nominal);
-    concrete->AddMaterial(O, 0.529107 * noH_fraction / noH_fraction_nominal);
-    concrete->AddMaterial(Na, 0.016000 * noH_fraction / noH_fraction_nominal);
-    concrete->AddMaterial(Mg, 0.002000 * noH_fraction / noH_fraction_nominal);
-    concrete->AddMaterial(Al, 0.033872 * noH_fraction / noH_fraction_nominal);
-    concrete->AddMaterial(Si, 0.337021 * noH_fraction / noH_fraction_nominal);
-    concrete->AddMaterial(K, 0.013000 * noH_fraction / noH_fraction_nominal);
-    concrete->AddMaterial(Ca, 0.044000 * noH_fraction / noH_fraction_nominal);
-    concrete->AddMaterial(Fe, 0.014000 * noH_fraction / noH_fraction_nominal);
-  } else if (theInputManager->GetConcreteType() ==
-             3) {  // Hormigón Portland Estándar (ICRU Report 49)
-    concrete = new G4Material("concrete", 2.3 * g / cm3, 11);
-    concrete->AddMaterial(H_thermal, 0.022100);
-    concrete->AddMaterial(C, 0.002484);
-    concrete->AddMaterial(O, 0.574930);
-    concrete->AddMaterial(Na, 0.015208);
-    concrete->AddMaterial(Mg, 0.001266);
-    concrete->AddMaterial(Al, 0.019953);
-    concrete->AddMaterial(Si, 0.304627);
-    concrete->AddMaterial(S, 0.008567);
-    concrete->AddMaterial(K, 0.010045);
-    concrete->AddMaterial(Ca, 0.042941);
-    concrete->AddMaterial(Fe, 0.006435);
-  } else if (theInputManager->GetConcreteType() ==
-             4) {  // Hormigón Baritado / Pesado (Barite Concrete)
-    concrete = new G4Material("concrete", 3.5 * g / cm3, 9);
-    concrete->AddMaterial(H_thermal, 0.003600);
-    concrete->AddMaterial(O, 0.320100);
-    concrete->AddMaterial(Mg, 0.001300);
-    concrete->AddMaterial(Al, 0.004200);
-    concrete->AddMaterial(Si, 0.017000);
-    concrete->AddMaterial(S, 0.107700);
-    concrete->AddMaterial(Ca, 0.050300);
-    concrete->AddMaterial(Fe, 0.047800);
-    concrete->AddMaterial(Ba, 0.448000);
-  } else if (theInputManager->GetConcreteType() ==
-             5) {  // Hormigón Magnetítico (Pesado, blindaje de rayos X/Gamma)
-    concrete = new G4Material("concrete", 3.53 * g / cm3, 9);
-    concrete->AddMaterial(H_thermal, 0.005100);
-    concrete->AddMaterial(O, 0.339400);
-    concrete->AddMaterial(Mg, 0.003900);
-    concrete->AddMaterial(Al, 0.017900);
-    concrete->AddMaterial(Si, 0.021000);
-    concrete->AddMaterial(Ca, 0.061700);
-    concrete->AddMaterial(Ti, 0.006100);
-    concrete->AddMaterial(Mn, 0.002900);
-    concrete->AddMaterial(Fe, 0.542000);
-  } else if (theInputManager->GetConcreteType() ==
-             6) {  // Hormigón de Serpentina (Rico en Hidrógeno, moderador de
-                   // neutrones)
-    concrete = new G4Material("concrete", 2.10 * g / cm3, 8);
-    concrete->AddMaterial(H_thermal, 0.013900);
-    concrete->AddMaterial(O, 0.518600);
-    concrete->AddMaterial(Mg, 0.187800);
-    concrete->AddMaterial(Al, 0.008800);
-    concrete->AddMaterial(Si, 0.165200);
-    concrete->AddMaterial(S, 0.001000);
-    concrete->AddMaterial(Ca, 0.067300);
-    concrete->AddMaterial(Fe, 0.037400);
-  } else if (theInputManager->GetConcreteType() ==
-             7) {  // Hormigón de Caliza (Limestone Concrete)
-    concrete = new G4Material("concrete", 2.30 * g / cm3, 10);
-    concrete->AddMaterial(H_thermal, 0.007800);
-    concrete->AddMaterial(C, 0.045600);  // Mayor presencia de Carbono
-    concrete->AddMaterial(O, 0.511600);
-    concrete->AddMaterial(Na, 0.005500);
-    concrete->AddMaterial(Mg, 0.004400);
-    concrete->AddMaterial(Al, 0.011800);
-    concrete->AddMaterial(
-        Si, 0.134500);  // Menor cantidad de Silicio que el estándar
-    concrete->AddMaterial(K, 0.004900);
-    concrete->AddMaterial(Ca, 0.264700);  // Muy alto en Calcio por el CaCO3
-    concrete->AddMaterial(Fe, 0.009200);
-  } else if (theInputManager->GetConcreteType() ==
-             8) {  // Hormigón de Ilmenita (Ilmenite Concrete)
-    concrete = new G4Material("concrete", 3.50 * g / cm3, 9);
-    concrete->AddMaterial(H_thermal, 0.006000);
-    concrete->AddMaterial(O, 0.334000);
-    concrete->AddMaterial(Mg, 0.015000);
-    concrete->AddMaterial(Al, 0.018000);
-    concrete->AddMaterial(Si, 0.038000);
-    concrete->AddMaterial(Ca, 0.059000);
-    concrete->AddMaterial(Ti, 0.153000);  // 15.3% de Titanio
-    concrete->AddMaterial(V, 0.002000);   // Pequeña fracción de Vanadio
-    concrete->AddMaterial(Fe, 0.375000);  // 37.5% de Hierro
-  } else if (theInputManager->GetConcreteType() ==
-             9) {  // Como el 2, pero las fracciones másicas se dan en el input
-    concrete = new G4Material("concrete", 2.3 * g / cm3, 10);
-    std::vector<G4double> ConcreteVals = theInputManager->GetConcreteValues();
-    if (ConcreteVals.size() < 10) {
-      G4cout << " ########## ERROR in " << __FILE__ << ", line " << __LINE__
-             << " ##########" << G4endl;
-      exit(1);
-    }
-    concrete->AddMaterial(H_thermal, ConcreteVals[0]);
-    concrete->AddMaterial(C, ConcreteVals[1]);
-    concrete->AddMaterial(O, ConcreteVals[2]);
-    concrete->AddMaterial(Na, ConcreteVals[3]);
-    concrete->AddMaterial(Mg, ConcreteVals[4]);
-    concrete->AddMaterial(Al, ConcreteVals[5]);
-    concrete->AddMaterial(Si, ConcreteVals[6]);
-    concrete->AddMaterial(K, ConcreteVals[7]);
-    concrete->AddMaterial(Ca, ConcreteVals[8]);
-    concrete->AddMaterial(Fe, ConcreteVals[9]);
+    concrete->AddMaterial(H_thermal, 0.010000);
+    concrete->AddMaterial(C, 0.001000);
+    concrete->AddMaterial(O, 0.529107);
+    concrete->AddMaterial(Na, 0.016000);
+    concrete->AddMaterial(Mg, 0.002000);
+    concrete->AddMaterial(Al, 0.033872);
+    concrete->AddMaterial(Si, 0.337021);
+    concrete->AddMaterial(K, 0.013000);
+    concrete->AddMaterial(Ca, 0.044000);
+    concrete->AddMaterial(Fe, 0.014000);
   } else {
     G4cout << " ########## ERROR in " << __FILE__ << ", line " << __LINE__
            << " ##########" << G4endl;
@@ -1719,7 +1604,7 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
     }
   }
   // Modify by Valcayne to not have overlaps in the volumes.
-  sprintf(name, "CFHolder-L6D6");
+  sprintf(name, "CFHolderL6D6");
   //      physiCFHolderL6D6[i] =
   new G4PVPlacement(TransformCFHolder, logicCFHolder, name, logicDetVol, false,
                     0, flagOverlaps);
@@ -1903,58 +1788,58 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   G4ThreeVector position1 =
       G4ThreeVector(0, 0, 134.5 * mm + 20 * mm + CFHolderShift);
   G4Transform3D transform1 = G4Transform3D(rotm1, position1);
-  new G4PVPlacement(transform1,           // rotation,position
-                    fLogicdetTube,        // its logical volume
-                    "detTubeShell-L6D6",  // its name
-                    logicDetVol,          // its mother  volume
-                    false,                // no boolean operation
-                    0,                    // copy number
-                    flagOverlaps);        // checking overlaps
+  new G4PVPlacement(transform1,      // rotation,position
+                    fLogicdetTube,   // its logical volume
+                    "detTubeShell",  // its name
+                    logicDetVol,     // its mother  volume
+                    false,           // no boolean operation
+                    0,               // copy number
+                    flagOverlaps);   // checking overlaps
   ////////////detConeShell:2///////////////////////////////////
   G4ThreeVector position2 =
       G4ThreeVector(0, 0, 74.5 * mm + 20 * mm + CFHolderShift);
   G4Transform3D transform2 = G4Transform3D(rotm1, position2);
-  new G4PVPlacement(transform2,           // rotation,position
-                    fLogicdetCone,        // its logical volume
-                    "detConeShell-L6D6",  // its name
-                    logicDetVol,          // its mother  volume
-                    false,                // no boolean operation
-                    0,                    // copy number
-                    flagOverlaps);        // checking overlaps
+  new G4PVPlacement(transform2,      // rotation,position
+                    fLogicdetCone,   // its logical volume
+                    "detConeShell",  // its name
+                    logicDetVol,     // its mother  volume
+                    false,           // no boolean operation
+                    0,               // copy number
+                    flagOverlaps);   // checking overlaps
   ////////////////////PMTubeShell:3//////////////////////////////
   G4ThreeVector position3 =
       G4ThreeVector(0, 0, -42 * mm + 20 * mm + CFHolderShift);
   G4Transform3D transform3 = G4Transform3D(rotm1, position3);
-  new G4PVPlacement(transform3,          // rotation,position
-                    fLogicPMTube,        // its logical volume
-                    "PMTubeShell-L6D6",  // its name
-                    logicDetVol,         // its mother  volume
-                    false,               // no boolean operation
-                    0,                   // copy number
-                    flagOverlaps);       // checking overlaps
+  new G4PVPlacement(transform3,     // rotation,position
+                    fLogicPMTube,   // its logical volume
+                    "PMTubeShell",  // its name
+                    logicDetVol,    // its mother  volume
+                    false,          // no boolean operation
+                    0,              // copy number
+                    flagOverlaps);  // checking overlaps
   ////////////detWindow:4 (Front part of the CFiber shell)////////
   G4ThreeVector position4 =
       G4ThreeVector(0, 0, 180.0 * mm + 20 * mm + CFHolderShift);
   G4Transform3D transform4 = G4Transform3D(rotm1, position4);
-  new G4PVPlacement(transform4,        // rotation,position
-                    fLogicdetWindow,   // its logical volume
-                    "detWindow-L6D6",  // its name
-                    logicDetVol,       // its mother  volume
-                    false,             // no boolean operation
-                    0,                 // copy number
-                    flagOverlaps);     // checking overlaps
+  new G4PVPlacement(transform4,       // rotation,position
+                    fLogicdetWindow,  // its logical volume
+                    "detWindow",      // its name
+                    logicDetVol,      // its mother  volume
+                    false,            // no boolean operation
+                    0,                // copy number
+                    flagOverlaps);    // checking overlaps
   /////////////////// Detector Base :20 ////////////////////////////
   //  G4double DetBase_pos=-144.5*mm-DetBase1_dZ;
   G4ThreeVector position20 =
       G4ThreeVector(0, 0, -144.5 * mm - DetBase1_dZ + 20 * mm + CFHolderShift);
   G4Transform3D transform20 = G4Transform3D(rotm1, position20);
-  new G4PVPlacement(transform20,     // rotation,position
-                    fLogicDetBase,   // its logical volume
-                    "DetBase-L6D6",  // its name
-                    logicDetVol,     // its mother  volume
-                    false,           // no boolean operation
-                    0,               // copy number
-                    flagOverlaps);   // checking overlaps
+  new G4PVPlacement(transform20,    // rotation,position
+                    fLogicDetBase,  // its logical volume
+                    "DetBase",      // its name
+                    logicDetVol,    // its mother  volume
+                    false,          // no boolean operation
+                    0,              // copy number
+                    flagOverlaps);  // checking overlaps
   //////////////22:CF support for Expansion Volume////////////////////
   // vbs->overlap with AluminumTube
   //  G4ThreeVector position22 = G4ThreeVector(120*mm,0.,
@@ -1971,28 +1856,28 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   G4ThreeVector position23 = G4ThreeVector(
       CFAdapt_dZ + R1min, 0, tube2_dZ + R_torusCenter + CFHolderShift);
   G4Transform3D transform23 = G4Transform3D(rotm23, position23);
-  new G4PVPlacement(transform23,     //
-                    fLogicCFAdapt,   // its logical volume
-                    "CFAdapt-L6D6",  // its name
-                    logicDetVol,     // its mother  volume
-                    false,           // no boolean opera
-                    0,               // copy number
-                    flagOverlaps);   // checking overlaps
+  new G4PVPlacement(transform23,    //
+                    fLogicCFAdapt,  // its logical volume
+                    "CFAdapt",      // its name
+                    logicDetVol,    // its mother  volume
+                    false,          // no boolean opera
+                    0,              // copy number
+                    flagOverlaps);  // checking overlaps
   ////////////////////////// Aluminium Tube for expansion Volume:24/////////
   new G4PVPlacement(0,
                     G4ThreeVector(120 * mm, 0, CFHolderShift),  // Translation
-                    fLogicAluminiumTube,   // its logical volume
-                    "AluminiumTube-L6D6",  // its name
-                    logicDetVol,           // its mother  volume
-                    false,                 // no boolean operation
-                    0,                     // copy number
-                    flagOverlaps);         // checking overlaps
+                    fLogicAluminiumTube,  // its logical volume
+                    "AluminiumTube",      // its name
+                    logicDetVol,          // its mother  volume
+                    false,                // no boolean operation
+                    0,                    // copy number
+                    flagOverlaps);        // checking overlaps
   /////////////////////////Expansion Volume Cilinder
   ///:25///////////////////////////////
   new G4PVPlacement(
       0, G4ThreeVector(120 * mm, 0, -tube2_dZ - expVol_dZ + CFHolderShift),
       fLogicExpVol,   // its logical volume
-      "ExpVol-L6D6",  // its name
+      "ExpVol",       // its name
       logicDetVol,    // its mother  volume
       false,          // no boolean operation
       0,              // copy number
@@ -2003,7 +1888,7 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   G4Transform3D transform5 = G4Transform3D(rotm1, position5);
   new G4PVPlacement(transform5,      // rotation,position
                     fLogicPMWindow,  // its logical volume
-                    "PMW-L6D6",      // its name
+                    "PMW",           // its name
                     logicDetVol,     // its mother  volume
                     false,           // no boolean operation
                     0,               // copy number
@@ -2015,7 +1900,7 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   G4Transform3D transform10 = G4Transform3D(rotm1, position10);
   new G4PVPlacement(transform10,      // rotation,position
                     fLogicPMWindow2,  // its logical volume
-                    "PMW2-L6D6",      // its name
+                    "PMW2",           // its name
                     logicDetVol,      // its mother  volume
                     false,            // no boolean operation
                     0,                // copy number
@@ -2036,136 +1921,136 @@ void C6D6DetectorConstruction::ConstructL6D6(G4LogicalVolume* mother,
   ///:26///////////////////////////////
   new G4PVPlacement(0,                                          // no rotation
                     G4ThreeVector(120 * mm, 0, CFHolderShift),  // Translation
-                    fLogicC6D6ExpTube,   // its logical volume
-                    "C6D6ExpTube-L6D6",  // its name
-                    logicDetVol,         // its mother  volume
-                    false,               // no boolean operation
-                    0,                   // copy number
-                    flagOverlaps);       // checking overlaps
+                    fLogicC6D6ExpTube,  // its logical volume
+                    "C6D6ExpTube",      // its name
+                    logicDetVol,        // its mother  volume
+                    false,              // no boolean operation
+                    0,                  // copy number
+                    flagOverlaps);      // checking overlaps
   /////////////////////////Expansion Volume C6D6
   ///:27///////////////////////////////
   new G4PVPlacement(
       0,  // no rotation
       G4ThreeVector(120 * mm, 0,
                     -tube2_dZ - expVol_dZ + 0.5 * expVol_thick + CFHolderShift),
-      fLogicExpVolC6D6,   // its logical volume
-      "ExpVolC6D6-L6D6",  // its name
-      logicDetVol,        // its mother  volume
-      false,              // no boolean operation
-      0,                  // copy number
-      flagOverlaps);      // checking overlaps
+      fLogicExpVolC6D6,  // its logical volume
+      "ExpVolC6D6",      // its name
+      logicDetVol,       // its mother  volume
+      false,             // no boolean operation
+      0,                 // copy number
+      flagOverlaps);     // checking overlaps
   ////////////////////PMShield1Tube:11/////////////////////////////////////////
   G4double PMS1Tube_pos = -1 * PMS1_dZ + 60.5 * mm;  //=0.912*mm;
   G4ThreeVector position11 =
       G4ThreeVector(0, 0, PMS1Tube_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform11 = G4Transform3D(rotm1, position11);
-  new G4PVPlacement(transform11,      // rotation,position
-                    fLogicPMS1Tube,   // its logical volume
-                    "PMS1Tube-L6D6",  // its name
-                    logicDetVol,      // its mother  volume
-                    false,            // no boolean operation
-                    0,                // copy number
-                    flagOverlaps);    // checking overlaps
+  new G4PVPlacement(transform11,     // rotation,position
+                    fLogicPMS1Tube,  // its logical volume
+                    "PMS1Tube",      // its name
+                    logicDetVol,     // its mother  volume
+                    false,           // no boolean operation
+                    0,               // copy number
+                    flagOverlaps);   // checking overlaps
   ////////////////////PMShield1Bottom:12/////////////////////////////////////////
   G4double PMS1Bottom_pos =
       -2 * PMS1_dZ + 60.5 * mm + 0.5 * PMS1_thick;  //= -58.405mm;
   G4ThreeVector position12 =
       G4ThreeVector(0, 0, PMS1Bottom_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform12 = G4Transform3D(rotm1, position12);
-  new G4PVPlacement(transform12,        // rotation,position
-                    fLogicPMS1Bottom,   // its logical volume
-                    "PMS1Bottom-L6D6",  // its name
-                    logicDetVol,        // its mother  volume
-                    false,              // no boolean operation
-                    0,                  // copy number
-                    flagOverlaps);      // checking overlaps
+  new G4PVPlacement(transform12,       // rotation,position
+                    fLogicPMS1Bottom,  // its logical volume
+                    "PMS1Bottom",      // its name
+                    logicDetVol,       // its mother  volume
+                    false,             // no boolean operation
+                    0,                 // copy number
+                    flagOverlaps);     // checking overlaps
   ////////////////////PMShield2Tube:13/////////////////////////////////////////
   G4double PMS2Tube_pos = PMS1Bottom_pos + 0.5 * PMS1_thick + PMS2_dZ;  //
   G4ThreeVector position13 =
       G4ThreeVector(0, 0, PMS2Tube_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform13 = G4Transform3D(rotm1, position13);
-  new G4PVPlacement(transform13,      // rotation,position
-                    fLogicPMS2Tube,   // its logical volume
-                    "PMS2Tube-L6D6",  // its name
-                    logicDetVol,      // its mother  volume
-                    false,            // no boolean operation
-                    0,                // copy number
-                    flagOverlaps);    // checking overlaps
+  new G4PVPlacement(transform13,     // rotation,position
+                    fLogicPMS2Tube,  // its logical volume
+                    "PMS2Tube",      // its name
+                    logicDetVol,     // its mother  volume
+                    false,           // no boolean operation
+                    0,               // copy number
+                    flagOverlaps);   // checking overlaps
   ////////////////////PMShield2Bottom:14/////////////////////////////////////////
   G4double PMS2Bottom_pos =
       PMS1Bottom_pos + 0.5 * PMS1_thick + 0.5 * PMS2_thick;
   G4ThreeVector position14 =
       G4ThreeVector(0, 0, PMS2Bottom_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform14 = G4Transform3D(rotm1, position14);
-  new G4PVPlacement(transform14,        // rotation,position
-                    fLogicPMS2Bottom,   // its logical volume
-                    "PMS2Bottom-L6D6",  // its name
-                    logicDetVol,        // its mother  volume
-                    false,              // no boolean operation
-                    0,                  // copy number
-                    flagOverlaps);      // checking overlaps
+  new G4PVPlacement(transform14,       // rotation,position
+                    fLogicPMS2Bottom,  // its logical volume
+                    "PMS2Bottom",      // its name
+                    logicDetVol,       // its mother  volume
+                    false,             // no boolean operation
+                    0,                 // copy number
+                    flagOverlaps);     // checking overlaps
   ///////////////////////////////////PMContentVolume:15///////////////////////////////////
   G4double PMContent_pos = 15.324 * mm;
   G4ThreeVector position15 =
       G4ThreeVector(0, 0, PMContent_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform15 = G4Transform3D(rotm1, position15);
-  new G4PVPlacement(transform15,       // rotation,position
-                    fLogicPMContent,   // its logical volume
-                    "PMContent-L6D6",  // its name
-                    logicDetVol,       // its mother  volume
-                    false,             // no boolean operation
-                    0,                 // copy number
-                    flagOverlaps);     // checking overlaps
+  new G4PVPlacement(transform15,      // rotation,position
+                    fLogicPMContent,  // its logical volume
+                    "PMContent",      // its name
+                    logicDetVol,      // its mother  volume
+                    false,            // no boolean operation
+                    0,                // copy number
+                    flagOverlaps);    // checking overlaps
   /////////////PMAdapt1: 16///////////////////////////////
   G4double PMAdapt1_pos = 45.5 * mm;
   G4ThreeVector position16 =
       G4ThreeVector(0, 0, PMAdapt1_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform16 = G4Transform3D(rotm1, position16);
-  new G4PVPlacement(transform16,           // rotation,position
-                    fLogicPMAdapt1,        // its logical volume
-                    "PMAdapt1Shell-L6D6",  // its name
-                    logicDetVol,           // its mother  volume
-                    false,                 // no boolean operation
-                    0,                     // copy number
-                    flagOverlaps);         // checking overlaps
+  new G4PVPlacement(transform16,      // rotation,position
+                    fLogicPMAdapt1,   // its logical volume
+                    "PMAdapt1Shell",  // its name
+                    logicDetVol,      // its mother  volume
+                    false,            // no boolean operation
+                    0,                // copy number
+                    flagOverlaps);    // checking overlaps
   /////////////PMAdapt2:17//////////////////////////////
   G4double PMAdapt2_pos = 50.5 * mm;
   G4ThreeVector position17 =
       G4ThreeVector(0, 0, PMAdapt2_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform17 = G4Transform3D(rotm1, position17);
-  new G4PVPlacement(transform17,           // rotation,position
-                    fLogicPMAdapt2,        // its logical volume
-                    "PMAdapt2Shell-L6D6",  // its name
-                    logicDetVol,           // its mother  volume
-                    false,                 // no boolean operation
-                    0,                     // copy number
-                    flagOverlaps);         // checking overlaps
+  new G4PVPlacement(transform17,      // rotation,position
+                    fLogicPMAdapt2,   // its logical volume
+                    "PMAdapt2Shell",  // its name
+                    logicDetVol,      // its mother  volume
+                    false,            // no boolean operation
+                    0,                // copy number
+                    flagOverlaps);    // checking overlaps
   /////////////Voltage divider:18///////////////////////////////
   G4double VoltageDiv_pos =
       PMS1Bottom_pos - VoltageDiv1_dZ - 0.5 * PMS1_thick;  //=-71.18*mm;
   G4ThreeVector position18 =
       G4ThreeVector(0, 0, VoltageDiv_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform18 = G4Transform3D(rotm1, position18);
-  new G4PVPlacement(transform18,        // rotation,position
-                    fLogicVoltageDiv,   // its logical volume
-                    "VoltageDiv-L6D6",  // its name
-                    logicDetVol,        // its mother  volume
-                    false,              // no boolean operation
-                    0,                  // copy number
-                    flagOverlaps);      // checking overlaps
+  new G4PVPlacement(transform18,       // rotation,position
+                    fLogicVoltageDiv,  // its logical volume
+                    "VoltageDiv",      // its name
+                    logicDetVol,       // its mother  volume
+                    false,             // no boolean operation
+                    0,                 // copy number
+                    flagOverlaps);     // checking overlaps
   /////////////SupportRing:19///////////////////////////////
   G4double SuppRing_pos =
       VoltageDiv_pos - PMSupportRing_dZ - VoltageDiv1_dZ;  //=-98.68*mm
   G4ThreeVector position19 =
       G4ThreeVector(0, 0, SuppRing_pos + 20 * mm + CFHolderShift);
   G4Transform3D transform19 = G4Transform3D(rotm1, position19);
-  new G4PVPlacement(transform19,      // rotation,position
-                    fLogicSuppRing,   // its logical volume
-                    "SuppRing-L6D6",  // its name
-                    logicDetVol,      // its mother  volume
-                    false,            // no boolean operation
-                    0,                // copy number
-                    flagOverlaps);    // checking overlaps
+  new G4PVPlacement(transform19,     // rotation,position
+                    fLogicSuppRing,  // its logical volume
+                    "SuppRing",      // its name
+                    logicDetVol,     // its mother  volume
+                    false,           // no boolean operation
+                    0,               // copy number
+                    flagOverlaps);   // checking overlaps
 
   /////////////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////     ATRIBUTES
@@ -3760,14 +3645,12 @@ void C6D6DetectorConstruction::ConstructBeamLineEAR1_2024_BigSampleHolder(
   G4double vacuum_length[vacuums], vacuum_diameter[vacuums];
   G4ThreeVector vacuum_position[vacuums];
   // Far before sample
-  // vacuum_length[0] = pipe_length[0] + pipe_length[2];
-  vacuum_length[0] = 200 * m + DistanceFrontPipesToSample;
+  vacuum_length[0] = pipe_length[0] + pipe_length[2];
   vacuum_diameter[0] = inner_beamline_diameter;
   vacuum_position[0] = G4ThreeVector(
       0. * cm, 0. * cm, DistanceFrontPipesToSample - vacuum_length[0] / 2.0);
   // after sample
-  // vacuum_length[1] = pipe_length[4];
-  vacuum_length[1] = 200 * m - DistanceBackPipesToSample;
+  vacuum_length[1] = pipe_length[4];
   vacuum_diameter[1] = inner_beamline_diameter;
   vacuum_position[1] = G4ThreeVector(
       0. * cm, 0. * cm, DistanceBackPipesToSample + vacuum_length[1] / 2.0);
@@ -4411,8 +4294,6 @@ void C6D6DetectorConstruction::ConstructSDandField() {
       new C6D6SensitiveTarget("C6D6SensitiveTarget");
   sdManager->AddNewDetector(theC6D6SensitiveTarget);
   logic_target->SetSensitiveDetector(theC6D6SensitiveTarget);
-
-  theInputManager->Setlogic_target(logic_target);
 }
 
 void C6D6DetectorConstruction::ConstructBeamLineEAR2AndSampleHolder_Cm244(

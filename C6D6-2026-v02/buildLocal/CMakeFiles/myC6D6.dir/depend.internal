@@ -1086,11 +1086,47 @@ CMakeFiles/myC6D6.dir/src/C6D6ActionInitialization.cc.o
 CMakeFiles/myC6D6.dir/src/C6D6DetectorConstruction.cc.o
  ../include/C6D6DetectorConstruction.hh
  ../include/C6D6Hit.hh
+ ../include/C6D6InputManager.hh
  ../include/C6D6SensitiveDetector.hh
  ../include/C6D6SensitiveTarget.hh
  /home/victor93/CmExperimentFolder/2021_Comissioning/Geant4Capture/Geant4_Background_v01/C6D6-2026-v02/src/C6D6DetectorConstruction.cc
  /home/victor93/Programs/geant4-v11.2.0/geant4-v11.2.0-BUILD/source/geometry/include/G4GeomConfig.hh
  /home/victor93/Programs/geant4-v11.2.0/geant4-v11.2.0-BUILD/source/global/include/G4GlobalConfig.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/factory/include/G4AnalysisManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/factory/include/G4GenericAnalysisManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/factory/include/G4GenericAnalysisManager.icc
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/factory/include/G4GenericFileManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/factory/include/G4GenericFileManager.icc
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/hntools/include/G4TH1ToolsManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/hntools/include/G4TH2ToolsManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/hntools/include/G4TH3ToolsManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/hntools/include/G4TP1ToolsManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/hntools/include/G4TP2ToolsManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/hntools/include/G4ToolsAnalysisManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/hntools/include/G4ToolsAnalysisManager.icc
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4AnalysisManagerState.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4AnalysisUtilities.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4AnalysisVerbose.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4BaseAnalysisManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4BaseFileManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4BinScheme.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4Fcn.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4HnInformation.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4HnManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4NtupleBookingManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4NtupleBookingManager.icc
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4THnManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4THnManager.icc
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4THnMessenger.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4THnMessenger.icc
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4THnToolsManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4THnToolsManager.icc
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4VAnalysisManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4VAnalysisManager.icc
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4VFileManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4VNtupleManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4VTBaseHnManager.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/analysis/management/include/G4VTHnFileManager.hh
  /home/victor93/Programs/geant4-v11.2.0/source/digits_hits/detector/include/G4CollectionNameVector.hh
  /home/victor93/Programs/geant4-v11.2.0/source/digits_hits/detector/include/G4HCtable.hh
  /home/victor93/Programs/geant4-v11.2.0/source/digits_hits/detector/include/G4SDManager.hh
@@ -1183,6 +1219,31 @@ CMakeFiles/myC6D6.dir/src/C6D6DetectorConstruction.cc.o
  /home/victor93/Programs/geant4-v11.2.0/source/externals/clhep/include/CLHEP/Vector/ThreeVector.icc
  /home/victor93/Programs/geant4-v11.2.0/source/externals/clhep/include/CLHEP/Vector/TwoVector.h
  /home/victor93/Programs/geant4-v11.2.0/source/externals/clhep/include/CLHEP/Vector/TwoVector.icc
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/cid
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/cids
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/eqT
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/forit
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/axes
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/axis
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/b1
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/b2
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/b3
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/base_histo
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/h1
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/h1d
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/h2
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/h2d
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/h3
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/h3d
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/histo_data
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/p1
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/p1d
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/p2
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/p2d
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/histo/profile_data
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/mem
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/ntuple_booking
+ /home/victor93/Programs/geant4-v11.2.0/source/externals/g4tools/include/tools/typedefs
  /home/victor93/Programs/geant4-v11.2.0/source/externals/ptl/include/PTL/Globals.hh
  /home/victor93/Programs/geant4-v11.2.0/source/externals/ptl/include/PTL/Types.hh
  /home/victor93/Programs/geant4-v11.2.0/source/externals/ptl/include/PTL/Utility.hh
@@ -1270,6 +1331,7 @@ CMakeFiles/myC6D6.dir/src/C6D6DetectorConstruction.cc.o
  /home/victor93/Programs/geant4-v11.2.0/source/global/HEPRandom/include/Randomize.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4Allocator.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4AllocatorPool.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4ApplicationState.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4AutoLock.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4DataVector.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4DataVector.icc
@@ -1296,6 +1358,7 @@ CMakeFiles/myC6D6.dir/src/C6D6DetectorConstruction.cc.o
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4SystemOfUnits.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4Threading.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4ThreeVector.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4Tokenizer.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4TwoVector.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4Types.hh
  /home/victor93/Programs/geant4-v11.2.0/source/global/management/include/G4UnitsTable.hh
@@ -1322,6 +1385,11 @@ CMakeFiles/myC6D6.dir/src/C6D6DetectorConstruction.cc.o
  /home/victor93/Programs/geant4-v11.2.0/source/graphics_reps/include/G4Visible.icc
  /home/victor93/Programs/geant4-v11.2.0/source/graphics_reps/include/HepPolyhedron.h
  /home/victor93/Programs/geant4-v11.2.0/source/graphics_reps/include/graphics_reps_defs.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/intercoms/include/G4UIcommand.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/intercoms/include/G4UIdirectory.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/intercoms/include/G4UImessenger.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/intercoms/include/G4UIparameter.hh
+ /home/victor93/Programs/geant4-v11.2.0/source/intercoms/include/G4UItokenNum.hh
  /home/victor93/Programs/geant4-v11.2.0/source/materials/include/G4DensityEffectCalculator.hh
  /home/victor93/Programs/geant4-v11.2.0/source/materials/include/G4Element.hh
  /home/victor93/Programs/geant4-v11.2.0/source/materials/include/G4ElementTable.hh

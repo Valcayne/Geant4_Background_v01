@@ -26,13 +26,7 @@ cmake ../
 make
 cd ../
 
-set -e
-mkdir -p buildLocal
-cd buildLocal
-rm -rf -- *
-cmake ..
-cmake --build . --parallel
-cd ..
+
 
 
 Marzo de 2025: comienzo a editar el código, a partir de versiones anteriores

@@ -29,12 +29,12 @@ iostream
 -
 sstream
 -
+C6D6InputManager.hh
+../include/C6D6InputManager.hh
 C6D6SensitiveDetector.hh
 ../include/C6D6SensitiveDetector.hh
 C6D6SensitiveTarget.hh
 ../include/C6D6SensitiveTarget.hh
-C6D6InputManager.hh
-../include/C6D6InputManager.hh
 G4Box.hh
 ../include/G4Box.hh
 G4Colour.hh
