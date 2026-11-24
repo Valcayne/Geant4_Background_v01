@@ -1176,6 +1176,19 @@ void C6D6DetectorConstruction::ConstructTarget_Er(G4LogicalVolume* mother,
 
 void C6D6DetectorConstruction::ConstructTarget_EmptyEr(
     G4LogicalVolume* mother) {
+  // Solid
+  G4double target_diameter = 0.0001 * mm;
+  G4double target_thickness = 0.001 * mm;
+  G4Tubs* target = new G4Tubs("Target_Calibration", 0, target_diameter / 2,
+                              target_thickness / 2, 0. * deg, 360. * deg);
+  // Logic
+  logic_target = new G4LogicalVolume(target, vacuum, "Target_Calibration");
+  // Physic
+  /* G4VPhysicalVolume *phys_target=*/new G4PVPlacement(
+      0, G4ThreeVector(0, 0, 0), logic_target, "Target_Calibration", mother,
+      false, 0, flagOverlaps);
+  logic_target->SetVisAttributes(new G4VisAttributes(G4Colour::Yellow()));
+
   // Mylars
   G4float mylar_thickness = 6 * um;
   G4Tubs* mylar =

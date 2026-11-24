@@ -20,7 +20,9 @@ Cosas mías en: /mnt/lustre/home/u5491/n_TOF/U238/Calc01
 doFullSim inputs/inp01/FullSim-Empty/inp01.inp xula2
 
 Para mirar cómo va todo en xula:
+
 squeue -u u6979
+squeue -u u6979 -r -h -o "%T" | sort | uniq -c
 
 Para los in-beam gamma rays:
 LaunchJobs_Ene02 inputs/GR01/Carbon-20-635_v01/Inp_GR01_1e8.inp 100 0 1
