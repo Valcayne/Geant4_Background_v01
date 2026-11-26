@@ -8,6 +8,7 @@ doFullSim inputs/inp01/Er167_13_Empty/inp01.inp xula2
 doFullSim inputs/inp01/U238_NoCap/inp01.inp xula2
 doFullSim inputs/inp01/Er167_13_NoCap/inp01.inp xula2
 
+doFullSim inputs/inp01/U238/inp01.inp xula2
 
 ln -s /mnt/lustre/home/u6979/2024_Er/Geant4_Background_v01/C6D6-2026-v02/build-11.3.2-mod02/myC6D6 myC6D6-11.3.2-mod02
 
