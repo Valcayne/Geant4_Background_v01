@@ -41,9 +41,9 @@ doFullSim inputs/inp04/Au_NoCap/inp04.inp xula2
 doFullSim inputs/inp04/Empty/inp04_1e8.inp xula2
 doFullSim inputs/inp04/Empty_NoCap/inp04_1e8.inp xula2
 doFullSim inputs/inp04/Er167/inp04_1e8.inp xula2
-doFullSim inputs/inp04/Er167_NoCap/inp04_1e8.inp xula2
-doFullSim inputs/inp04/Au/inp04_1e8.inp xula2
-doFullSim inputs/inp04/Au_NoCap/inp04_1e8.inp xula2 
+doFullSim inputs/inp04/Er167_NoCap/inp04_1e8.inp xula1
+doFullSim inputs/inp04/Au/inp04_1e8.inp xula1
+doFullSim inputs/inp04/Au_NoCap/inp04_1e8.inp xula1
 
 doFullSim inputs/inp04/Empty/inp04_1e7.inp xula2
 doFullSim inputs/inp04/Empty_NoCap/inp04_1e7.inp xula2
