@@ -4868,6 +4868,10 @@ void C6D6DetectorConstruction::ConstructSDandField() {
   C6D6SensitiveTarget* theC6D6SensitiveTarget =
       new C6D6SensitiveTarget("C6D6SensitiveTarget");
   sdManager->AddNewDetector(theC6D6SensitiveTarget);
+
+  // Added by Valcayne
+  //  Share the target logical volume with StackingAction through InputManager.
+  theInputManager->Setlogic_target(logic_target);
   logic_target->SetSensitiveDetector(theC6D6SensitiveTarget);
 }
 
