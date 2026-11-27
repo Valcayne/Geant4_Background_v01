@@ -18,7 +18,8 @@ spack load /5bo56mj
 spack load libxmu@1.1.4 %gcc@=8.5.0
 module load libx11-1.8.4-oneapi-2023.1.0-aj3pqdu
 
-
+rm -rf build-11.3.2-mod02/*
+cd build-11.3.2-mod02/
 
 cmake -DGeant4_DIR=/mnt/lustre/home/u5491/programs/geant4/geant4-v11.3.2-mod02_install/lib64/Geant4-11.3.2/ ../
 gmake -j20

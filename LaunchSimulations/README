@@ -14,6 +14,12 @@ doFullSim inputs/inp02/U238_NoCap/inp02.inp xula2
 doFullSim inputs/inp02/Er167/inp02.inp xula2
 doFullSim inputs/inp02/Er167_NoCap/inp02.inp xula2
 
+doFullSim inputs/inp03/U238/inp03.inp xula2
+doFullSim inputs/inp03/U238_NoCap/inp03.inp xula2
+
+doFullSim inputs/inp03/Er167/inp03.inp xula2
+doFullSim inputs/inp03/Er167_NoCap/inp03.inp xula2
+
 
 
 doFullSim inputs/inp01/U238/inp01.inp xula2
