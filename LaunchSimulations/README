@@ -37,6 +37,24 @@ doFullSim inputs/inp04/Au/inp04.inp xula2
 doFullSim inputs/inp04/Au_NoCap/inp04.inp xula2 
 
 
+
+doFullSim inputs/inp04/Empty/inp04_1e8.inp xula2
+doFullSim inputs/inp04/Empty_NoCap/inp04_1e8.inp xula2
+doFullSim inputs/inp04/Er167/inp04_1e8.inp xula2
+doFullSim inputs/inp04/Er167_NoCap/inp04_1e8.inp xula2
+doFullSim inputs/inp04/Au/inp04_1e8.inp xula2
+doFullSim inputs/inp04/Au_NoCap/inp04_1e8.inp xula2 
+
+doFullSim inputs/inp04/Empty/inp04_1e7.inp xula2
+doFullSim inputs/inp04/Empty_NoCap/inp04_1e7.inp xula2
+doFullSim inputs/inp04/Er167/inp04_1e7.inp xula2
+doFullSim inputs/inp04/Er167_NoCap/inp04_1e7.inp xula2
+doFullSim inputs/inp04/Au/inp04_1e7.inp xula2
+doFullSim inputs/inp04/Au_NoCap/inp04_1e7.inp xula2
+
+
+
+
 doFullSim inputs/inp01/U238/inp01.inp xula2
 
 ln -s /mnt/lustre/home/u6979/2024_Er/Geant4_Background_v01/C6D6-2026-v02/build-11.3.2-mod02/myC6D6 myC6D6-11.3.2-mod02
