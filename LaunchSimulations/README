@@ -24,6 +24,17 @@ doFullSim inputs/inp03/U238_NoCap_v01/inp03.inp xula2
 doFullSim inputs/inp03/U238_v01/inp03.inp xula2
 
 doFullSim inputs/inp03/Au/inp03.inp xula2
+doFullSim inputs/inp03/Au_NoCap/inp03.inp xula2
+
+
+mkdir -p outputs/out04/{Empty,Empty_NoCap,Er167,Er167_NoCap,Au,Au_NoCap}
+mkdir -p outputs/out04
+doFullSim inputs/inp04/Empty/inp04.inp xula2
+doFullSim inputs/inp04/Empty_NoCap/inp04.inp xula2
+doFullSim inputs/inp04/Er167/inp04.inp xula2
+doFullSim inputs/inp04/Er167_NoCap/inp04.inp xula2
+doFullSim inputs/inp04/Au/inp04.inp xula2
+doFullSim inputs/inp04/Au_NoCap/inp04.inp xula2 
 
 
 doFullSim inputs/inp01/U238/inp01.inp xula2
